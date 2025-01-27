@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<or>
+    <!-- Directory-based patterns -->
+    <path_pattern pattern=".*/(?:tutorials?|examples?|demos?|samples?|quickstarts?|getting[_-]started)/.*" case_sensitive="false"/>
+    
+    <!-- File name patterns -->
+    <or>
+        <!-- Python files -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.py$" case_sensitive="false"/>
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.ipynb$" case_sensitive="false"/>
+        
+        <!-- JavaScript/TypeScript -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.(?:js|jsx|ts|tsx)$" case_sensitive="false"/>
+        
+        <!-- Web files -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.(?:html|htm|css)$" case_sensitive="false"/>
+        
+        <!-- Documentation -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.(?:md|rst|txt|adoc)$" case_sensitive="false"/>
+        
+        <!-- Data files -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.(?:json|yaml|yml|xml|csv)$" case_sensitive="false"/>
+        
+        <!-- Shell scripts -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample|test).*\.(?:sh|bash|zsh)$" case_sensitive="false"/>
+        
+        <!-- Config files -->
+        <path_pattern pattern=".*(?:example|demo|tutorial|sample).*\.(?:toml|ini|cfg|conf)$" case_sensitive="false"/>
+    </or>
+    
+    <!-- Content-based patterns -->
+    <or>
+        <!-- Common comment markers -->
+        <content_pattern pattern="#\s*(?:Example|Demo|Tutorial|Sample|Test)" case_sensitive="false"/>
+        <content_pattern pattern="//\s*(?:Example|Demo|Tutorial|Sample|Test)" case_sensitive="false"/>
+        <content_pattern pattern="/\*\s*(?:Example|Demo|Tutorial|Sample|Test)" case_sensitive="false"/>
+        <content_pattern pattern="&lt;!--\s*(?:Example|Demo|Tutorial|Sample|Test)" case_sensitive="false"/>
+        
+        <!-- Documentation strings -->
+        <content_pattern pattern="(?:'''|&quot;&quot;&quot;)\s*(?:Example|Demo|Tutorial|Sample|Test)" case_sensitive="false"/>
+        
+        <!-- Common code markers -->
+        <content_pattern pattern="@example" case_sensitive="false"/>
+        <content_pattern pattern="@demo" case_sensitive="false"/>
+        <content_pattern pattern="@tutorial" case_sensitive="false"/>
+        <content_pattern pattern="@sample" case_sensitive="false"/>
+        <content_pattern pattern="@test" case_sensitive="false"/>
+    </or>
+    
+    <!-- Special cases -->
+    <or>
+        <!-- README files in example directories -->
+        <and>
+            <path_pattern pattern=".*/(?:examples?|demos?|tutorials?|samples?)/.*README.*" case_sensitive="false"/>
+            <path_pattern pattern=".*\.(?:md|rst|txt|adoc)$" case_sensitive="false"/>
+        </and>
+        
+        <!-- Index files in example directories -->
+        <and>
+            <path_pattern pattern=".*/(?:examples?|demos?|tutorials?|samples?)/.*index\..*" case_sensitive="false"/>
+            <path_pattern pattern=".*\.(?:html|htm|js|jsx|ts|tsx)$" case_sensitive="false"/>
+        </and>
+        
+        <!-- Common example file patterns -->
+        <path_pattern pattern=".*/example[_-].*" case_sensitive="false"/>
+        <path_pattern pattern=".*/demo[_-].*" case_sensitive="false"/>
+        <path_pattern pattern=".*/tutorial[_-].*" case_sensitive="false"/>
+        <path_pattern pattern=".*/sample[_-].*" case_sensitive="false"/>
+        <path_pattern pattern=".*[_-]example/.*" case_sensitive="false"/>
+        <path_pattern pattern=".*[_-]demo/.*" case_sensitive="false"/>
+        <path_pattern pattern=".*[_-]tutorial/.*" case_sensitive="false"/>
+        <path_pattern pattern=".*[_-]sample/.*" case_sensitive="false"/>
+    </or>
+</or>
