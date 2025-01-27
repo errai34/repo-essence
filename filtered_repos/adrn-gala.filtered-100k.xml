@@ -10736,13 +10736,6 @@ def test_immutabledict():
     with pytest.raises(TypeError):
         b['test'] = 5
 </file>
-    <file path="gala/potential/__init__.py">
-from .potential import *
-from .hamiltonian import *
-from .frame import *
-from .scf import SCFPotential
-from .common import PotentialParameter
-</file>
     <file path="gala/dynamics/__init__.py">
 from .core import PhaseSpacePosition
 from .orbit import Orbit
@@ -10753,6 +10746,13 @@ from .util import *
 from .representation_nd import *
 from .nbody import *
 from .mockstream import *
+</file>
+    <file path="gala/potential/__init__.py">
+from .potential import *
+from .hamiltonian import *
+from .frame import *
+from .scf import SCFPotential
+from .common import PotentialParameter
 </file>
     <file path="gala/potential/scf/__init__.py">
 &quot;&quot;&quot;

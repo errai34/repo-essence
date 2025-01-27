@@ -22,6 +22,7 @@ import xml.dom.minidom
 import xml.etree.ElementTree as ET
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Set
+import os
 
 # For GPT-based token counting
 import tiktoken
@@ -313,21 +314,35 @@ def main():
         "--config", required=True, help="Filter config XML (for tutorial-like rules)"
     )
     parser.add_argument(
-        "--output", default="compressed_repository.xml", help="Path for the output file"
+        "--output", help="Path for the output file (optional, will auto-construct if not provided)"
     )
     parser.add_argument(
         "--max-tokens",
         type=int,
         default=30000,
-        help="Stop if we exceed this token count",
+        help="Maximum number of tokens to include (default: 30000)",
     )
     parser.add_argument(
         "--model",
         default="gpt-3.5-turbo",
-        help="Model name for tiktoken (default: gpt-3.5-turbo)",
+        help="Model to use for token counting (default: gpt-3.5-turbo)",
     )
-
     args = parser.parse_args()
+
+    # Auto-construct output filename if not provided
+    if not args.output:
+        # Extract the base name from input XML
+        input_base = os.path.basename(args.merged_xml)
+        input_name = os.path.splitext(input_base)[0]
+        
+        # Create filtered_repos directory if it doesn't exist
+        os.makedirs("filtered_repos", exist_ok=True)
+        
+        # Construct output filename: filtered_repos/name.filtered-{tokens}k.xml
+        token_k = args.max_tokens // 1000
+        args.output = f"filtered_repos/{input_name}.filtered-{token_k}k.xml"
+
+    # Load the tiktoken encoder
     encoder = load_token_encoder(args.model)
 
     # 1. Read the entire merged XML as raw text

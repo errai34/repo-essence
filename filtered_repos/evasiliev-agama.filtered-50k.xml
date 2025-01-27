@@ -1,0 +1,3557 @@
+<?xml version="1.0" ?>
+<compressed_repository total_tokens="49795">
+  <file_summary>
+    
+This section contains a summary of this file.
+
+
+    <purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+    
+
+
+    <file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Repository structure
+4. Repository files, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+    
+
+
+    <usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+    
+
+
+    <notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's
+  configuration.
+- Binary files are not included in this packed representation. Please refer to
+  the Repository Structure section for a complete list of file paths, including
+  binary files.
+</notes>
+    
+
+
+    <additional_info>
+
+For more information about Repomix, visit: https://github.com/yamadashy/repomix
+</additional_info>
+    
+
+
+  </file_summary>
+  <repository_structure>
+data/
+  BT08.ini
+  Cautun20.ini
+  Irrgang13.ini
+  McMillan11_best.ini
+  McMillan11_convenient.ini
+  McMillan17.ini
+  MWPotential2014.ini
+  MWPotential2014galpy.ini
+  phaseflow_bahcallwolfcusp.ini
+  phaseflow_corecollapse.ini
+  Piffl14.ini
+  PriceWhelan17.ini
+  PriceWhelan22.ini
+  raga_corecollapse.ini
+  schwarzschild_axisym.ini
+  SCM_MW.ini
+  SCM.ini
+  SCM3.ini
+doc/
+  readme_raga.tex
+  reference.tex
+py/
+  agamacolormaps.py
+  alltest.py
+  example_actions_nbody.py
+  example_adiabatic_contraction.py
+  example_amuse_raga.py
+  example_amuse.py
+  example_basis_set.py
+  example_deprojection.py
+  example_df_fit.py
+  example_forstand.py
+  example_gala.py
+  example_galpy.py
+  example_gizmo_snapshot.py
+  example_lmc_mw_interaction.py
+  example_mw_bar_potential.py
+  example_mw_nsd.py
+  example_mw_potential_hunter24.py
+  example_nbody_simulation_arepo.param
+  example_nbody_simulation_arepo.patch
+  example_nbody_simulation_gadget4.param
+  example_nbody_simulation_gadget4.patch
+  example_nbody_simulation.py
+  example_poincare.py
+  example_schwarzschild_flattened_rotating.py
+  example_schwarzschild_triaxial.py
+  example_self_consistent_model_flattened.py
+  example_self_consistent_model_mw.py
+  example_self_consistent_model_simple.py
+  example_self_consistent_model.py
+  example_self_consistent_model3.py
+  example_smoothing_spline.py
+  example_spiral.py
+  example_target.py
+  example_tidal_stream.py
+  example_time_dependent_potential.py
+  example_torus.py
+  example_vdf_fit_bspline.py
+  gc_modelparamsE.py
+  gc_modelparamsJ.py
+  gc_resample.py
+  gc_runfit.py
+  interface_amuse.py
+  measureshape.py
+  nemofile.py
+  pygama.py
+  schwarzlib.py
+  schwarzschild.py
+  test_actions.py
+  test_amuse.py
+  test_batch_computations.py
+  test_compositions.py
+  test_coordinates.py
+  test_math.py
+  test_orbit.py
+  test_self_consistent_model.py
+  test_spline.py
+  test_threads.py
+  test_user_profiles.py
+  tutorial_potential_orbits.ipynb
+  tutorial_streams.ipynb
+src/
+  torus/
+    CHB.cc
+    CHB.h
+    Constants.h
+    Fit.cc
+    Fit.h
+    Fit2.cc
+    GeneratingFunction.cc
+    GeneratingFunction.h
+    Maps.h
+    Orb.cc
+    Orb.h
+    Pi.h
+    PJM_utils.h
+    PJMNum.cc
+    PJMNum.h
+    Point_ClosedOrbitCheby.cc
+    Point_ClosedOrbitCheby.h
+    Point_None.cc
+    Point_None.h
+    Potential.h
+    Torus.cc
+    Torus.h
+    Toy_Isochrone.cc
+    Toy_Isochrone.h
+    Types.h
+    Units.h
+    WD_FreeMemory.h
+    WD_Matrix.h
+    WD_Numerics.cc
+    WD_Numerics.h
+    WD_Numerics.templates
+    WD_Vector.h
+  actions_base.h
+  actions_factory.cpp
+  actions_factory.h
+  actions_focal_distance_finder.cpp
+  actions_focal_distance_finder.h
+  actions_isochrone.cpp
+  actions_isochrone.h
+  actions_spherical.cpp
+  actions_spherical.h
+  actions_staeckel.cpp
+  actions_staeckel.h
+  actions_torus.cpp
+  actions_torus.h
+  coord.cpp
+  coord.h
+  cubature.cpp
+  cubature.h
+  debug_utils.h
+  df_base.cpp
+  df_base.h
+  df_disk.cpp
+  df_disk.h
+  df_factory.cpp
+  df_factory.h
+  df_halo.cpp
+  df_halo.h
+  df_spherical.cpp
+  df_spherical.h
+  galaxymodel_base.cpp
+  galaxymodel_base.h
+  galaxymodel_densitygrid.cpp
+  galaxymodel_densitygrid.h
+  galaxymodel_fokkerplanck.cpp
+  galaxymodel_fokkerplanck.h
+  galaxymodel_jeans.cpp
+  galaxymodel_jeans.h
+  galaxymodel_losvd.cpp
+  galaxymodel_losvd.h
+  galaxymodel_selfconsistent.cpp
+  galaxymodel_selfconsistent.h
+  galaxymodel_spherical.cpp
+  galaxymodel_spherical.h
+  galaxymodel_target.h
+  galaxymodel_velocitysampler.cpp
+  galaxymodel_velocitysampler.h
+  interface_amuse.cpp
+  interface_c.cpp
+  interface_c.h
+  interface_fortran.cpp
+  interface_nemo.cpp
+  interface_python.cpp
+  math_base.h
+  math_core.cpp
+  math_core.h
+  math_fit.cpp
+  math_fit.h
+  math_gausshermite.cpp
+  math_gausshermite.h
+  math_geometry.cpp
+  math_geometry.h
+  math_glquadrature.h
+  math_linalg.cpp
+  math_linalg.h
+  math_ode.cpp
+  math_ode.h
+  math_optimization.cpp
+  math_optimization.h
+  math_random.cpp
+  math_random.h
+  math_sample.cpp
+  math_sample.h
+  math_simple_cubature.h
+  math_specfunc.cpp
+  math_specfunc.h
+  math_sphharm.cpp
+  math_sphharm.h
+  math_spline.cpp
+  math_spline.h
+  orbit_variational.cpp
+  orbit_variational.h
+  orbit.cpp
+  orbit.h
+  particles_base.h
+  particles_io.cpp
+  particles_io.h
+  potential_analytic.cpp
+  potential_analytic.h
+  potential_base.cpp
+  potential_base.h
+  potential_composite.cpp
+  potential_composite.h
+  potential_cylspline.cpp
+  potential_cylspline.h
+  potential_dehnen.cpp
+  potential_dehnen.h
+  potential_disk.cpp
+  potential_disk.h
+  potential_factory.cpp
+  potential_factory.h
+  potential_ferrers.cpp
+  potential_ferrers.h
+  potential_king.cpp
+  potential_king.h
+  potential_multipole.cpp
+  potential_multipole.h
+  potential_perfect_ellipsoid.cpp
+  potential_perfect_ellipsoid.h
+  potential_spheroid.cpp
+  potential_spheroid.h
+  potential_utils.cpp
+  potential_utils.h
+  raga_base.h
+  raga_binary.cpp
+  raga_binary.h
+  raga_core.cpp
+  raga_core.h
+  raga_losscone.cpp
+  raga_losscone.h
+  raga_potential.cpp
+  raga_potential.h
+  raga_relaxation.cpp
+  raga_relaxation.h
+  raga_trajectory.cpp
+  raga_trajectory.h
+  shared_ptr.h
+  smart.h
+  units.h
+  utils_config.cpp
+  utils_config.h
+  utils.cpp
+  utils.h
+tests/
+  example_actions_nbody.cpp
+  example_df_fit.cpp
+  example_doublepowerlaw.cpp
+  example_self_consistent_model_mw.cpp
+  example_self_consistent_model.cpp
+  mkspherical.cpp
+  phaseflow.cpp
+  raga.cpp
+  test_action_finder.cpp
+  test_actions_isochrone.cpp
+  test_actions_spherical.cpp
+  test_actions_staeckel.cpp
+  test_actions_torus.cpp
+  test_coord.cpp
+  test_density_grid.cpp
+  test_df_halo.cpp
+  test_df_spherical.cpp
+  test_fortran.f
+  test_galaxymodel.cpp
+  test_losvd.cpp
+  test_math_core.cpp
+  test_math_linalg.cpp
+  test_math_spline.cpp
+  test_orbit_integr.cpp
+  test_orbit_variational.cpp
+  test_potential_expansions.cpp
+  test_potential_modifiers.cpp
+  test_potentials.cpp
+  test_units.cpp
+  test_utils.cpp
+__init__.py
+.gitignore
+Doxyfile
+INSTALL
+LICENSE
+Makefile
+Makefile.list
+Makefile.local.template
+Makefile.msvc
+NEWS
+README
+setup.py
+</repository_structure>
+  <repository_files>
+    <file path="data/schwarzschild_axisym.ini">
+# Example input file for the schwarzschild.py program
+# This parameter file constructs a three-component disk-bulge-halo system as in Vasiliev&amp;Athanassoula(2015)
+
+# first we list density ingredients (each section name should start with 'density' and have no spaces)
+[Density_bulge]
+type=Sersic
+sersicIndex=2
+mass=0.25
+scaleRadius=0.215
+axisratioz=0.8
+
+[Density_disk]
+type=Disk
+mass=1
+scaleRadius=1
+scaleHeight=-0.0625
+
+[Density_halo]
+type=Spheroid
+mass=20
+gamma=1
+beta=3
+scaleRadius=5
+outerCutoffRadius=55
+cutoffStrength=2.5
+
+# next we define two potential solvers - disky density components are delegated to CylSpline,
+# and spheroidal components - to Multipole.
+# section names should start with 'Potential' and are otherwise arbitrary;
+# the total potential will contain all such components
+# (e.g. one could add a central massive black hole by defining an extra Plummer potential with scaleRadius=0)
+
+[Potential_disk]
+# list the section names of corresponding density components
+density=density_Disk
+# potential solver type
+type=cylspline
+# number of azumuthal harmonics - 0 means axisymmetry
+mmax=0
+# grid parameters
+gridsizer=20
+gridsizez=25
+rmin=0.1
+rmax=10
+zmin=0.02
+zmax=10
+
+[potential_spher]
+density=density_bulge, density_halo
+type=multipole
+lmax=2
+gridSizeR=30
+
+# now comes the list of separate components of the Schwarzschild model.
+# each section should start with 'Component', and corresponds to a complete orbit-based model
+# (definition of the density profile and its discretization, kinematic constraints,
+# initial conditions for the orbit library, orbit integration and storage parameters,
+# and finally the parameters for exporting an N-body model).
+# All models are constructed in the same total potential, but the density profiles
+# may be selected at will (e.g., be a combination of one or more density components defined above,
+# even if these components do not contribute to the potential).
+
+[Component_bulge]
+# list of density models (section names) that define the density profile of this component:
+# here we only have one per component, but in general there could be more than one comma-separated names
+density=Density_bulge
+
+# subsection: density constraints
+# type of the density discretization model
+type=DensityClassicLinear
+# radial grid
+gridr=numpy.linspace(0.04, 1, 30)
+# number of subdivision lines per each of three panes in one radial shell
+stripsPerPane=2
+# flattening factor of the spatial grid
+axisRatioZ=0.8
+
+# subsection: kinematic constraints
+# number of radial points in kinematic grid
+kinemgrid=numpy.linspace(0.05, 0.5, 10)
+# degree of B-spline basis function for recording the density-weighted velocity dispersions
+# (0 to 3: zero means histograms, 3 is for cubic splines)
+kinemDegree=2
+# constraint for the velocity anisotropy in the solution (if omitted, it will not be constrained)
+beta=0
+
+# section: orbit library params
+# integration time measured in orbital periods (actual time is different for each orbit)
+intTime=100
+# number of orbits in this components - should generally be larger than the number of constraints
+# by at least a factor of few, maybe even ten
+numOrbits=5000
+
+# section: N-body model params
+# number of particles drawn from this component
+nbody=40000
+
+
+[Component_disk]
+density=density_disk
+
+# density constraints
+type=DensityCylindricalLinear
+gridR=agama.nonuniformGrid(20, 0.2, 5)
+gridZ=agama.nonuniformGrid(20, 0.02, 0.5)
+mmax=0
+
+# orbit library params
+numOrbits=20000
+# parameters of initial condition generation that also define the method for assigning velocities:
+# if neither icbeta nor ickappa is specified, this means Eddington (isotropic velocities drawn from a DF);
+# if icbeta is given, this means spherical Jeans model with a constant anisotropy coefficient;
+# if both icbeta and ickappa are given, this means axisymmetric Jeans Anisotropic Model.
+icbeta=0.6
+ickappa=1.0
+intTime=100
+# note that for this component we do not constrain the velocity in the solution (beta=...),
+# only specify the parameters of the initial conditions generator
+
+# N-body output
+nbody=160000
+
+
+[Component_halo]
+density=Density_halo
+# density constraints
+type=DensityClassicLinear
+gridR=agama.nonuniformGrid(50, 0.2, 80.0)
+stripsPerPane=2
+# kinematic constraints
+kinemgrid=agama.nonuniformGrid(20, 0.4, 80.0)
+kinemDegree=2
+beta=0
+# orbit library params
+intTime=100
+numOrbits=25000
+# N-body output
+nbody=800000
+</file>
+    <file path="py/alltest.py">
+#!/usr/bin/python
+def alltest():
+    import sys,os,glob,subprocess,time
+    exe = glob.glob(&quot;../exe/test_*.exe&quot;)
+    py  = [ (sys.executable, f) for f in glob.glob(&quot;../py/test_*.py&quot;) ]
+    allprogs = exe + py
+    passed = 0
+    failed = 0
+    skipped= 0
+    unknown= 0
+    for prog in allprogs:
+        progname = os.path.basename(prog[1] if isinstance(prog, tuple) else prog)
+        sys.stdout.write(progname)
+        sys.stdout.flush()
+        filler = ' ' * (32-len(progname))
+        try:
+            tstart = time.time()
+            proc = subprocess.Popen(prog, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            result = proc.communicate()[0].decode()
+            elapsed = filler + &quot;%5.1f s, &quot; % (time.time()-tstart)
+            if &quot;ALL TESTS PASSED&quot; in result:
+                print(elapsed+&quot;OK&quot;)
+                passed+=1
+            elif &quot;SOME TESTS FAILED&quot; in result or &quot;FAILED TO IMPORT&quot; in result:
+                print(elapsed+&quot;FAILED&quot;)
+                failed+=1
+            elif &quot;SKIPPED DUE TO&quot; in result:
+                print(elapsed+&quot;SKIPPED&quot;)
+                skipped+=1
+            else:
+                print(elapsed+&quot;UNKNOWN&quot;)  # not a failure, nor a success
+                unknown+=1
+        except Exception as e:
+            print(filler + &quot;NOT STARTED: &quot;+str(e))
+            failed+=1
+    print(str(passed)+&quot; TESTS PASSED&quot; + \
+        ( &quot;, &quot;+str(failed)+&quot; FAILED&quot; if failed&gt;0 else &quot;, NONE FAILED&quot;) +
+        ( &quot;, &quot;+str(skipped)+&quot; SKIPPED&quot; if skipped&gt;0 else &quot;&quot;) +
+        ( &quot;, &quot;+str(unknown)+&quot; UNKNOWN&quot; if unknown&gt;0 else &quot;&quot;) )
+    return failed==0
+
+if __name__ == '__main__':
+    alltest()
+</file>
+    <file path="py/example_actions_nbody.py">
+#!/usr/bin/python
+&quot;&quot;&quot;
+    This example demonstrates the use of action finder (Staeckel approximation)
+    to compute actions for particles from an N-body simulation.
+    The N-body system consists of a disk and a halo,
+    the two components being stored in separate text files.
+    They are not provided in the distribution, but could be created by running
+    example_self_consistent_model.py
+    The potential is computed from the snapshot itself, by creating a suitable
+    potential expansion for each component: Multipole for the halo and CylSpline
+    for the disk. This actually takes most of the time. We save the constructed
+    potentials to text files, and on the subsequent launches of this program
+    they are loaded from these files, speeding up the initialization.
+    Then we compute actions for all particles from the disk component,
+    and store them in a text file.
+
+    An equivalent example in C++ is located in tests folder.
+&quot;&quot;&quot;
+import agama, numpy
+try: from time import process_time as clock  # Python 3.3+
+except ImportError: from time import clock   # older Python
+
+#1. set units (in Msun, Kpc, km/s)
+agama.setUnits(mass=1, length=1, velocity=1)
+
+#2. get in N-body snapshots: columns 0 to 2 are position, 3 to 5 are velocity, 6 is mass
+tbegin = clock()
+try:
+    diskParticles = numpy.loadtxt(&quot;model_stars_final&quot;)
+    haloParticles = numpy.loadtxt(&quot;model_dm_final&quot;)
+except:
+    exit(&quot;Input snapshot files are not available; &quot; \
+        &quot;you may create them by running example_self_consistent_model.py&quot;)
+
+print(&quot;%g s to load %d disk particles (total mass=%g Msun) &quot; \
+    &quot;and %d halo particles (total mass=%g Msun)&quot; % \
+    ( clock()-tbegin, \
+    diskParticles.shape[0], numpy.sum(diskParticles[:,6]), \
+    haloParticles.shape[0], numpy.sum(haloParticles[:,6]) ) )
+
+
+#3. create an axisymmetric potential from these snapshots
+
+try:
+    #3a. try to load potentials from previously stored text files instead of computing them
+    diskPot = agama.Potential(&quot;model_stars_final.ini&quot;)
+    haloPot = agama.Potential(&quot;model_dm_final.ini&quot;)
+
+except:
+    # 3b: these files don't exist on the first run, so we have to create the potentials
+    tbegin  = clock()
+    haloPot = agama.Potential( \
+        type=&quot;Multipole&quot;, particles=(haloParticles[:,0:3], haloParticles[:,6]), \
+        symmetry='a', gridsizeR=20, lmax=2)
+    print(&quot;%f s to init %s potential for the halo; value at origin=%f (km/s)^2&quot; % \
+        ((clock()-tbegin), haloPot, haloPot.potential(0,0,0)))
+    tbegin  = clock()
+    # manually specify the spatial grid for the disk potential,
+    # although one may rely on the automatic choice of these parameters (as we did for the halo)
+    diskPot = agama.Potential( \
+        type=&quot;CylSpline&quot;, particles=(diskParticles[:,0:3], diskParticles[:,6]), \
+        gridsizer=20, gridsizez=20, symmetry='a', Rmin=0.2, Rmax=100, Zmin=0.05, Zmax=50)
+    print(&quot;%f s to init %s potential for the disk; value at origin=%f (km/s)^2&quot; % \
+        ((clock()-tbegin), diskPot, diskPot.potential(0,0,0)))
+
+    # save the potentials into text files; on the next call may load them instead of re-computing
+    diskPot.export(&quot;model_stars_final.ini&quot;)
+    haloPot.export(&quot;model_dm_final.ini&quot;)
+
+#3c. combine the two potentials into a single composite one
+totalPot  = agama.Potential(diskPot, haloPot)
+
+#4. compute actions for disk particles
+tbegin    = clock()
+actFinder = agama.ActionFinder(totalPot)
+print(&quot;%f s to init action finder&quot; % (clock()-tbegin))
+
+tbegin    = clock()
+actions   = actFinder(diskParticles[:,0:6])
+print(&quot;%f s to compute actions for %i particles&quot; % (clock()-tbegin,  diskParticles.shape[0]))
+
+#5. write out data
+Rz        = numpy.vstack(
+    ( numpy.sqrt(diskParticles[:,0]**2 + diskParticles[:,1]**2), diskParticles[:,2] ) ).T
+energy    = (totalPot.potential(diskParticles[:,0:3]) + \
+    0.5 * numpy.sum(diskParticles[:,3:6]**2, axis=1) ).reshape(-1,1)
+numpy.savetxt( &quot;disk_actions.txt&quot;, numpy.hstack((Rz, actions, energy)), \
+    header=&quot;R[Kpc]\tz[Kpc]\tJ_r[Kpc*km/s]\tJ_z[Kpc*km/s]\tJ_phi[Kpc*km/s]\tE[(km/s)^2]&quot;, \
+    fmt=&quot;%.6g&quot;, delimiter=&quot;\t&quot; )
+</file>
+    <file path="py/example_adiabatic_contraction.py">
+'''
+Module for performing adiabatic contraction of dark matter (DM) halo due to baryons.
+Two methods are implemented:
+(1) `true' adiabatic contraction relies on the invariance of actions under slow changes of potential:
+    first the DM distribution function corresponding to the given density/potential profile is constructed,
+    then the DM-only potential is replaced with the sum of DM+baryonic potentials,
+    and the DM density profile generated by the DF in the new potential is computed.
+(2) `approximate' prescription for contraction, which uses empirical correction formula calibrated
+    against N-body simulations to transform the initial DM density into the contracted one
+    without explicitly working with the DF.
+    A Milky Way potential corresponding to an adiabatically contracted NFW halo is provided in
+    ../data/Cautun20.ini
+
+The routine `contraction()' performs either of the two procedures for the given DM and baryon profiles.
+When run as the main program, this script uses the above routine to illustrate both methods.
+
+Authors: Tom Callingham, Marius Cautun, Tadafumi Matsuno, Eugene Vasiliev
+Date: Nov 2021
+'''
+import numpy, agama
+
+def contraction(pot_dm, pot_bar, method='C20', beta_dm=0.0, rmin=1e-2, rmax=1e4):
+    '''
+    Construct the contracted halo density profile for the given
+    initial halo density and the baryonic density profiles.
+    Arguments:
+      pot_dm:  initial halo potential (assumed to be spherical!).
+      pot_bar: potential of baryons (a spherical approximation to it will be used even if it was not spherical).
+      method:  choice between two alternative approaches:
+        'C20'  (default) uses the approximate correction procedure from Cautun+2020;
+        'adiabatic'  uses the invariance of actions in conjunction with an internally constructed halo DF.
+      beta_dm: anisotropy coefficient for the halo DF
+        (only used with the adiabatic method, must be between -0.5 and 1, default 0 means isotropy).
+      rmin (1e-2), rmax(1e4): min/max grid radii for representing the contracted density profile
+        (default values are suitable for Milky Way-sized galaxies if expressed in kpc).
+    Return:
+      the spherically symmetric contracted halo potential.
+    '''
+    gridr = numpy.logspace(numpy.log10(rmin), numpy.log10(rmax), 101)
+    xyz = numpy.column_stack((gridr, gridr*0, gridr*0))
+    if method == 'adiabatic':
+        # create a spherical DF for the DM-only potential/density pair with a constant anisotropy coefficient beta
+        df_dm = agama.DistributionFunction(type='QuasiSpherical', potential=pot_dm, beta0=beta_dm)
+        # create a sphericalized total potential (DM+baryons)
+        pot_total_sph = agama.Potential(type='multipole', potential=agama.Potential(pot_dm, pot_bar),
+            lmax=0, rmin=0.1*rmin, rmax=10*rmax)
+        # compute the density generated by the DF in the new total potential at the radial grid
+        dens_contracted = agama.GalaxyModel(pot_total_sph, df_dm).moments(xyz, dens=True, vel=False, vel2=False)
+    elif method == 'C20':
+        # use the differential (d/dr) form of Eq. (11) from Cautun et al (2020) to approximate the effect of contraction
+        cumul_mass_dm = pot_dm. enclosedMass(gridr)  # cumulative mass profile of DM
+        cumul_mass_bar= pot_bar.enclosedMass(gridr)  # same for baryons (sphericalized)
+        valid_r = numpy.hstack([True, cumul_mass_bar[:-1] &lt; cumul_mass_bar[1:]*0.999])  # use only those radii where mass keeps increasing
+        sph_dens_bar  = agama.Density(cumulmass=numpy.column_stack((gridr[valid_r], cumul_mass_bar[valid_r])))  # sphericalized baryon density profile
+        f_bar = 0.157  # cosmic baryon fraction; the formula is calibrated against simulations only for this value
+        eta_bar = cumul_mass_bar / cumul_mass_dm * (1.-f_bar) / f_bar  # the last two terms account for transforming the DM mass into the corresponding baryonic mass in dark-matter-only simulations
+        first_factor = 0.45 + 0.41 * (eta_bar + 0.98)**0.53
+        dens_dm_orig = pot_dm.density(xyz)
+        temp         = sph_dens_bar.density(xyz) - eta_bar * dens_dm_orig * f_bar / (1.-f_bar)
+        const_term   = 0.41 * 0.53 * (eta_bar + 0.98)**(0.53-1.) * (1.-f_bar) / f_bar * temp
+        dens_contracted = dens_dm_orig * first_factor + const_term  # new values of DM density at the radial grid
+    else:
+        raise RuntimeError('Invalid choice of method')
+
+    # create a cubic spline interpolator in log-log space
+    valid_r = dens_contracted&gt;0  # make sure the input for log-spline is positive
+    dens_contracted_interp = agama.Spline(numpy.log(gridr[valid_r]), numpy.log(dens_contracted[valid_r]), reg=True)
+    # convert the grid-based density profile into a full-fledged potential
+    contracted_pot = agama.Potential(type=&quot;Multipole&quot;, symmetry=&quot;spherical&quot;, rmin=rmin, rmax=rmax,
+        density=lambda xyz: numpy.exp(dens_contracted_interp(numpy.log(numpy.sum(xyz**2, axis=1))*0.5)) )
+    return contracted_pot
+
+
+if __name__ == '__main__':
+    # example of usage of the above function for the Milky Way potential from Cautun+ 2020
+    agama.setUnits(mass=1., length=1., velocity=1.)  # Msun, kpc, km/s
+    # DM halo
+    fb = 4.825 / 30.7  # Planck 1 baryon fraction
+    m200 = 0.969e12  # the DM halo mass
+    conc = 8.76
+    NFW_rho0 = 3486926.735447284
+    NFW_rs = 25.20684733101539
+    # Note subtletly in Cautun20 NFW definition, scaled overdensity changes from paper value!
+
+    # bulge
+    params_bulge = dict(type='Spheroid',
+        densityNorm=1.03e11,
+        axisRatioZ=0.5,
+        gamma=0,
+        beta=1.8,
+        scaleRadius=0.075,
+        outerCutoffRadius=2.1)
+    # stellar disks
+    params_thin_disk = dict(type='Disk',
+        surfaceDensity=7.31e8,
+        scaleRadius=2.63,
+        scaleHeight=0.3)
+    params_thick_disk = dict(type='Disk',
+        surfaceDensity=1.01e8,
+        scaleRadius=3.8,
+        scaleHeight=0.9)
+    # gas disks
+    params_HI_disk = dict(type='disk',
+        surfaceDensity=5.3e7,
+        scaleRadius=7.0,
+        scaleHeight=0.085,
+        innerCutoffRadius=4.0)
+    params_H2_disk = dict(type='disk',
+        surfaceDensity=2.2e9,
+        scaleRadius=1.5,
+        scaleHeight=0.045,
+        innerCutoffRadius=12.0)
+    # CGM
+    params_CGM = dict(type='Spheroid',
+        densityNorm=7.615e2,
+        gamma=1.46,
+        beta=1.46,
+        scaleRadius=219,
+        outerCutoffRadius=2*219,
+        cutoffStrength=2)
+    # uncontracted DM halo
+    params_halo = dict(type='Spheroid',
+        densityNorm=3.487e6,
+        gamma=1,
+        beta=3,
+        scaleRadius=25.2)
+
+    pot_baryon = agama.Potential(params_bulge, params_thin_disk, params_thick_disk, params_HI_disk, params_H2_disk, params_CGM)
+    pot_dm_init= agama.Potential(params_halo)
+    # several variants of contracted halo potentials
+    pot_dm_C20 = contraction(pot_dm_init, pot_baryon, method='C20')
+    pot_dm_iso = contraction(pot_dm_init, pot_baryon, method='adiabatic', beta_dm= 0.0)
+    pot_dm_rad = contraction(pot_dm_init, pot_baryon, method='adiabatic', beta_dm=+0.5)
+    pot_dm_tan = contraction(pot_dm_init, pot_baryon, method='adiabatic', beta_dm=-0.5)
+    # plot profiles
+    import numpy, matplotlib.pyplot as plt
+    r = numpy.logspace(-2,3,101)
+    xyz = numpy.column_stack((r, r*0, r*0))
+    ax = plt.subplots(1, 2, figsize=(10,5))[1]
+    pots  = [pot_baryon, pot_dm_init, pot_dm_C20, pot_dm_iso, pot_dm_rad, pot_dm_tan]
+    names = ['baryons', 'initial halo', 'contracted Cautun+2020', 'contracted isotropic', 'contracted radial', 'contracted tangential']
+    colors= ['k', 'c', 'g', 'm', 'r', 'b']
+    dashes= [[1000,1], [2,2], [5,2], [4,1,1,1], [7,3,2,3], [2,1,1,1]]
+    for pot, name, color, dash in zip(pots, names, colors, dashes):
+        ax[0].plot(r, pot.density(xyz),  label=name, color=color, dashes=dash)
+        ax[1].plot(r, (-r*pot.force(xyz)[:,0])**0.5, color=color, dashes=dash)
+    ax[0].set_xscale('log')
+    ax[0].set_yscale('log')
+    ax[1].set_xscale('log')
+    ax[0].legend(loc='lower left', frameon=False)
+    ax[0].set_xlabel('R [kpc]')
+    ax[0].set_ylabel(r'$\rho\; \rm[M_\odot/kpc^3]$', fontsize=15)
+    ax[1].set_xlabel('R [kpc]')
+    ax[1].set_ylabel(r'$v_{\rm circ}\; \rm[km/s]$', fontsize=15)
+    plt.tight_layout()
+    plt.savefig('example_adiabatic_contraction.pdf')
+    plt.show()
+</file>
+    <file path="py/example_amuse_raga.py">
+&quot;&quot;&quot;
+Illustration of the use of Raga stellar-dynamical code from the AMUSE framework.
+
+We create a Plummer model with a spectrum of masses, and follow the coupled
+dynamical and stellar evolution represented by Raga and SeBa, respectively.
+&quot;&quot;&quot;
+
+useRaga = True or False   # choose whether to use Raga or a conventional N-body code (much slower!)
+
+import numpy, matplotlib.pyplot as plt
+from amuse.lab import *
+from amuse.community.agama.interface import Agama
+
+if __name__ in ('__main__', '__plot__'):
+
+    # set up parameters:
+    numpy.random.seed(42)  # make experiments repeatable
+    N         = 16384
+    Rcluster  = 1. | units.parsec
+    #masses   = new_kroupa_mass_distribution(N)
+    masses    = new_powerlaw_mass_distribution(N, mass_min=0.4|units.MSun, mass_max=20|units.MSun, alpha=-2.5)
+    Mcluster  = masses.sum()
+    converter = nbody_system.nbody_to_si(Mcluster, Rcluster)
+    particles = new_plummer_model(N, converter)
+    particles.mass = masses
+    stellarevol = SeBa(redirection='null')
+    stellarevol.particles.add_particles(particles)
+    particles.radius = stellarevol.particles.radius
+    if useRaga:
+        cluster = Agama(converter, redirection='none', number_of_workers=8,
+        updatepotential=True, coulombLog=5.0, symmetry='s',
+        filelog='raga_multimass_plummer.log', fileoutputpotential='raga_multimass_plummer.pot',
+        fileoutputrelaxation='raga_multimass_plummer.rel', fileoutput='raga_multimass_plummer.out', fileoutputformat='nemo',
+        outputinterval=1. | units.Myr,
+        numSamplesPerEpisode=10 )#, particles=particles)
+    else:
+        #cluster = ph4(converter, channel_type='sockets', number_of_workers=8, parameters=[(&quot;epsilon_squared&quot;, (0.01 | units.parsec)**2)])
+        cluster = ph4(converter, channel_type='sockets', mode='gpu', parameters=[(&quot;epsilon_squared&quot;, (0.01 | units.parsec)**2)])
+        #cluster = Gadget2(converter, channel_type='sockets', number_of_workers=8, parameters=[(&quot;epsilon_squared&quot;, (0.01 | units.parsec)**2)], redirection='null')
+        #cluster = Bonsai(converter, channel_type='sockets', parameters=[(&quot;epsilon_squared&quot;, (0.01 | units.parsec)**2)], redirection='null')
+    cluster.particles.add_particles(particles)
+
+    channel_from_stellar_to_gravity   = stellarevol.particles.new_channel_to(cluster.particles, attributes=['mass'])
+    channel_from_gravity_to_framework = cluster.particles.new_channel_to(particles)
+
+    # evolve and make plots
+    times = numpy.linspace(0,20,21) | units.Myr
+
+    print(&quot;Start evolution&quot;)
+    for i,t in enumerate(times):
+        print(&quot;Evolve gravity&quot;)
+        cluster.evolve_model(t)
+        print(&quot;Evolve stars&quot;)
+        stellarevol.evolve_model(t)
+        channel_from_stellar_to_gravity.copy()
+        channel_from_gravity_to_framework.copy()
+
+        print(&quot;Evolved the system to time %.1f Myr&quot; % t.value_in(units.Myr) +
+            &quot;, total mass=%.1f Msun&quot;                % particles.mass.sum().value_in(units.MSun) +
+            &quot;, Ekin=%.4g Msun*(km/s)^2&quot;             % cluster.kinetic_energy.value_in(units.MSun*units.kms**2) + 
+            &quot;, Etot=%.4g Msun*(km/s)^2&quot;             % (cluster.potential_energy + cluster.kinetic_energy).value_in(units.MSun*units.kms**2))
+        x=particles.x.value_in(units.parsec)
+        y=particles.y.value_in(units.parsec)
+        plt.figure(figsize=(6,6))
+        plt.scatter(x, y, marker='.', s=5*particles.mass.value_in(units.MSun)**0.5, edgecolors=None, c='k', alpha=0.2)
+        plt.xlim(-5,5)
+        plt.ylim(-5,5)
+        plt.title(&quot;t=%.1f Myr&quot; % t.value_in(units.Myr))
+        basename = 'example_amuse_raga' if useRaga else 'example_amuse_nbody'
+        plt.savefig('%s_%i.png' % (basename, i))
+        plt.close()
+
+    cluster.stop()
+    stellarevol.stop()
+</file>
+    <file path="py/example_amuse.py">
+&quot;&quot;&quot;
+Illustration of the Agama plugin for the AMUSE framework.
+
+Evolves a cluster in the potention of the galactic center,
+using the bridge integrator to couple different codes
+(a static potential of the galaxy provided by the instance of Agama potential,
+and the evolving N-body system representing a stellar cluster on the orbit in the galaxy).
+&quot;&quot;&quot;
+
+import numpy
+from amuse.units import units
+from amuse.units import constants
+from amuse.units import nbody_system
+from amuse.ext.bridge import bridge
+from amuse.community.hermite0.interface import Hermite
+from amuse.community.agama.interface import Agama
+from matplotlib import pyplot
+from amuse.ic.kingmodel import new_king_model
+
+if __name__ in ('__main__', '__plot__'):
+
+    # set up parameters:
+    N = 100
+    W0 = 3
+    Rinit = 50. | units.parsec
+    timestep = 0.01 | units.Myr
+    Mcluster = 4.e4 | units.MSun
+    Rcluster = 0.7 | units.parsec
+    converter = nbody_system.nbody_to_si(Mcluster,Rcluster)
+
+    # create a globular cluster model
+    particles = new_king_model(N, W0, convert_nbody=converter)
+    particles.radius = 0.0| units.parsec
+    cluster = Hermite(converter, parameters=[(&quot;epsilon_squared&quot;, (0.01 | units.parsec)**2)], redirection='null', channel_type='sockets')
+
+    # create the external potential of the Galaxy
+    galaxy = Agama(converter, type=&quot;Dehnen&quot;, gamma=1.8, \
+        rscale=1000.| units.parsec, mass=1.6e10 | units.MSun, channel_type='sockets')
+
+    # shift the cluster to an orbit around Galactic center
+    acc,_,_ = galaxy.get_gravity_at_point(0|units.kpc, Rinit, 0|units.kpc, 0|units.kpc)
+    vcirc = (-acc * Rinit)**0.5
+    print(&quot;Vcirc=%f km/s&quot; % vcirc.value_in(units.kms))
+    particles.x  += Rinit
+    particles.vy += vcirc
+    cluster.particles.add_particles(particles)
+
+    # set up bridge; cluster is evolved under influence of the galaxy
+    sys = bridge(verbose=False)
+    sys.add_system(cluster, (galaxy,), False)
+
+    # evolve and make plots
+    times = units.Myr([0.,0.2,0.4,0.6,0.8,1.0,1.2,1.4])
+    f = pyplot.figure(figsize=(16,8))
+
+    for i,t in enumerate(times):
+        sys.evolve_model(t, timestep=timestep)
+        print(&quot;Evolved the system to time %f Myr&quot; % t.value_in(units.Myr))
+
+        x=sys.particles.x.value_in(units.parsec)
+        y=sys.particles.y.value_in(units.parsec)
+
+        subplot=f.add_subplot(2,4,i+1)
+        subplot.plot(x,y,'r .')
+        subplot.plot([0.],[0.],'b +')
+        subplot.set_xlim(-60,60)
+        subplot.set_ylim(-60,60)
+        subplot.set_title(&quot;%g Myr&quot; % t.value_in(units.Myr))
+        if i==7:
+            subplot.set_xlabel('parsec')
+
+    cluster.stop()
+    galaxy.stop()
+    pyplot.show()
+#    pyplot.savefig('test.eps')
+</file>
+    <file path="py/example_basis_set.py">
+#!/usr/bin/python
+
+'''
+Example of basis-set potential expansions in agama, galpy and gala.
+The latter two libraries implement the Hernquist-Ostriker basis set,
+while agama provides a more general Zhao basis set (of which HO is a special case).
+We set up a squashed, rotated and shifted Plummer model (so that it has no symmetry at all),
+and also sample this analytic density profile with particles.
+Then we create an agama BasisSet expansion from both analytic model and particle snapshot;
+they do not exactly match because of discreteness noise in the latter case
+(it can be reduced by increasing the particle number, but then it would take ages to i
+Then we compare the results with the SCF potentials from galpy and gala;
+galpy can create the expansion from an analytic density model,
+while gala offers both analytic and n-body initialization (but the former one is too slow).
+The expansion coefficients computed by either code can be converted into agama-compatible
+INI file, from which a native agama BasisSet potential is constructed, and its value and
+derivatives are compared to those of the two libraries.
+If using the same set of coefficients (i.e. agama potential constructed from foreign coefs),
+the results agree to machine precision; the computation of coefficients from an n-body snapshot
+also produces identical results in agama and gala, while the initialization from an analytic
+density profile in galpy gives slightly different coefs due to integration inaccuracies.
+Both construction and evaluation of basis-set potentials is significantly faster in agama;
+however, for most practical purposes, the Multipole potential from agama is preferrable
+for better performance and accuracy than BasisSet.
+'''
+import numpy, agama, time
+numpy.random.seed(42)
+
+def createPlummer(nbody=100000, rscale=1.2, p=0.8, q=0.6,
+    alpha=1.0, beta=2.0, gamma=3.0, offset=numpy.array([0.1,0.2,0.3])):
+    # create a triaxial Plummer model with axis ratios y/x=p, z/x=q,
+    # rotated w.r.t. principal axes by Euler angles alpha,beta,gamma and shifted from origin by offset
+    radius = rscale * (numpy.random.random(size=nbody)**(-2./3) - 1)**-0.5
+    costheta = numpy.random.random(size=nbody)*2-1
+    sintheta = (1-costheta**2)**0.5
+    phi = numpy.random.random(size=nbody) * 2*numpy.pi
+    xyz = numpy.column_stack((
+        radius*sintheta*numpy.cos(phi),
+        radius*sintheta*numpy.sin(phi) * p,
+        radius*costheta * q))
+    rotmat = agama.makeRotationMatrix(alpha, beta, gamma)
+    xyzrot = xyz.dot(rotmat) + offset
+    norm = rscale**2 * 3./(4*numpy.pi*p*q)
+    def densfnc(xyzrot):
+        xyz = (xyzrot-offset).dot(rotmat.T)
+        return norm * (rscale**2 + xyz[:,0]**2 + (xyz[:,1]/p)**2 + (xyz[:,2]/q)**2)**-2.5
+    return xyzrot, numpy.ones(nbody)/nbody, densfnc
+
+particles, masses, densfnc = createPlummer()
+# a small fraction of particle positions are used to compare the potentials
+points = particles[:5000]
+den_true = densfnc(points)
+nmax = 8   # order of radial expansion
+lmax = 6   # order of angular expansion
+r0   = 1.5 # scale radius of basis functions
+
+
+print('creating and evaluating agama BasisSet potential')
+t0 = time.time()
+pot_agama_nbody = agama.Potential(type='BasisSet', nmax=nmax, lmax=lmax, eta=1.0, r0=r0,
+    symmetry='none', particles=(particles,masses))
+pot_agama_nbody.export('example_basis_set_nbody.ini')
+pot_agama_densfnc = agama.Potential(type='BasisSet', nmax=nmax, lmax=lmax, eta=1.0, r0=r0,
+    symmetry='none', density=densfnc)
+pot_agama_densfnc.export('example_basis_set_densfnc.ini')
+
+Phi_agama_nbody   = pot_agama_nbody.  potential(points)
+Phi_agama_densfnc = pot_agama_densfnc.potential(points)
+acc_agama_nbody   = pot_agama_nbody  .force(points)
+acc_agama_densfnc = pot_agama_densfnc.force(points)
+den_agama_nbody   = pot_agama_nbody  .density(points)
+den_agama_densfnc = pot_agama_densfnc.density(points)
+print('time for constructing and evaluating agama BasisSet potentials: %.3g s' % (time.time()-t0))
+print('potential difference between BasisSet potentials initialized from nbody and analytic density: %g' %
+    numpy.mean( (Phi_agama_nbody / Phi_agama_densfnc - 1)**2 )**0.5 )
+print('acceleration difference between BasisSet potentials initialized from nbody and analytic density: %g' %
+    numpy.mean( numpy.sum((acc_agama_nbody-acc_agama_densfnc)**2, axis=1)**0.5 /
+        numpy.sum(acc_agama_densfnc**2, axis=1)**0.5 ) )
+print('density difference between the true density and BasisSet initialized from analytic density: %g' %
+    numpy.mean( (den_agama_densfnc / den_true - 1)**2 )**0.5 )
+print('density difference between the true density and BasisSet initialized from nbody snapshot: %g' %
+    numpy.mean( (den_agama_nbody / den_true - 1)**2 )**0.5 )
+
+### in addition to BasisSet potentials, we construct and evaluate Multipole potentials
+### from both analytic density profile and n-body snapshot
+print('creating and evaluating agama Multipole potential')
+t0 = time.time()
+pot_multipole_nbody = agama.Potential(type='Multipole', lmax=lmax,
+    symmetry='none', particles=(particles,masses))
+pot_multipole_densfnc = agama.Potential(type='Multipole', lmax=lmax, rmin=0.01,rmax=100,
+    symmetry='none', density=densfnc)
+print('time for constructing and evaluating agama Multipole potentials: %.3g s' % (time.time()-t0))
+print('density difference between the true density and Multipole initialized from analytic density: %g' %
+    numpy.mean( (pot_multipole_densfnc.density(points) / den_true - 1)**2 )**0.5 )
+print('density difference between the true density and Multipole initialized from nbody snapshot: %g' %
+    numpy.mean( (pot_multipole_nbody.density(points) / den_true - 1)**2 )**0.5 )
+
+
+def convertCoefsToAgamaPotential(r0, Acos, Asin=None, filename='tmppotential.ini'):
+    '''
+    convert the arrays of cosine and sine coefs from galpy or gala into the agama input format,
+    and create the equivalent agama BasisSet potential
+    '''
+    nmax = Acos.shape[0]-1
+    lmax = Acos.shape[1]-1
+    assert Acos.shape[2]==lmax+1
+    if Asin is None: Asin=numpy.zeros(Acos.shape)
+    with open(filename, 'w') as inifile:
+        inifile.write('[Potential]\ntype=BasisSet\nnmax=%i\nlmax=%i\nr0=%g\nCoefficients\n#Phi\n#(array)\n' %
+            (nmax, lmax, r0))
+        for n in range(nmax+1):
+            inifile.write(str(n))
+            for l in range(lmax+1):
+                # first come sine terms in reverse order: m=l, l-1, ..., 1
+                for m in range(l):
+                    inifile.write('\t%.15g' % (Asin[n,l,l-m] * 0.5**0.5))
+                # then come cosine terms in normal order: m=0, 1, ..., l
+                for m in range(l+1):
+                    inifile.write('\t%.15g' % (Acos[n,l,m] * (0.5**0.5 if m&gt;0 else 1)))
+            inifile.write('\n')
+    return agama.Potential(filename)
+
+def testGalpy():
+    try: import galpy.potential
+    except ImportError:
+        print('galpy not available, skipping test')
+        return
+    print('creating galpy scf potential')
+    t0=time.time()
+    Acos,Asin = galpy.potential.scf_compute_coeffs(
+        lambda R,z,phi: densfnc(numpy.array([[R*numpy.cos(phi),R*numpy.sin(phi),z]]))[0],
+        N=nmax+1, L=lmax+1, a=r0, phi_order=40)
+    pot_galpy_native= galpy.potential.SCFPotential(Acos=Acos, Asin=Asin, a=r0)
+    if hasattr(pot_galpy_native, 'phitorque'):  # renamed from phiforce in newer versions
+        pot_galpy_native.phiforce = pot_galpy_native.phitorque
+    t1=time.time()
+    print('evaluating agama scf potential initialized from galpy coefficients')
+    Acos[:,:,0] *= 0.5; Asin[:,:,0] *= 0.5  # by some strange convention, m=0 terms are doubled in galpy
+    pot_agama_galpy = convertCoefsToAgamaPotential(r0, Acos, Asin, 'example_basis_set_galpy.ini')
+    Phi_agama_galpy = pot_agama_galpy.potential(points)
+    acc_agama_galpy = pot_agama_galpy.force(points)
+    print('evaluating galpy scf potential')
+    t2=time.time()
+    # need to convert from cylindrical to cartesian coords
+    pointscyl = [(points[:,0]**2+points[:,1]**2)**0.5, points[:,2], numpy.arctan2(points[:,1],points[:,0])]
+    Phi_galpy_native= pot_galpy_native(*pointscyl)
+    acc_galpy_R     = pot_galpy_native.Rforce(*pointscyl)
+    acc_galpy_z     = pot_galpy_native.zforce(*pointscyl)
+    acc_galpy_phi   = pot_galpy_native.phiforce(*pointscyl)
+    acc_galpy_native= numpy.column_stack((
+        acc_galpy_R*numpy.cos(pointscyl[2]) - acc_galpy_phi*numpy.sin(pointscyl[2])/pointscyl[0],
+        acc_galpy_R*numpy.sin(pointscyl[2]) + acc_galpy_phi*numpy.cos(pointscyl[2])/pointscyl[0],
+        acc_galpy_z))
+    print('time for constructing galpy scf potential: %.3g s, evaluating it: %.3g s' %
+        (t1-t0, time.time()-t2))
+    print('potential difference between agama(native) and agama(from galpy): %g' %
+        numpy.mean( (Phi_agama_galpy/Phi_agama_densfnc - 1)**2 )**0.5 )
+    print('potential difference between galpy(native) and agama(from galpy): %g' %
+        numpy.mean( (Phi_agama_galpy/Phi_galpy_native  - 1)**2 )**0.5 )
+    print('acceleration difference between agama(native) and agama(from galpy): %g' %
+        numpy.mean( numpy.sum((acc_agama_galpy-acc_agama_densfnc)**2, axis=1)**0.5 /
+            numpy.sum(acc_agama_nbody**2, axis=1)**0.5 ) )
+    print('acceleration difference between galpy(native) and agama(from galpy): %g' %
+        numpy.mean( numpy.sum((acc_agama_galpy-acc_galpy_native )**2, axis=1)**0.5 /
+            numpy.sum( acc_galpy_native**2, axis=1)**0.5 ) )
+
+def testGala():
+    try: import gala.potential
+    except ImportError:
+        print('gala not available, skipping test')
+        return
+    print('creating gala scf potential')
+    t0=time.time()
+    Acos,Asin = gala.potential.scf.compute_coeffs_discrete(
+        particles, mass=masses, nmax=nmax, lmax=lmax, r_s=r0)
+    # the initialization of gala scf from analytic density is too slow
+    #(Acos,_),(Asin,_) = gala.potential.scf.compute_coeffs(
+    #    lambda x,y,z: densfnc(numpy.array([[x,y,z]]),
+    #    nmax=nmax, lmax=lmax, M=1, r_s=r0, args=(), skip_m=False)
+    pot_gala_native = gala.potential.scf.SCFPotential(Snlm=Acos, Tnlm=Asin, m=1, r_s=r0)
+    t1=time.time()
+    print('evaluating agama scf potential initialized from gala coefficients')
+    pot_agama_gala  = convertCoefsToAgamaPotential(r0, Acos, Asin, 'example_basis_set_gala.ini')
+    Phi_agama_gala  = pot_agama_gala.potential(points)
+    acc_agama_gala  = pot_agama_gala.force(points)
+    print('evaluating gala scf potential')
+    t2=time.time()
+    Phi_gala_native = pot_gala_native.energy(points.T)
+    acc_gala_native = pot_gala_native.acceleration(points.T).T
+    print('time for constructing gala scf potential: %.3g s, evaluating it: %.3g s' %
+        (t1-t0, time.time()-t2))
+    print('potential difference between agama(native) and agama(from gala): %g' %
+        numpy.mean( (Phi_agama_gala/Phi_agama_nbody - 1)**2 )**0.5 )
+    print('potential difference between  gala(native) and agama(from gala): %g' %
+        numpy.mean( (Phi_agama_gala/ Phi_gala_native - 1)**2 )**0.5 )
+    print('acceleration difference between agama(native) and agama(from gala): %g' %
+        numpy.mean( numpy.sum((acc_agama_gala-acc_agama_nbody)**2, axis=1)**0.5 /
+            numpy.sum(acc_agama_nbody**2, axis=1)**0.5 ) )
+    print('acceleration difference between  gala(native) and agama(from gala): %g' %
+        numpy.mean( numpy.sum((acc_agama_gala- acc_gala_native)**2, axis=1)**0.5 /
+            numpy.sum( acc_gala_native**2, axis=1)**0.5 ) )
+
+testGalpy()
+testGala()
+</file>
+    <file path="py/example_deprojection.py">
+#!/usr/bin/python
+__docstring__ = &quot;&quot;&quot;
+This example program shows an interactive plot illustrating the projection and
+deprojection of a triaxial ellipsoid, viewed at an arbitrary orientation.
+The axis lengths Sx,Sy,Sz of the ellipsoid may be provided as command-line
+arguments, otherwise they have default values 1.5, 1.0, 0.7.
+The orientation of the ellipsoid relative to the observer is controlled by
+three viewing angles -- Euler rotation angles of the transformation between
+the intrinsic coordinate system associated with the object and the image plane.
+The angles can be adjusted by mouse movement: when the left button is pressed,
+horizontal movement changes the angle alpha of the rotation in the equatorial
+plane of the ellipsoid, and vertical movement changes the inclination angle beta;
+when the right button is pressed, the movement changes the rotation angle gamma
+in the image plane.
+The ellipsoid is drawn by a triangulated surface, coloured according to the
+intrinsic coordinates x,y,z: red for large |x| - at the long-axis endpoints,
+green for large |y| - intermediate axis, and blue for large |z| - short axis;
+additionally, the brightness shows the scattered and reflected light coming
+from the direction of observer -- parts of the surface that are parallel
+to the image plane are brighter.
+The intrinsic coordinate axes x,y,z are shown by red, green and blue lines:
+solid if they point towards the observer, dashed if behind the image plane.
+The position angles (PA) of the projected principal axes x,y,z are printed
+in the top left corner (measured counter-clockwise from the vertical axis/north).
+The projected shape is shown by black ellipse, and its axis lengths and
+orientation in the image plane are also displayed in the top left corner.
+Right part of the plot shows four possible deprojections of this ellipse
+for the fixed assumed axis lengths of the triaxial ellipsoid; they differ by
+the inferred viewing angles, and the correct one is highlighted in green.
+Alternatively, the intrinsic shape of the ellipsoid can be inferred from the
+observed ellipse and the assumed viewing angles, except when it is projected
+along one if its principal planes; it is shown in the bottom of the left panel.
+&quot;&quot;&quot;
+import sys, numpy, agama, traceback
+import matplotlib.pyplot as plt, matplotlib.patches, matplotlib.collections, matplotlib.backend_bases
+sin=numpy.sin
+cos=numpy.cos
+pi=numpy.pi
+
+# orientation angles
+alpha = numpy.random.randint(0,180)*pi/180
+beta  = numpy.random.randint(0, 90)*pi/180
+gamma = 0
+# axes of the ellipsoid
+Sx    = 1.5  # default values
+Sy    = 1.0
+Sz    = 0.7
+if len(sys.argv)&gt;=4:  # may be overriden in the command line
+    Sx = float(sys.argv[1])
+    Sy = float(sys.argv[2])
+    Sz = float(sys.argv[3])
+    if 2&lt;Sx or Sx&lt;Sy or Sy&lt;Sz or Sz&lt;0:
+        raise ValueError(&quot;Axes must be sorted in order of increase&quot;)
+
+# lighting and shading
+ampScattered = 0.4
+ampDirection = 0.5
+ampSpecular  = 0.5
+powSpecular  = 8
+
+def getColor(xyz):
+    return 0.3 + xyz**2 * numpy.array([0.5 * Sx**-2, 0.3 * Sy**-2, 0.9 * Sz**-2])
+
+# grid for ray tracing
+Ngrid  = round(90*Sx)
+gridn  = numpy.linspace(-Sx, Sx, Ngrid+1)
+gridc  = 0.5*(gridn[1:]+gridn[:-1])
+X      = numpy.tile  (gridc, len(gridc))
+Y      = numpy.repeat(gridc, len(gridc))
+
+# polygons for triangulated surface plotting
+points = numpy.array([[0,1,0],[1,0,0],[0,0,1],[-1,0,0],[0,0,-1],[0,-1,0],[0.967,0,0.255],[0.665,0.665,0.339],[0.828,0.561,0],[0.561,0,0.828],[0.339,0.665,0.665],[0.967,0.255,0],[0.31,0.899,0.31],[0.899,0.31,0.31],[0.561,0.828,0],[0.255,0,0.967],[0.665,0.339,0.665],[0.828,0,0.561],[0.31,0.31,0.899],[0.255,0.967,0],[-0.255,0,0.967],[-0.339,0.665,0.665],[0,0.561,0.828],[-0.828,0,0.561],[-0.665,0.665,0.339],[0,0.255,0.967],[-0.31,0.899,0.31],[-0.31,0.31,0.899],[0,0.828,0.561],[-0.967,0,0.255],[-0.665,0.339,0.665],[-0.561,0,0.828],[-0.899,0.31,0.31],[0,0.967,0.255],[-0.967,0,-0.255],[-0.665,0.665,-0.339],[-0.828,0.561,0],[-0.561,0,-0.828],[-0.339,0.665,-0.665],[-0.967,0.255,0],[-0.31,0.899,-0.31],[-0.899,0.31,-0.31],[-0.561,0.828,0],[-0.255,0,-0.967],[-0.665,0.339,-0.665],[-0.828,0,-0.561],[-0.31,0.31,-0.899],[-0.255,0.967,0],[0.339,0.665,-0.665],[0,0.561,-0.828],[0.665,0.665,-0.339],[0,0.255,-0.967],[0.31,0.899,-0.31],[0.31,0.31,-0.899],[0,0.828,-0.561],[0.665,0.339,-0.665],[0.899,0.31,-0.31],[0,0.967,-0.255],[0.339,-0.665,0.665],[0.828,-0.561,0],[0.665,-0.665,0.339],[0.31,-0.899,0.31],[0.561,-0.828,0],[0.31,-0.31,0.899],[0.665,-0.339,0.665],[0.255,-0.967,0],[0.899,-0.31,0.31],[0.967,-0.255,0],[-0.339,-0.665,0.665],[0,-0.828,0.561],[-0.665,-0.339,0.665],[0,-0.967,0.255],[-0.31,-0.31,0.899],[-0.31,-0.899,0.31],[0,-0.561,0.828],[-0.665,-0.665,0.339],[-0.899,-0.31,0.31],[0,-0.255,0.967],[-0.665,-0.665,-0.339],[-0.561,-0.828,0],[-0.665,-0.339,-0.665],[-0.255,-0.967,0],[-0.899,-0.31,-0.31],[-0.31,-0.899,-0.31],[-0.828,-0.561,0],[-0.339,-0.665,-0.665],[-0.31,-0.31,-0.899],[-0.967,-0.255,0],[0.339,-0.665,-0.665],[0,-0.828,-0.561],[0.828,0,-0.561],[0.665,-0.339,-0.665],[0,-0.967,-0.255],[0.31,-0.31,-0.899],[0.561,0,-0.828],[0.31,-0.899,-0.31],[0,-0.561,-0.828],[0.665,-0.665,-0.339],[0.255,0,-0.967],[0.899,-0.31,-0.31],[0,-0.255,-0.967],[0.967,0,-0.255]])
+faces  = numpy.array([[44,38,35],[41,35,36],[41,44,35],[7,14,8],[55,94,90],[51,4,98],[13,11,6],[17,13,6],[13,7,8],[11,13,8],[46,51,49],[38,46,49],[44,46,38],[46,44,37],[29,32,23],[27,21,22],[25,27,22],[63,15,9],[61,69,58],[10,12,7],[12,14,7],[47,57,0],[42,47,26],[35,42,36],[93,94,98],[53,51,98],[48,53,55],[94,53,98],[53,94,55],[51,53,49],[53,48,49],[50,48,55],[14,50,8],[50,14,52],[48,50,52],[86,43,37],[43,46,37],[43,4,51],[46,43,51],[44,45,37],[45,41,34],[41,45,44],[101,1,11],[11,1,6],[13,16,7],[16,13,17],[16,17,9],[16,10,7],[41,39,34],[39,32,29],[39,41,36],[32,39,36],[31,20,72],[20,31,27],[25,20,27],[70,31,72],[31,70,23],[31,30,27],[30,21,27],[30,31,23],[32,30,23],[17,64,9],[64,63,9],[63,64,58],[73,79,75],[12,19,14],[14,19,52],[57,19,0],[19,57,52],[28,10,22],[28,12,10],[21,28,22],[28,21,26],[54,38,49],[48,54,49],[54,48,52],[57,54,52],[38,40,35],[40,57,47],[40,42,35],[42,40,47],[54,40,38],[40,54,57],[21,24,26],[24,42,26],[42,24,36],[30,24,21],[24,32,36],[24,30,32],[4,100,98],[100,93,98],[100,43,86],[43,100,4],[56,101,11],[56,50,55],[56,55,90],[101,56,90],[56,11,8],[50,56,8],[25,18,15],[16,18,10],[10,18,22],[18,25,22],[15,18,9],[18,16,9],[87,3,29],[3,87,34],[39,3,34],[3,39,29],[2,25,15],[2,20,25],[68,70,72],[70,68,75],[68,73,75],[73,68,69],[76,87,29],[76,70,75],[76,29,23],[70,76,23],[94,91,90],[91,93,88],[93,91,94],[67,1,101],[1,67,6],[71,73,69],[71,69,61],[83,78,79],[78,83,85],[81,79,73],[81,71,5],[71,81,73],[81,83,79],[92,81,5],[83,81,92],[28,33,12],[19,33,0],[33,19,12],[33,28,26],[33,47,0],[47,33,26],[89,95,88],[95,89,92],[83,89,85],[89,83,92],[93,96,88],[100,96,93],[96,89,88],[89,96,85],[85,96,86],[96,100,86],[78,84,79],[79,84,75],[84,76,75],[76,84,87],[87,82,34],[82,45,34],[84,82,87],[82,84,78],[45,80,37],[80,78,85],[80,86,37],[80,85,86],[82,80,45],[80,82,78],[20,77,72],[2,77,20],[63,77,15],[77,2,15],[97,91,88],[95,97,88],[71,65,5],[65,71,61],[65,92,5],[65,95,92],[67,66,6],[66,17,6],[66,64,17],[66,67,59],[68,74,69],[69,74,58],[74,68,72],[77,74,72],[74,63,58],[74,77,63],[99,67,101],[97,99,91],[99,101,90],[91,99,90],[67,99,59],[99,97,59],[62,97,95],[65,62,95],[97,62,59],[62,65,61],[66,60,64],[60,66,59],[64,60,58],[62,60,59],[60,61,58],[60,62,61]], dtype=int)
+points[:,0] *= Sx
+points[:,1] *= Sy
+points[:,2] *= Sz
+# vertices of all triangular faces
+fvert  = numpy.vstack([points[f] for f in faces]).reshape(len(faces), 3, 3)
+fcent  = numpy.mean(fvert, axis=1)
+fcolor = getColor(fcent)
+fveca  = fvert[:,0]-fvert[:,1]
+fvecb  = fvert[:,2]-fvert[:,1]
+# normal vectors of all triangular faces
+fnorm  = numpy.column_stack((
+    fveca[:,1]*fvecb[:,2] - fveca[:,2]*fvecb[:,1],
+    fveca[:,2]*fvecb[:,0] - fveca[:,0]*fvecb[:,2],
+    fveca[:,0]*fvecb[:,1] - fveca[:,1]*fvecb[:,0] ))
+fnorm /= (numpy.sum(fnorm**2, axis=1)**0.5)[:,None]
+
+def getEllipse(Sxp, Syp, eta):
+    angles = numpy.linspace(0, 2*pi, 49)
+    xp = Sxp * numpy.hstack((cos(angles), 0, 0, 0))
+    yp = Syp * numpy.hstack((sin(angles), 0, 1, 0))
+    return numpy.column_stack((xp * sin(eta) + yp * cos(eta), xp * cos(eta) - yp * sin(eta)))
+
+def clip(x):
+    return numpy.maximum(0, (1-1/(1+x**5))**0.2)   # soft clipping into the interval [0..1]
+
+def traceEllipsoid(alpha, beta, gamma):
+    R = agama.makeRotationMatrix(alpha, beta, gamma)
+    # ray tracing - find the (smallest) Z coordinate of ellipsoid for each point in the X,Y grid
+    Q = numpy.einsum('ij,j,kj-&gt;ik', R, [Sx**-2, Sy**-2, Sz**-2], R)
+    a =  Q[2,2]
+    b = (Q[0,2]+Q[2,0]) * X + (Q[1,2]+Q[2,1]) * Y
+    c =  Q[0,0] * X**2 + (Q[0,1]+Q[1,0]) * X*Y + Q[1,1] * Y**2 - 1
+    d = 0.25*b*b - a*c
+    Z = -0.5*b/a - numpy.abs(d**0.5/a)
+    xyz = numpy.dot(numpy.column_stack((X,Y,Z)), R)
+    pcolor   = getColor(xyz)
+    pnorm    = xyz * numpy.array([Sx**-2, Sy**-2, Sz**-2])
+    pnorm   /= (numpy.sum(pnorm**2, axis=1)**0.5)[:,None]
+    angle    = numpy.maximum(0, -numpy.dot(pnorm, R[2]))
+    intensity= ampScattered + ampDirection * angle + ampSpecular * angle**powSpecular
+    return numpy.column_stack((clip(pcolor * intensity[:,None]),
+        numpy.isfinite(Z))).reshape(len(gridc), len(gridc), 4)
+
+def drawproj():
+    Sxp, Syp, eta = agama.getProjectedEllipse(Sx, Sy, Sz, alpha, beta, gamma)
+    R = agama.makeRotationMatrix(alpha, beta, gamma)
+    prjfaces = numpy.dot(fvert.reshape(-1,3), R.T).reshape(-1, 3, 3)
+    angle    = numpy.maximum(0, -numpy.dot(fnorm, R[2]))
+    intensity= ampScattered + ampDirection * angle + ampSpecular * angle**powSpecular
+    prjcolor = clip(fcolor * intensity[:,None])
+    meanz    = numpy.mean(prjfaces[:,:,2], axis=1)
+    order    = numpy.argsort(-meanz)
+    figfaces.set_paths([matplotlib.patches.Polygon(f[:,0:2], closed=True) for f in prjfaces[order]])
+    figfaces.set_facecolor(prjcolor[order])
+    figfaces.set_edgecolor('gray')
+    figarrowx.set_xy(numpy.vstack((Sx*R[0:2,0], 2*R[0:2,0])))
+    figarrowy.set_xy(numpy.vstack((Sy*R[0:2,1], 2*R[0:2,1])))
+    figarrowz.set_xy(numpy.vstack((Sz*R[0:2,2], 2*R[0:2,2])))
+    figarrowx.set_zorder(-10 if R[2,0]&gt;0 else 10)
+    figarrowy.set_zorder(-10 if R[2,1]&gt;0 else 10)
+    figarrowz.set_zorder(-10 if R[2,2]&gt;0 else 10)
+    figarrowx.set_linestyle('dotted' if R[2,0]&gt;0 else 'solid')
+    figarrowy.set_linestyle('dotted' if R[2,1]&gt;0 else 'solid')
+    figarrowz.set_linestyle('dotted' if R[2,2]&gt;0 else 'solid')
+    figlabelx.set_x(2.2*R[0,0])
+    figlabelx.set_y(2.2*R[1,0])
+    figlabely.set_x(2.2*R[0,1])
+    figlabely.set_y(2.2*R[1,1])
+    figlabelz.set_x(2.2*R[0,2])
+    figlabelz.set_y(2.2*R[1,2])
+    figellips.set_xy(getEllipse(Sxp, Syp, eta))
+    PAprojx = numpy.arctan2(R[0,0], R[1,0])
+    PAprojy = numpy.arctan2(R[0,1], R[1,1])
+    PAprojz = numpy.arctan2(R[0,2], R[1,2])
+    figlabela.set_text('alpha=%.2f, beta=%.2f, gamma=%.2f' % (alpha*180/pi, beta*180/pi, gamma*180/pi) +
+        '\nPAprojx=%.2f, PAprojy=%.2f, PAprojz=%.2f' % (PAprojx*180/pi, PAprojy*180/pi, PAprojz*180/pi) +
+        '\nmajor=%.3f, minor=%.3f, PAmajor=%.2f' % (Sxp, Syp, eta*180/pi))
+    try:
+        getSx, getSy, getSz = agama.getIntrinsicShape(Sxp, Syp, eta, alpha, beta, gamma)
+        figlabeld.set_text('deprojected A=%.9f, B=%.9f, C=%.9f' % (getSx, getSy, getSz))
+        figlabeld.set_color('k' if abs(getSx-Sx)+abs(getSy-Sy)+abs(getSz-Sz) &lt; 1e-8 else 'r')
+    except Exception as e:
+        traceback.print_exc()
+        figlabeld.set_text(str(e))
+        figlabeld.set_color('r')
+    # plot four possible deprojections
+    try:
+        cax.cla()
+        cax.set_axis_off()
+        getang = agama.getViewingAngles(Sxp, Syp, eta, Sx, Sy, Sz)
+        images = []
+        arrowf = []
+        arrowb = []
+        trueR  = R  # rotation matrix corresponding to the true orientation
+        for i in range(4):
+            getAlpha, getBeta, getGamma = getang[i]
+            getSxp, getSyp, geteta = agama.getProjectedEllipse(Sx, Sy, Sz, getAlpha, getBeta, getGamma)
+            R = agama.makeRotationMatrix(getAlpha, getBeta, getGamma)
+            # check which orientation is equivalent to the true one, i.e. when the rotation matrix is
+            # &quot;almost&quot; the same as the true one (up to a simultaneous change of sign in two axes),
+            # the product of R and inverse of true R is a diagonal matrix with +-1 on diagonal and det=1.
+            RtR = numpy.dot(trueR.T, R)
+            tru = numpy.linalg.norm(numpy.abs(RtR) - numpy.eye(3)) &lt; 1e-8
+            off = numpy.array([ ((i%2)*2-1)*Sx, ((i//2)*2-1)*Sx ])
+            sign = numpy.where(R[2]&lt;=0, 1, -1)
+            arrowf += [matplotlib.patches.Polygon(numpy.vstack((Sx*R[0:2,0], 2*R[0:2,0])) * sign[0] + off,
+                edgecolor='r', fill=False, closed=False, linestyle='solid')]
+            arrowb += [matplotlib.patches.Polygon(numpy.vstack((Sx*R[0:2,0], 2*R[0:2,0])) *-sign[0] + off,
+                edgecolor='r', fill=False, closed=False, linestyle='dotted')]
+            arrowf += [matplotlib.patches.Polygon(numpy.vstack((Sy*R[0:2,1], 2*R[0:2,1])) * sign[1] + off,
+                edgecolor='g', fill=False, closed=False, linestyle='solid')]
+            arrowb += [matplotlib.patches.Polygon(numpy.vstack((Sy*R[0:2,1], 2*R[0:2,1])) *-sign[1] + off,
+                edgecolor='g', fill=False, closed=False, linestyle='dotted')]
+            arrowf += [matplotlib.patches.Polygon(numpy.vstack((Sz*R[0:2,2], 2*R[0:2,2])) * sign[2] + off,
+                edgecolor='b', fill=False, closed=False, linestyle='solid')]
+            arrowb += [matplotlib.patches.Polygon(numpy.vstack((Sz*R[0:2,2], 2*R[0:2,2])) *-sign[2] + off,
+                edgecolor='b', fill=False, closed=False, linestyle='dotted')]
+            cax.add_artist(matplotlib.patches.Ellipse(off, getSxp*2, getSyp*2, angle=(pi/2-eta)*180/pi,
+                fill=False, edgecolor='k', clip_on=False))
+            cax.text(off[0]+Sx, off[1]+Sx,
+                'alpha=%.9f\nbeta=%.9f\ngamma=%.9f' % (getAlpha*180/pi, getBeta*180/pi, getGamma*180/pi),
+                color='g' if tru else 'k' if abs(getSxp-Sxp)+abs(getSyp-Syp)+abs(sin(geteta-eta)) &lt; 1e-8 else 'r',
+                ha='left', va='top', fontsize=12)
+            images += [traceEllipsoid(getAlpha, getBeta, getGamma)]
+        im = numpy.hstack(numpy.hstack(numpy.array(images).reshape(2, 2, len(gridc), len(gridc), 4)))
+        cax.imshow(im, extent=[-2*Sx, 2*Sx, -2*Sx, 2*Sx], origin='lower', interpolation='nearest', aspect='auto', zorder=0)
+        arrowsf = matplotlib.collections.PatchCollection(arrowf, match_original=True)
+        arrowsf.set_zorder(1)
+        arrowsf.set_clip_on(False)
+        arrowsb = matplotlib.collections.PatchCollection(arrowb, match_original=True)
+        arrowsb.set_zorder(-1)
+        arrowsb.set_clip_on(False)
+        cax.add_artist(arrowsf)
+        cax.add_artist(arrowsb)
+        cax.set_xlim( 2*Sx,-2*Sx)
+        cax.set_ylim(-2*Sx, 2*Sx)
+    except Exception as e:
+        traceback.print_exc()
+        cax.text(0, 0, str(e), color='r', ha='center', va='center')
+    # repaing the whole figure
+    plt.draw()
+
+def onmousepress(event):
+    if event.xdata is None or event.button is None or event.inaxes!=ax: return
+    global mousex, mousey
+    mousex = event.xdata
+    mousey = event.ydata
+
+def onmousemove(event):
+    if event.xdata is None or event.button is None or event.inaxes!=ax: return
+    global alpha, beta, gamma, mousex, mousey
+    if event.button==1:  # change inclination and/or intrinsic rotation
+        deltax = (event.xdata - mousex) * pi/2
+        deltay = (event.ydata - mousey) * pi/2
+        alpha += deltax * cos(gamma) - deltay * sin(gamma)
+        beta  -= deltay * cos(gamma) + deltax * sin(gamma)
+    if event.button==3:  # change rotation in the image plane
+        gamma += numpy.arctan2(event.xdata, event.ydata) - numpy.arctan2(mousex, mousey)
+    # normalize angles to the default range
+    while beta &gt; pi: beta -= 2*pi
+    if beta &lt; 0: beta = -beta; alpha += pi; gamma += pi;
+    while alpha &gt;   pi: alpha -= 2*pi
+    while alpha &lt;= -pi: alpha += 2*pi
+    while gamma &gt;   pi: gamma -= 2*pi
+    while gamma &lt;= -pi: gamma += 2*pi
+    mousex = event.xdata
+    mousey = event.ydata
+    drawproj()
+
+def new_home_button(self, *args, **kwargs):
+    # reset orientation to default when home button is pressed
+    global alpha, beta, gamma
+    alpha = 0; beta = 0; gamma = 0;
+    drawproj()
+    home_button(self, *args, **kwargs)
+
+home_button = matplotlib.backend_bases.NavigationToolbar2.home
+matplotlib.backend_bases.NavigationToolbar2.home = new_home_button
+fig = plt.figure(figsize=(15, 7.5), dpi=80)
+ax  = plt.axes([0.04, 0.08, 0.45, 0.9])
+cax = plt.axes([0.52, 0.08, 0.45, 0.9])
+ax.set_xlim(3, -3)
+ax.set_ylim(-3, 3)
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+figfaces  = matplotlib.collections.PatchCollection([matplotlib.patches.Polygon([[1,0], [0,0], [0,1]])])
+figarrowx = matplotlib.patches.Polygon([[0,0], [0,0]], closed=False, color='r')
+figarrowy = matplotlib.patches.Polygon([[0,0], [0,0]], closed=False, color='g')
+figarrowz = matplotlib.patches.Polygon([[0,0], [0,0]], closed=False, color='b')
+figellips = matplotlib.patches.Polygon([[0,0], [0,0]], closed=False, color='k', fill=False, zorder=9)
+ax.add_artist(figfaces)
+ax.add_patch(figarrowx)
+ax.add_patch(figarrowy)
+ax.add_patch(figarrowz)
+ax.add_patch(figellips)
+figlabelx = ax.text(0, 0, 'x',  ha='center', va='center', fontsize=12, color='r')
+figlabely = ax.text(0, 0, 'y',  ha='center', va='center', fontsize=12, color='g')
+figlabelz = ax.text(0, 0, 'z',  ha='center', va='center', fontsize=12, color='b')
+figlabela = ax.text(2.9, 2.9, '', ha='left', va='top',    fontsize=12)
+figlabeld = ax.text(2.9,-2.9, '', ha='left', va='bottom', fontsize=12)
+fig.canvas.mpl_connect(&quot;button_press_event&quot;, onmousepress)
+fig.canvas.mpl_connect(&quot;motion_notify_event&quot;, onmousemove)
+drawproj()
+print(__docstring__)
+plt.show()
+</file>
+    <file path="py/example_df_fit.py">
+#!/usr/bin/python
+
+'''
+    This example demonstrates how to find best-fit parameters of an action-based
+    distribution function that matches the given N-body snapshot.
+
+    The N-body model itself corresponds to a spherically-symmetric isotropic
+    Hernquist profile, and we fit it with a double-power-law distribution function
+    of Posti et al.2015. We use the exact potential (i.e., do not compute it
+    from the N-body model itself, nor try to vary its parameters, although
+    both options are possible), and compute actions for all particles only once.
+    Then we scan the parameter space of DF, finding the maximum of the likelihood
+    function with a multidimensional minimization algorithm.
+    This takes a few hundred iterations to converge.
+
+    This Python script is almost equivalent to the C++ test program example_df_fit.cpp,
+    up to the difference in implementation of Nelder-Mead minimization algorithm.
+
+    Additionally, we use the MCMC implementation EMCEE to explore the confidence
+    intervals of model parameters around their best-fit values obtained at the first
+    stage (deterministic search).
+    Note that occasionally this first stage could get stuck in a local minimum,
+    but the MCMC algorithm then usually finds its way towards the global minimum.
+    In these cases one could see rather large fluctuations in the parameters
+    explored by the chain.
+'''
+import agama, numpy
+from scipy.optimize import minimize
+
+labels = ['slopeIn', 'slopeOut', 'steepness', 'coef$J_r$', r'$\ln J_0$']
+
+# convert from parameter space to DF params: note that we apply
+# some non-trivial scaling to make the life easier for the minimizer
+def dfparams(args):
+    return dict(
+        type = 'DoublePowerLaw',
+        slopeIn   = args[0],
+        slopeOut  = args[1],
+        steepness = args[2],
+        coefJrIn  = args[3],
+        coefJzIn  = (3-args[3])/2,  # fix h_z=h_phi taking into account that h_r+h_z+h_phi=3
+        coefJrOut = 1.,
+        coefJzOut = 1.,
+        J0        = numpy.exp(args[4]),
+        norm = 1.)
+
+# compute log-likelihood of DF with given params against an array of points
+def model_likelihood(params, points):
+    line = &quot;J0=%6.5g, slopeIn=%6.5g, slopeOut=%6.5g, steepness=%6.5g, coefJrIn=%6.5g: &quot; \
+        % (params['J0'], params['slopeIn'], params['slopeOut'], params['steepness'], params['coefJrIn'])
+    try:
+        dpl = agama.DistributionFunction(**params)
+        norm = dpl.totalMass()
+        sumlog = numpy.sum( numpy.log(dpl(points)/norm) )
+        print(line + (&quot;LogL=%.8g&quot; % sumlog))
+        return sumlog
+    except ValueError as err:
+        print(line + &quot;Exception &quot; + str(err))
+        return -1000.*len(points)
+
+# function to minimize
+def model_search_fnc(args, actions):
+    return -model_likelihood(dfparams(args), actions)
+
+# function to maximize
+def model_search_emcee(args, actions):
+    return model_likelihood(dfparams(args), actions)
+
+# analytic expression for the ergodic distribution function f(E)
+# in a Hernquist model with mass M, scale radius a, at energy E (it may be an array).
+def dfHernquist(E):
+    q = numpy.sqrt(-E)
+    return 1 / (8 * 2**0.5 * numpy.pi**3) * (1-q*q)**-2.5 * \
+        (3*numpy.arcsin(q) + q * numpy.sqrt(1-q*q) * (1-2*q*q) * (8*q**4 - 8*q*q - 3) )
+
+# create an N-body representation of Hernquist model
+def createHernquistModel(nbody):
+    points      = numpy.zeros((nbody, 6))
+    masses      = numpy.ones(nbody, dtype=numpy.float64) / nbody
+    # 1. choose position:
+    # assign the radius by inverting M(r), where M(r) is the enclosed mass - uniform in [0:1]
+    radius      = 1 / (numpy.random.random(size=nbody)**-0.5 - 1)
+    costheta    = numpy.random.uniform(-1, 1, size=nbody)
+    sintheta    = (1-costheta**2)**0.5
+    phi         = numpy.random.uniform(0, 2*numpy.pi, size=nbody)
+    points[:,0] = radius * sintheta * numpy.cos(phi)
+    points[:,1] = radius * sintheta * numpy.sin(phi)
+    points[:,2] = radius * costheta
+    # 2. assign velocity by rejection sampling
+    potential   = -1 / (1 + radius)
+    fmax        = 0.025 / radius**2 / (radius+3) # upper boundary on f(r,v) for rejection sampling
+    velocity    = numpy.zeros(nbody)
+    indices     = numpy.where(velocity == 0)[0]  # initially this contains all points
+    while len(indices)&gt;0:
+        E       = numpy.random.random(size=len(indices)) * potential[indices]
+        vel     = 2**0.5 * (E-potential[indices])**0.5
+        fE      = dfHernquist(E) * vel * 2**-0.5
+        f       = numpy.random.random(size=len(indices)) * fmax[indices]
+        if(numpy.any(fE &gt;= fmax[indices])):
+            raise &quot;Invalid upper boundary on f(E)&quot;  # shouldn't happen
+        assigned= numpy.where(f &lt; fE)[0]
+        velocity[indices[assigned]] = vel[assigned]
+        indices = numpy.where(velocity == 0)[0]  # find out the unassigned elements
+    costheta    = numpy.random.uniform(-1, 1, size=nbody)
+    sintheta    = (1-costheta**2)**0.5
+    phi         = numpy.random.uniform(0, 2*numpy.pi, size=nbody)
+    points[:,3] = velocity * sintheta * numpy.cos(phi)
+    points[:,4] = velocity * sintheta * numpy.sin(phi)
+    points[:,5] = velocity * costheta
+    return points, masses
+
+
+def main():
+    pot = agama.Potential(type=&quot;Dehnen&quot;, mass=1, scaleRadius=1.)
+    actf= agama.ActionFinder(pot)
+    particles, masses = createHernquistModel(100000)
+    actions = actf(particles)
+
+    # do a parameter search to find best-fit distribution function describing these particles
+    initparams = numpy.array([2.0, 4.0, 1.0, 1.0, 0.0])
+    result = minimize(model_search_fnc, initparams, args=(actions,), method='Nelder-Mead',
+        options=dict(maxiter=1000, maxfev=1000, disp=True))
+
+    # explore the parameter space around the best-fit values using the MCMC chain
+    try:
+        import matplotlib.pyplot as plt, emcee, corner
+    except ImportError as ex:
+        print(str(ex) + &quot;\nYou need to install 'emcee' and 'corner' packages&quot;)
+        exit()
+    print(&quot;Starting MCMC&quot;)
+    ndim = len(initparams)
+    nwalkers = 16    # number of parallel walkers in the chain
+    nsteps   = 300   # number of steps in MCMC chain
+    nburnin  = 100   # number of initial steps to discard
+    # initial coverage of parameter space - around the best-fit solution with a small dispersion
+    initwalkers = [result.x + 0.01*numpy.random.randn(ndim) for i in range(nwalkers)]
+    sampler = emcee.EnsembleSampler(nwalkers, ndim, model_search_emcee, args=(actions,))
+    sampler.run_mcmc(initwalkers, nsteps)
+
+    # show the time evolution of parameters carried by the ensemble of walkers (time=number of MC steps)
+    fig,axes = plt.subplots(ndim+1, 1, sharex=True)
+    for i in range(ndim):
+        axes[i].plot(sampler.chain[:,:,i].T, color='k', alpha=0.5)
+        axes[i].set_ylabel(labels[i])
+    # last panel shows the evolution of log-likelihood for the ensemble of walkers
+    axes[-1].plot(sampler.lnprobability.T, color='k', alpha=0.5)
+    axes[-1].set_ylabel('log(L)')
+    maxloglike = numpy.max(sampler.lnprobability)
+    axes[-1].set_ylim(maxloglike-3*ndim, maxloglike)
+    fig.tight_layout(h_pad=0.)
+    plt.show()
+
+    # show the posterior distribution of parameters
+    samples = sampler.chain[:, nburnin:, :].reshape((-1, ndim))
+    corner.corner(samples, labels=labels, quantiles=[0.16, 0.5, 0.84])
+    plt.show()
+    print(&quot;Acceptance fraction: %f&quot; % numpy.mean(sampler.acceptance_fraction))  # should be in the range 0.2-0.5
+    #print(&quot;Autocorrelation time: %f&quot;% sampler.acor)  # should be considerably shorter than the total number of steps
+
+main()
+</file>
+    <file path="py/example_forstand.py">
+#!/usr/bin/python
+'''
+This program is an example of running observationally-constrained Schwarzschild models
+(the FORSTAND code, Vasiliev&amp;Valluri 2020).
+It has several modes of operation:
+
+1.  Run a model for a particular choice of parameters for the potential, orbit library, etc.
+    (actually, a series of models with the same potential/orbit, but different mass-to-light ratios,
+    in which the velocities are rescaled before fitting to observational constraints).
+    Normally one would launch several copies of the script with different parameters (e.g. Mbh),
+    the results will be collected in a summary text file,
+    and each model's best-fit LOSVD and orbit library will be stored in separate files.
+
+2.  Display an interactive plot with several panels:
+  - kinematic maps (v,sigma,Gauss-Hermite moments) of the data or the model(s),
+    one may click on any aperture and examine the LOSVD profile in both the data and the current model;
+  - a 2d plot of chi2 values as a function of potential parameters for a grid of models,
+    one may choose a model from the grid, load its LOSVD and display corresponding kinematic maps;
+  - LOSVD in the given aperture (both data constraints with uncertainties and the current model);
+  - distribution of orbit weights of the current model in two projections of integral space:
+    mean radius vs. normalized squared total angular momentum [L/Lcirc(E)]^2, or
+    mean radius vs. orbit inclination Lz/L; the size of symbols indicates orbit weights.
+
+3.  Display some diagnostic plots useful for assessing the overall setup before running any models:
+    projected and 3d density profiles along major and minor axes, location and masses of spatial bins,
+    circular-velocity curve of the potential, and the observed values of v0 and sigma.
+    The surface density and especially the deprojected 3d density help to check the photometric model;
+    they should be smooth and have a sensible shape. In the 3d density plot, we also show the nodes of
+    the spatial discretization grid, which should cover the region of interest, especially the central
+    cusp (if we are interested in measuring Mbh, we need to have at least a few bins in the density
+    profile within the expected radius of influence).
+    The top right panel shows the values of density constraints (essentially, cell masses);
+    ideally they should be quite uniform (with the exception of the innermost ones, which may be
+    smaller if the grid is deliberately made finer in the central region). If the dynamical range
+    spans more than 3-4 orders of magnitude, there is a risk that the smallest bins don't get any
+    suitable orbits passing through them, so these density constraints would be impossible to satisfy,
+    and the model either will be infeasible (if the density tolerance is set to zero) or will have
+    a large and unpredictably varying penalty for violating these density constraints, which is also
+    bad. In these cases one would need to adjust the grid parameters or even change the density
+    discretization scheme to a different kind (e.g. classic instead of cylindrical, or vice versa).
+    The bottom right panel shows the circular-velocity curve (split between mass components)
+    for the model with the currently chosen parameters (Mbh, stellar M/L, etc.). For comparison,
+    the values of kinematic constraints (v0 and sigma) in all bins are plotted against radius.
+    In a thin and cold disk observed edge-on, the maximum value of |v0| should be close to the
+    amplitude of the total circular velocity, but in general it will be smaller by some factor.
+    This plot may be used to get a rough idea about the expected M/L: the amplitude of Vcirc in
+    the potential is scaled by sqrt(Upsilon), where Upsilon (provided as a command-line argument)
+    is the starting value for scanning the M/L axis automatically performed by the code.
+
+4.  Prepare mock data for running the first two tasks.
+    For this, one needs an N-body snapshot - in this example it should be produced by running
+    a separate script  example_self_consistent_model3.py, which creates a three-component galaxy model
+    (disk + bulge + DM halo) with a central black hole.
+    It should be straightforward to feed in any other N-body snapshot, adjusting a few parameters.
+
+This script uses various routines from the submodule agama.schwarzlib, which are general enough
+to be used in any model fitting task. The specifics of each particular galaxy are encoded as numerous
+parameters scattered througout this file.
+Almost all needed parameters have reasonable default values in this example, but of course these are
+not necessarily optimal for other purposes.
+When adapting this example to your particular dataset, you will need to modify/adjust many parameters;
+those which likely need to be changed are marked by [REQ],
+other parameters which may be adjusted but have reasonable default values are marked by [OPT].
+It is convenient to assign default values at the beginning of the script, and optionally change
+some of them by providing command-line arguments in the form  name=value.
+
+To run a complete example of constructing a grid of Schwarzschild models, do the following:
+
+1.  Construct an N-body snapshot which will be used for the mock data, by running
+    example_self_consistent_model3.py
+    Among other things, it will produce the two files model_disk_final, model_bulge_final,
+    which together contain the stellar particles of the model galaxy.
+
+2.  Prepare the mock photometric and kinematic datasets, by running
+    example_forstand.py do=mock
+    It requires two Python modules 'mgefit' and 'vorbin'.
+    This will produce an MGE file with surface density, and two kinematic datasets
+    (low-resolution covering a large part of the galaxy, and high-res for the central region).
+    Kinematic data (LOSVDs) in ~200 Voronoi bins are provided in two alternative forms:
+  - histogrammed LOSVDs with values and their uncertainties in ~15 bins across the velocity axis;
+  - Gauss-Hermite moments of LOSVDs (v, sigma, h3, h4, h5, h6 and their uncertainties).
+    The models could be run on either of these alternative datasets, the choice is controlled
+    by the command-line argument  hist=[y/n]  (the mock data are always generated for both cases).
+
+3.  Examine the model setup by running
+    example_forstand.py do=test
+    (this is less relevant for the mock dataset, but could be quite helpful when working
+    with real data, to check if the parameters are sensible, or to diagnose possible problems).
+
+4.  Now run several series of models with different values of Mbh:
+    example_forstand.py do=run Mbh=...
+    (of course, one may also adjust many other parameters, including hist=[true/false])
+    Each series of models has the same gravitational potential, scaled by several values of M/L;
+    the LOSVD and the orbit properties of each model series are written into separate .npz files,
+    and the summary of all models (grid of parameters and chi2 values) are stored in a single file
+    results***.txt (*** is either GH or Hist).
+    For each series of models with a given potential, the one with a M/L that gives the lowest chi2
+    is converted into an N-body representation and written into a separate text file.
+    The true value of Mbh is 1e8, and M/L is 1; it makes sense to explore at least a few series of
+    models with Mbh ranging from 0 to ~3-5 times the true value.
+
+5.  Finally, one may explore the grid of models for all values of Mbh and M/L by running
+    example_forstand.py do=plot [hist=... and other params]
+
+When adapting this script to a particular galaxy with existing observational datasets,
+start from step 4 (to make sure that the observed kinematic maps look reasonable and
+geometric parameters of the model, such as viewing angles and grids, are correct),
+and then go back to step 3 (run several series of models) before going to step 4 again.
+
+This script is mainly tailored to axisymmetric systems, although the Forstand code is applicable
+in a more general context (e.g., to rotating triaxial barred galaxies).
+The main limitation is the lack of suitable deprojection methods: in this example we use
+the Multi-Gaussian expansion to fit the 2d surface density profile of the N-body snapshot
+and then deproject it into an ellipsoidally stratified 3d density profile.
+In the case of triaxial systems, especially with radially varying axis ratios, this procedure
+is much less reliable and may even fail to produce a reasonable deprojection if the actual
+3d shape is not well described by ellipsoids.
+For triaxial systems, there are two rather than one angle specifying the orientation:
+inclination (beta) and the angle alpha between the major axis and the line of nodes,
+and in the rotating case, the pattern speed Omega is also a free parameter.
+
+The model parameters and corresponding chi^2 values are stored in a single file
+resultsGH.txt (for Gauss-Hermite parametrization of the LOSVD) or
+resultsHist.txt (for histograms), and the kinematic maps and orbit distribution of each series
+of models with the same potential and varying M/L are stored in a separate .npz archive.
+In the interactive plotting regime, the likelihood surface is shown as a function of two
+model parameters (in this example, Mbh and M/L), but one may choose another pair of parameters
+by providing different columns of the results file as &quot;aval&quot;, &quot;bval&quot; arguments for
+agama.schwarzlib.runPlot(...); the values of remaining parameters should then be fixed and
+specified as command-line arguments.
+'''
+
+import sys, numpy, agama
+
+############### parse parameters from command-line arguments or assign default values #############
+arglist = []
+for arg in sys.argv[1:]:
+    nameval = arg.split('=')
+    if len(nameval)!=2:
+        raise ValueError('Command-line arguments should be in the form  name=value')
+    arglist.append([nameval[0].upper(), nameval[1]])
+args = dict(arglist)
+
+distance  = float(args.get('DISTANCE', 20626.5))# [REQ] assumed distance [kpc]
+arcsec2kpc= distance * numpy.pi / 648000        # conversion factor (number of kiloparsecs in one arcsecond)
+agama.setUnits(mass=1, length=arcsec2kpc, velocity=1)  # [OPT] units: mass = 1 Msun, length = 1&quot;, velocity = 1 km/s
+Mbh       = float(args.get('MBH', 1e8))         # [REQ] mass of the central black hole  [Msun]
+Omega     = float(args.get('OMEGA', 0))         # [REQ] pattern speed (relevant only for non-axisymmetric models) [km/s/length_unit]
+halotype  =       args.get('HALOTYPE', 'nfw')   # [OPT] halo type: 'LOG' or 'NFW'
+vhalo     = float(args.get('VHALO', 190))       # [OPT] asymptotic (LOG) or peak (NFW) circular velocity of the halo [km/s]
+rhalo     = float(args.get('RHALO', 150))       # [OPT] core (LOG) or scale (NFW) radius of the halo [lenth_unit]
+Upsilon   = float(args.get('UPSILON', 1.0))     # [OPT] initial value of mass-to-light ratio in the search
+multstep  = float(args.get('MULTSTEP', 1.02))   # [OPT] multiplicative step for increasing/decreasing Upsilon during grid search
+numOrbits = int  (args.get('NUMORBITS', 20000)) # [OPT] number of orbit in the model (size of orbit library)
+intTime   = float(args.get('INTTIME', 100.0))   # [OPT] integration time in units of orbital period
+regul     = float(args.get('REGUL', 1. ))       # [OPT] regularization parameter (larger =&gt; more uniform orbit weight distribution in models)
+incl      = float(args.get('INCL', 60.0))       # [REQ] inclination angle (0 is face-on, 90 is edge-on) [degrees]
+beta      = incl * numpy.pi/180                 # same in radians
+alpha_deg = float(args.get('ALPHA', 0.0))       # [REQ] azimuthal angle of viewing direction in the model coordinates (relevant only for non-axisym)
+alpha     = alpha_deg * numpy.pi/180            # same in radians
+degree    = int  (args.get('DEGREE', 2))        # [OPT] degree of B-splines  (0 means histograms, 2 or 3 is preferred)
+symmetry  = 'a'                                 # [OPT] symmetry of the model ('s'pherical, 'a'xisymmetric, 't'riaxial)
+addnoise  =      (args.get('ADDNOISE', 'True')  # [OPT] whether to add a realistic amount of noise in generating mock datacubes
+    .upper() in ('TRUE', 'T', 'YES', 'Y'))
+nbody     = int  (args.get('NBODY', 100000))    # [OPT] number of particles for the N-body representation of the best-fit model
+nbodyFormat = args.get('NBODYFORMAT', 'text')   # [OPT] format for storing N-body snapshots (text/nemo/gadget)
+command   = args.get('DO', '').upper()          # [REQ] operation mode: 'RUN' - run a model, 'PLOT' - show the model grid and maps, 'TEST' - show diagnostic plots, 'MOCK' - create mock maps
+variant   = args.get('VARIANT', 'GH').upper()   # [OPT] choice between three ways of representing and fitting LOSVDs (see below)
+if 'HIST' not in variant and 'GH' not in variant and 'VS' not in variant:
+    raise RuntimeError('parameter &quot;variant&quot; should be one of &quot;GH&quot; (Gauss-Hermite moments), &quot;VS&quot; (classical moments - v &amp; sigma), or &quot;HIST&quot; (LOSVD histograms)')
+fileResult= 'results%s.txt' % variant           # [OPT] filename for collecting summary results for the entire model grid
+seed      = int  (args.get('SEED', 99))         # [OPT] random seed (different values will create different realizations of mock data when do=MOCK, or initial conditions for the orbit library when do=RUN)
+agama.setRandomSeed(seed)                       # note that Agama has its own
+numpy.random.seed(seed)                         # make things repeatable when generating mock data (*not* related to the seed for the orbit library)
+numpy.set_printoptions(precision=4, linewidth=9999, suppress=True)
+
+# In this example, we use the Multi-Gaussian Expansion to parametrize
+# the surface density profile and deproject it into the 3d density profile,
+# but the code works with any other choice of 3d density model.
+filenameMGE = 'mge_i%.0f.txt' % incl    # [REQ] file with parameters of the MGE model for the surface density profile (if MGE is used)
+
+### common parameters for kinematic datasets (though in principle they may also differ between them)
+gridv  = numpy.linspace(-500, 500, 26)  # [REQ] the grid in model velocity space (will be multiplied by sqrt(Upsilon) when comparing to data)
+velpsf = 0.0                  # [OPT] velocity-space PSF (usually not needed, as the spectroscopic fits produce deconvolved LOSVDs)
+# [OPT] define the degree and velocity grid for the observed LOSVD provided as histograms or (less likely) higher-degree B-splines;
+# the following two lines are needed [REQ] only if the input is provided in the form of binned LOSVDs (usehist=True),
+# but we also use these parameters to generate mock LOSVD histograms if command=='MOCK'
+hist_degree = 0               # [OPT] B-spline degree for the observed LOSVDs (0 means histogram)
+hist_gridv  = numpy.linspace(-400, 400, 17)  # [OPT] velocity grid for the observed LOSVDs (boundaries of velocity bins, not centers!)
+
+### parameters of the 1st kinematic dataset
+gamma1 = 25.0 * numpy.pi/180  # [REQ] CW rotation angle of the image-plane X axis relative to the line of nodes (=major axis for axisym.systems)
+psf1   = 1.0                  # [REQ] width of the Gaussian PSF ( may use more than one component: [ [width1, weight1], [width2, weight2] ] )
+kinemParams1 = dict(          # parameters passed to the constructor of the Target class
+    type     = 'LOSVD',
+    symmetry = symmetry,      # symmetry properties of the potential
+    alpha    = alpha,         # two angles defining the orientation of the model
+    beta     = beta,          # w.r.t. image plane (same for all kinematic datasets)
+    gamma    = gamma1,        # third angle is the rotation of the image plane, may be different for each dataset
+    psf      = psf1,          # spatial PSF
+    velpsf   = velpsf,        # velocity-space PSF
+    degree   = degree,        # parameters for the internal datacube represented by B-splines:
+    gridv    = gridv,         # usually will be identical for all datasets (except gridx,gridy which is determined by apertures)
+)
+filenameVorBin1 = 'voronoi_bins_i%.0f_lr.txt' % incl # [REQ] Voronoi binning scheme for this dataset
+filenameHist1   = 'kinem_hist_i%.0f_lr.txt'   % incl # [REQ] histogrammed representation of observed LOSVDs
+filenameGH1     = 'kinem_gh_i%.0f_lr.txt'     % incl # [REQ] Gauss-Hermite parametrization of observed LOSVDs (usually only one of these two files is given)
+filenameVS1     = 'kinem_vs_i%.0f_lr.txt'     % incl # [REQ] 
+
+### same for the 2nd kinematic dataset [OPT] - may have only one dataset, or as many as needed
+gamma2 = -10.0 * numpy.pi/180
+psf2   = 0.1                  # in this case it's a high-resolution IFU datacube
+kinemParams2 = dict(
+    type     = 'LOSVD',
+    symmetry = symmetry,
+    alpha    = alpha,
+    beta     = beta,
+    gamma    = gamma2,
+    psf      = psf2,
+    velpsf   = velpsf,
+    degree   = degree,
+    gridv    = gridv,
+)
+filenameVorBin2 = 'voronoi_bins_i%.0f_hr.txt' % incl
+filenameHist2   = 'kinem_hist_i%.0f_hr.txt'   % incl
+filenameGH2     = 'kinem_gh_i%.0f_hr.txt'     % incl
+filenameVS2     = 'kinem_vs_i%.0f_hr.txt'     % incl
+
+
+def makeMockKin(kinemParams, gridxy, nbins, filenameVorBin, filenameHist, filenameGH, filenameVS):
+    # 1st step: construct Voronoi bins for kinematic datasets
+    print('Creating Voronoi bins')
+    xc, yc, bintags = agama.schwarzlib.makeVoronoiBins(
+        posvel,
+        gridx = gridxy,   # [REQ] X-axis pixel boundaries for the 1st (LR) dataset
+        gridy = gridxy,   # [REQ] same for Y axis
+        nbins = nbins,    # [REQ] desired number of Voronoi bins (the result may differ somewhat)
+        alpha = kinemParams['alpha'],  # orientation angles
+        beta  = kinemParams['beta'],
+        gamma = kinemParams['gamma']
+    )
+    # save the binning scheme to text file
+    numpy.savetxt(filenameVorBin, numpy.column_stack((xc, yc, bintags)), fmt='%8.4f %8.4f %7d')
+
+    # 2st step: construct the LOSVD target and apply it to the N-body snapshot
+    print('Computing LOSVDs of input snapshot')
+    apertures    = agama.schwarzlib.getBinnedApertures(xc, yc, bintags)      # obtain boundary polygons from Voronoi bins
+    gridx, gridy = agama.schwarzlib.makeGridForTargetLOSVD(apertures, kinemParams['psf'])  # construct a suitable image-plane grid
+    target       = agama.Target(apertures=apertures, gridx=gridx, gridy=gridy, **kinemParams)
+    datacube     = target((posvel, mass)).reshape(len(apertures), -1)
+
+    # datacube now contains the amplitudes of B-spline representation of LOSVDs in each aperture.
+    # Assign the uncertainties on each amplitude assuming the Poisson noise;
+    # for this we need to know the &quot;typical&quot; amplitude produced by one particle (e.g., placed at the center),
+    # which is the particle mass divided by the bin size of the velocity grid.
+    oneparticle = numpy.mean(mass) / (gridv[1]-gridv[0])
+    noise = numpy.maximum(1, datacube / oneparticle)**0.5
+    # it turns out that this noise level is very low in our example, so we multiply it by some factor &gt;1
+    if '_lr' in filenameGH: noise *= 8
+    else: noise *= 2
+    # to propagate the uncertainties throughout subsequent computations, construct &quot;nboot&quot; realizations
+    # of the original datacube perturbed by Gaussian noise
+    nboot = 16
+    datacubes = datacube + numpy.random.normal(size=(nboot,)+datacube.shape) * noise * oneparticle
+    if addnoise:
+        datacube = datacubes[0]   # take one perturbed realization as the input (noisy) data
+    # else keep datacube as computed originally
+
+    # 3th step, variant A: convert the B-splines to histograms, which are in fact 0th-degree B-splines;
+    # we might have constructed model LOSVDs in terms of histograms directly, but this would have been less accurate
+    # than rebinning the model LOSVDs onto the new velocity grid
+    conv = numpy.linalg.solve(   # conversion matrix from the model B-splines into observed histograms
+        agama.bsplineMatrix(hist_degree, hist_gridv),
+        agama.bsplineMatrix(hist_degree, hist_gridv, degree, gridv) ).T
+    hist_val = datacube.dot(conv)
+    hist_err = numpy.std(datacubes.dot(conv), axis=0)
+    hist_norm= numpy.sum(hist_val, axis=1)[:,None]
+    # save the interleaved values and error estimates of the B-spline amplitudes in each aperture to a text file
+    numpy.savetxt(filenameHist,
+        numpy.dstack((hist_val/hist_norm, hist_err/hist_norm)).reshape(len(apertures), -1),
+        fmt='%9.3g')
+
+    # 3rd step, variant B: convert the B-spline LOSVDs to GH moments
+    print('Computing Gauss-Hermite moments and their error estimates')
+    ghorder = 6  # [OPT] order of GH expansion
+    ghm_val = agama.ghMoments(degree=degree, gridv=gridv, ghorder=ghorder, matrix=datacube)
+    ghm_err = numpy.std(
+        agama.ghMoments(degree=degree, gridv=gridv, ghorder=ghorder,
+            matrix=datacubes.reshape(-1, datacubes.shape[2])).
+        reshape(nboot, len(apertures), -1),
+        axis=0)
+    ind = (1,2,6,7,8,9)  # keep only these columns, corresponding to v,sigma,h3,h4,h5,h6
+    numpy.savetxt(filenameGH,
+        numpy.dstack((ghm_val, ghm_err))[:,ind,:].reshape(len(apertures), -1),
+        fmt='%8.3f', header='v        v_err    sigma    sigma_err '+
+        'h3       h3_err    h4       h4_err    h5       h5_err    h6       h6_err')
+
+    # 3th step, variant C: convert the B-splines to V and sigma
+    i0 = agama.bsplineIntegrals(degree, gridv)
+    i1 = agama.bsplineIntegrals(degree, gridv, power=1)
+    i2 = agama.bsplineIntegrals(degree, gridv, power=2)
+    datacube0  = datacube.dot(i0)
+    datacubes0 = datacubes.dot(i0)
+    meanv_val  = (datacube.dot(i1) / datacube0)
+    sigma_val  = (datacube.dot(i2) / datacube0 - meanv_val**2)**0.5
+    meanv_vals = (datacubes.dot(i1) / datacubes0)
+    sigma_vals = (datacubes.dot(i2) / datacubes0 - meanv_vals**2)**0.5
+    meanv_err  = numpy.std(meanv_vals, axis=0)
+    sigma_err  = numpy.std(sigma_vals, axis=0)
+    numpy.savetxt(filenameVS,
+        numpy.column_stack((meanv_val, meanv_err, sigma_val, sigma_err)),
+        fmt='%8.3f', header='v v_err sigma sigma_err')
+
+
+# generate mock observations from an N-body model ([OPT] - of course this section is not needed when running the script on actual observations)
+if command == 'MOCK':
+    # here we use the N-body model generated by another example program:  example_self_consistent_model3.py
+    # among other things, it outputs two N-body snapshot files - one for the disk, the other for the bulge component
+    try:
+        print('Reading input snapshot')
+        snapshot1 = agama.readSnapshot('model_disk_final')
+        snapshot2 = agama.readSnapshot('model_bulge_final')
+        posvel    = numpy.vstack((snapshot1[0], snapshot2[0]))  # 2d Nx6 array of positions and velocities
+        mass      = numpy.hstack((snapshot1[1], snapshot2[1]))  # 1d array of N particle masses
+        # if your N-body snapshot is contained in a single file, just load it and assign posvel,mass arrays as specified above
+    except:
+        exit('You need to generate N-body snapshots by running example_self_consistent_model3.py')
+    # convert the N-body model (which was set up in N-body units with G=1) to observational units defined at the beginning of this script
+    rscale = 30.0   # [REQ] 1 length unit of the N-body snapshot corresponds to this many length units of this script (arcseconds)
+    mscale = 4e10   # [REQ] 1 mass unit of the snapshot corresponds to this many mass units of this script (solar masses)
+    vscale = (agama.G * mscale / rscale)**0.5  # same for the N-body velocity unit =&gt; km/s
+    print('Scaling N-body model to physical units: 1 length unit = %g arcsec = %g kpc, 1 velocity unit = %g km/s, 1 mass unit = %g Msun' %
+        (rscale, rscale * arcsec2kpc, vscale, mscale))
+    posvel[:, 0:3] *= rscale
+    posvel[:, 3:6] *= vscale
+    mass *= mscale
+
+    # 0th step: construct an MGE parameterization of the density (note: this is a commonly used, but not necessarily optimal approach)
+    print('Creating MGE')
+    mge = agama.schwarzlib.makeMGE(posvel, mass, beta, distance, plot=True)
+    numpy.savetxt(filenameMGE, mge, fmt='%12.6g %11.3f %11.4f',
+        header='MGE file\nsurface_density  width  axis_ratio\n[Msun/pc^2]   [arcsec]')
+
+    # Low-resolution dataset with a FoV 1x1' and pixel size 1&quot; (comparable to ground-based IFU such as SAURON).
+    # Note: make sure that the pixel size passed to makeVoronoiBins is rounded to at most 4 significant digits,
+    # since this is the precision with which we save it later; otherwise the subsequent reading of Voronoi bins will fail
+    makeMockKin(kinemParams1, numpy.linspace(-30.0, 30.0, 61), 150, filenameVorBin1, filenameHist1, filenameGH1, filenameVS1)
+    # High-resolution dataset similar to AO-assisted IFU such as NIFS (2x2&quot;, pixel size 0.1&quot;)
+    makeMockKin(kinemParams2, numpy.linspace(- 1.0,  1.0, 21),  50, filenameVorBin2, filenameHist2, filenameGH2, filenameVS2)
+
+    print('Finished creating mock datasets, now you may run this script with the argument  do=plot  or  do=run')
+    exit()
+
+
+### assemble the datasets (Targets and constraints)
+datasets = []
+
+### 0: photometry =&gt; 3d density profile and its discretization scheme for a density Target
+
+# read the input MGE file, skipping the first three lines as comments, deproject it and construct the Density object.
+# Instead of MGE, one may use any other parametric density profile, e.g. one or more Sersic components with parameters
+# determined by photometric fitting software such as Galfit
+try:
+    mge = numpy.loadtxt(filenameMGE)   # [REQ] file with MGE parametrization of surface density profile
+except:
+    print('%s not found; you need to generate the mock data first, as explained at the beginning of this file' % filenameMGE)
+    exit()
+
+densityStars = agama.schwarzlib.makeDensityMGE(mge, distance, arcsec2kpc, beta)
+#densityStars = agama.Density(agama.Density('dens_disk'), agama.Density('dens_bulge'))  # true profiles of this mock dataset
+
+### parameters for the density dataset
+# the choice of discretization scheme depends on the morphological type of the galaxy being modelled:
+# for disky systems, DensityCylindrical[TopHat/Linear] is preferred, either in the axisymmetric regime
+# (mmax=0), or more generally with mmax&gt;0;
+# for spheroidal systems, DensityClassic[TopHat/Linear] or DensitySphHarm may be more suitable,
+# and in any case, the choice of radial [and possibly vertical] grid requires careful consideration.
+# Here we do it automatically to ensure that the grid covers almost the entire model
+# and has roughly equal mass in each shell (for spherical) or slab (for cylindrical grids),
+# but this might not be suitable for every case; in particular, one may wish to make the grids
+# denser in the central region to better constrain the 3d density profile near the black hole.
+densityParams = dict(type = (
+    'DensityClassicTopHat',
+    'DensityClassicLinear',
+    'DensitySphHarm',
+    'DensityCylindricalTopHat',
+    'DensityCylindricalLinear')[4])   # [REQ] choose one of these types!
+# use the discrete samples from the density profile to choose the grid parameters
+samples = densityStars.sample(10000)[0]
+if densityParams['type'] == 'DensityClassicTopHat' or densityParams['type'] == 'DensityClassicLinear':
+    # create a grid in elliptical radius with axis ratio chosen to [roughly] match those of the density profile
+    axes = numpy.percentile(numpy.abs(samples), 90, axis=0)  # three principal axes in the outer part of the profile
+    axes/= numpy.exp(numpy.mean(numpy.log(axes)))  # normalize so that the product of three axes is unity
+    ellrad = numpy.sum((samples / axes)**2, axis=1)**0.5
+    # [OPT] make the inner grid segment contain 1% of the total mass
+    # (to better constrain the density near the black hole, though this may need some further tuning),
+    # and the remaining segments contain roughly equal fractions of mass up to 99% of the total mass
+    densityParams['gridr'] = numpy.hstack([0, numpy.percentile(ellrad, tuple(numpy.linspace(1, 99, 24))) ])
+    densityParams['axisRatioY'] = axes[1] / axes[0]
+    densityParams['axisRatioZ'] = axes[2] / axes[0]
+    print('%s grid in elliptical radius: %s, axis ratios: y/x=%.3g, z/x=%.3g' %
+        (densityParams['type'], densityParams['gridr'], densityParams['axisRatioY'], densityParams['axisRatioZ']))
+    # [OPT] each shell in the elliptical radius is divided in three equal 'panes'
+    # adjacent to each of the principal axes, and then each pane is further divided
+    # into a square grid of cells with stripsPerPane elements on each side
+    densityParams['stripsPerPane'] = 2
+elif densityParams['type'] == 'DensitySphHarm':
+    # this discretization scheme uses a grid in spherical radius and a spherical-harmonic expansion in angles
+    sphrad = numpy.sum(samples**2, axis=1)**0.5
+    # [OPT] same procedure as above, using roughly equal-mass bins in spherical radius except the innermost one
+    densityParams['gridr'] = numpy.hstack([0, numpy.percentile(sphrad, tuple(numpy.linspace(1, 99, 24))) ])
+    # [OPT] order of angular spherical-harmonic expansion in theta and phi (must be even)
+    densityParams['lmax'] = 0 if symmetry[0]=='s' else 8
+    densityParams['mmax'] = 0 if symmetry[0]!='t' else 6
+    print('%s grid in spherical radius: %s, lmax=%i, mmax=%i' %
+        (densityParams['type'], densityParams['gridr'], densityParams['lmax'], densityParams['mmax']))
+elif densityParams['type'] == 'DensityCylindricalTopHat' or densityParams['type'] == 'DensityCylindricalLinear':
+    sampleR = (samples[:,0]**2 + samples[:,1]**2)**0.5
+    samplez = abs(samples[:,2])
+    # [OPT] choose the grids in R and z so that each 'slab' (1d projection along the complementary coordinate)
+    # contains approximately equal mass, though this doesn't guarantee that the 2d cells would be even roughly balanced
+    densityParams['gridR'] = numpy.hstack([0, numpy.percentile(sampleR, tuple(numpy.linspace(1, 99, 20))) ])
+    densityParams['gridz'] = numpy.hstack([0, numpy.percentile(samplez, tuple(numpy.linspace(1, 99, 15))) ])
+    # [OPT] number of azimuthal-harmonic coefficients (0 for axisymmetric systems)
+    densityParams['mmax']  = 0 if symmetry[0]!='t' else 6
+    print('%s grid in R: %s, z: %s, mmax=%i' %
+        (densityParams['type'], densityParams['gridR'], densityParams['gridz'], densityParams['mmax']))
+
+datasets.append(agama.schwarzlib.DensityDataset(
+    density=densityStars,
+    # [OPT] fractional tolerance (e.g., 0.01) on the values of density constraints;
+    # may be 0, requiring to satisfy them exactly, but in this case the solution may be infeasible
+    tolerance=0.01,
+    alpha=alpha,     # the orientation of intrinsic model coordinates w.r.t. the observed ones,
+    beta=beta,       # specified by two Euler angles (used only for plotting the projected density)
+    **densityParams  # remaining parameters set above
+) )
+
+
+### 1: 1st kinematic dataset
+
+# read the Voronoi binning scheme and convert it to polygons (aperture boundaries)
+vorbin1    = numpy.loadtxt(filenameVorBin1)
+apertures1 = agama.schwarzlib.getBinnedApertures(xcoords=vorbin1[:,0], ycoords=vorbin1[:,1], bintags=vorbin1[:,2])
+# note that when using real observational data, the coordinate system in the image plane is usually
+# right-handed, with Y pointing up and X pointing right. This is different from the convention used
+# in Agama, where X points left. Therefore, one will need to invert the X axis of the observed dataset:
+# getBinnedApertures(xcoords=-vorbin[:,0], ...)
+
+# use either histograms, GH moments, or classical moments (v &amp; sigma) as input data
+if 'HIST' in variant:
+    # [REQ] read the input kinematic data in the form of histograms;
+    # if using the mock data as produced by this script, each line contains both values and errors for each velocity bin
+    # in a given aperture, but when using data coming from other sources, may need to adjust the order of columns below
+    kindat1 = numpy.loadtxt(filenameHist1)
+    datasets.append(agama.schwarzlib.KinemDatasetHist(
+        density   = densityStars,
+        tolerance = 0.01,              # [REQ] relative error in fitting aperture mass constraints
+        obs_val   = kindat1[:, 0::2],  # [REQ] values of velocity histograms
+        obs_err   = kindat1[:, 1::2],  # [REQ] errors in these values
+        obs_degree= hist_degree,
+        obs_gridv = hist_gridv,
+        apertures = apertures1,
+        **kinemParams1
+    ) )
+elif 'GH' in variant:
+    # [REQ] read the input kinematic data (V, sigma, higher Gauss-Hermite moments);
+    # if using the mock data produced by this script, each line contains interleaved values and errors of v,sigma,h3...h6,
+    # but when using data coming from other sources, may need to adjust the order of columns below
+    kindat1 = numpy.loadtxt(filenameGH1)
+    datasets.append(agama.schwarzlib.KinemDatasetGH(
+        density   = densityStars,
+        tolerance = 0.01,              # [REQ] relative error in fitting aperture mass constraints
+        ghm_val   = kindat1[:, 0::2],  # [REQ] values of v,sigma,h3,h4...
+        ghm_err   = kindat1[:, 1::2],  # [REQ] errors in the same order
+        apertures = apertures1,
+        **kinemParams1
+    ) )
+elif 'VS' in variant:
+    # [REQ] read the input kinematic data (v and sigma, which have a different meaning here than in the case of
+    # Gauss-Hermite moments above; specifically, v is the mean velocity and sigma is its standard deviation,
+    # while for the GH parameterization, v and sigma are the center and width of the best-fit Gaussian);
+    # data format used in this script: v, v_error, sigma, sigma_error, one line per aperture
+    kindat1 = numpy.loadtxt(filenameVS1)
+    datasets.append(agama.schwarzlib.KinemDatasetVS(
+        density   = densityStars,
+        tolerance = 0.01,              # [REQ] relative error in fitting aperture mass constraints
+        vs_val   = kindat1[:, 0::2],   # [REQ] values of v,sigma
+        vs_err   = kindat1[:, 1::2],   # [REQ] errors in the same order
+        apertures = apertures1,
+        **kinemParams1
+    ) )
+
+
+### 2: [OPT] same for the 2nd kinematic dataset (and similarly for all subsequent ones)
+vorbin2     = numpy.loadtxt(filenameVorBin2)
+apertures2  = agama.schwarzlib.getBinnedApertures(xcoords=vorbin2[:,0], ycoords=vorbin2[:,1], bintags=vorbin2[:,2])
+if 'HIST' in variant:
+    kindat2 = numpy.loadtxt(filenameHist2)
+    datasets.append(agama.schwarzlib.KinemDatasetHist(
+        density   = densityStars,
+        tolerance = 0.01,
+        obs_val   = kindat2[:, 0::2],
+        obs_err   = kindat2[:, 1::2],
+        obs_degree= hist_degree,
+        obs_gridv = hist_gridv,
+        apertures = apertures2,
+        **kinemParams2
+    ) )
+elif 'GH' in variant:
+    kindat2 = numpy.loadtxt(filenameGH2)
+    if True: datasets.append(agama.schwarzlib.KinemDatasetGH(
+        density   = densityStars,
+        tolerance = 0.01,
+        ghm_val   = kindat2[:, 0::2],
+        ghm_err   = kindat2[:, 1::2],
+        apertures = apertures2,
+        **kinemParams2
+    ) )
+elif 'VS' in variant:
+    kindat2 = numpy.loadtxt(filenameVS2)
+    datasets.append(agama.schwarzlib.KinemDatasetVS(
+        density   = densityStars,
+        tolerance = 0.01,
+        vs_val   = kindat2[:, 0:4:2],
+        vs_err   = kindat2[:, 1:4:2],
+        apertures = apertures2,
+        **kinemParams2
+    ) )
+
+
+# create a dark halo according to the provided parameters (type, scale radius and circular velocity)
+if rhalo&gt;0 and vhalo&gt;0:
+    if   halotype.upper() == 'LOG':
+        densityHalo = agama.schwarzlib.makeDensityLogHalo(rhalo, vhalo)
+    elif halotype.upper() == 'NFW':
+        densityHalo = agama.schwarzlib.makeDensityNFWHalo(rhalo, vhalo)
+    else:
+        raise ValueError('Invalid halo type')
+else:
+    densityHalo = agama.Density(type='Plummer', mass=0, scaleRadius=1)  # no halo
+
+# additional density component for constructing the initial conditions:
+# create more orbits at small radii to better resolve the kinematics around the central black hole
+densityExtra = agama.Density(type='Dehnen', scaleradius=1)
+
+# fiducialMbh: Mbh used to construct initial conditions (may differ from Mbh used to integrate orbits;
+# the idea is to keep fiducialMbh fixed between runs with different Mbh, so that the initial conditions
+# for the orbit library are the same, compensating one source of noise in chi2 due to randomness)
+fiducialMbh = densityStars.totalMass() * 0.01
+
+# potential of the galaxy, excluding the central BH
+pot_gal   = agama.Potential(type='Multipole',
+    density=agama.Density(densityStars, densityHalo),  # all density components together
+    lmax=32,  # lmax is set to a large value to accurately represent a disky density profile
+    mmax=0 if symmetry[0]!='t' else 6, gridSizeR=40)  # mmax&gt;0 only for triaxial systems
+# potential of the central BH
+pot_bh    = agama.Potential(type='Plummer', mass=Mbh, scaleRadius=1e-4)
+# same for the fiducial BH
+pot_bhfidu= agama.Potential(type='Plummer', mass=fiducialMbh, scaleRadius=1e-4)
+# total potential of the model (used to integrate the orbits)
+pot_total = agama.Potential(pot_gal, pot_bh)
+# total potential used to generate initial conditions only
+pot_fidu  = agama.Potential(pot_gal, pot_bhfidu)
+
+
+### finally, decide what to do
+if command == 'RUN':
+
+    # prepare initial conditions - use the same total potential independent of the actual Mbh
+    # [OPT]: choose the sampling method: isotropic IC drawn from Eddington DF are created by
+    #   density.sample(numorbits, potential)
+    # while IC with preferential rotation (for disky models) are constructed from axisymmetric Jeans eqns by
+    #   density.sample(numorbits, potential, beta={0-0.5}, kappa={1 or -1, depending on sign of rotation})
+    # Here we add together two sets of IC - the majority of orbits sampled with axisymmetric Jeans eqns,
+    # plus a small fraction additionally sampled from the central region to improve coverage.
+    ic = numpy.vstack((
+        densityStars.sample(int(numOrbits*0.85), potential=pot_fidu, beta=0.3, kappa=1)[0],
+        densityExtra.sample(int(numOrbits*0.15), potential=pot_fidu)[0] ))
+
+
+    # launch the orbit library and perform fits for several values of Upsilon;
+    agama.schwarzlib.runModel(datasets=datasets, potential=pot_total, ic=ic,
+        intTime=intTime, Upsilon=Upsilon, multstep=multstep, regul=regul, Omega=Omega,
+        # [OPT] prefix - common part of the file name storing LOSVDs of each model in this series;
+        # the value of Upsilon is appended to each filename;  here one may adjust the string format or the list of parameters to store
+        filePrefix = 'M%.3g_O%.3g_Rh%.3g_Vh%.3g_i%.0f_a%.0f_N%d_R%.2f_%s' %
+            (Mbh, Omega, rhalo, vhalo, incl, alpha_deg, numOrbits, regul, variant),
+        # [OPT] data stored at the beginning of each line (= a separate model with a given Upsilon) in the results/summary file;
+        # usually should contains the same parameters as in filePrefix, but separated by tabs.
+        # Keep track of the order of parameters - when reading the results file in the plotting part of this script, the order should be the same.
+        # After the linePrefix, each line in the result file will contain the value of Upsilon, values of chi2 for each dataset,
+        # regularization penalty, and the name of the file with LOSVD of that model.
+        linePrefix = '\t'.join([ '%.3g' % Mbh, '%.3g' % Omega, '%.3g' % rhalo, '%.3g' % vhalo,
+            '%.0f' % incl, '%.0f' % alpha_deg, '%d' % numOrbits, '%.2f' % regul ]),
+        # [OPT] results/summary file
+        fileResult = fileResult,
+        # [OPT] parameters for the N-body snapshot representing the best-fit model
+        nbody = nbody, nbodyFormat = nbodyFormat )
+
+elif command == 'TEST':
+
+    # plot various diagnostics to check if the parameters of the model are reasonable
+    import matplotlib.pyplot as plt
+    ax = plt.subplots(2, 2, figsize=(12,8), dpi=100)[1].reshape(-1)
+    # radial range of these plots is somewhat arbitrary, but should encompass the extent of kinematic data (may need adjustment)
+    gridrmajor = numpy.logspace(numpy.log10(0.05), numpy.log10(200))
+    gridrminor = numpy.logspace(numpy.log10(0.05), numpy.log10(100))
+    # surface density along the major and minor axes
+    Sigmamajor = densityStars.projectedDensity(numpy.column_stack((gridrmajor, gridrmajor*0)), beta=beta, alpha=alpha)
+    Sigmaminor = densityStars.projectedDensity(numpy.column_stack((gridrminor*0, gridrminor)), beta=beta, alpha=alpha)
+    ax[0].loglog(gridrmajor, Sigmamajor, color='b', label=r'$\Sigma(R)$ major')
+    ax[0].loglog(gridrminor, Sigmaminor, color='r', label=r'$\Sigma(R)$ minor')
+    ax[0].set_xlabel('projected radius')
+    ax[0].set_ylabel('surface density')
+    ax[0].legend(loc='lower left', frameon=False)
+    ax[0].set_xlim(min(gridrmajor), max(gridrmajor))
+    ax[0].set_ylim(min(Sigmamajor), max(Sigmamajor))
+
+    # deprojected 3d density along the major (x) and minor (z) axes
+    rhomajor = densityStars.density(numpy.column_stack((gridrmajor, gridrmajor*0, gridrmajor*0)))
+    rhominor = densityStars.density(numpy.column_stack((gridrminor*0, gridrminor*0, gridrminor)))
+    ax[2].loglog(gridrmajor, rhomajor, color='b', label=r'$\rho(R,z=0)$')
+    ax[2].loglog(gridrminor, rhominor, color='r', label=r'$\rho(R=0,z)$')
+    ax[2].set_xlabel('radius')
+    ax[2].set_ylabel('3d density')
+    ax[2].legend(loc='lower left', frameon=False)
+    ax[2].set_xlim(min(gridrmajor), max(gridrmajor))
+    ax[2].set_ylim(min(rhomajor)/5, max(rhomajor))
+    # also show the location of nodes of the 3d density discretization grid
+    if 'gridR' in densityParams: gridnodesmajor = densityParams['gridR']
+    if densityParams['type'] == 'DensityCylindricalTopHat' or densityParams['type'] == 'DensityCylindricalLinear':
+        ax[2].plot(densityParams['gridR'], numpy.interp(densityParams['gridR'], gridrmajor, rhomajor), 'b|', ms=6)
+        ax[2].plot(densityParams['gridz'], numpy.interp(densityParams['gridz'], gridrminor, rhominor), 'r|', ms=6)
+    else:
+        if 'axisRatioZ' in densityParams:   # elliptical grid in DensityClassic[TopHat/Linear]
+            multX = (densityParams['axisRatioY'] * densityParams['axisRatioZ'])**(-1./3)  # scaling along the X (major) axis
+            multZ =  densityParams['axisRatioZ'] * multX                                  # scaling along the Z (minor) axis
+        else:
+            multX = multZ = 1
+        ax[2].plot(densityParams['gridr']*multX, numpy.interp(densityParams['gridr']*multX, gridrmajor, rhomajor), 'b|', ms=6)
+        ax[2].plot(densityParams['gridr']*multZ, numpy.interp(densityParams['gridr']*multZ, gridrminor, rhominor), 'r|', ms=6)
+
+    # values of discretized density constraints: this is rather technical, but a large spread in values
+    # (more than a few orders of magnitude) may present trouble for the solution - then one would need
+    # to change some grid parameters, so that the distribution of cell masses is more uniform
+    ax[1].plot(datasets[0].cons_val[1:])
+    ax[1].set_xlabel('constraint index')
+    ax[1].set_ylabel('density constraint value')
+    ax[1].set_yscale('log')
+
+    # plot observed parameters of GH expansion v0 and sigma against radius
+    if 'HIST' not in variant:
+        aperture_radii1 = numpy.array([numpy.mean(ap[:,0]**2+ap[:,1]**2)**0.5  for ap in apertures1])
+        aperture_radii2 = numpy.array([numpy.mean(ap[:,0]**2+ap[:,1]**2)**0.5  for ap in apertures2])
+        ax[3].scatter(aperture_radii1, abs(kindat1[:,0]), label='v', c='y', linewidths=0)
+        ax[3].scatter(aperture_radii1, kindat1[:,2],  label='sigma', c='c', linewidths=0)
+        ax[3].scatter(aperture_radii2, abs(kindat2[:,0]), c='y', marker='x')
+        ax[3].scatter(aperture_radii2, kindat2[:,2],      c='c', marker='x')
+    # plot circular-velocity curves of each potential component
+    for name, pot in [
+        ['stars', agama.Potential(type='Multipole', density=densityStars, mmax=0, lmax=32)],
+        ['halo',  agama.Potential(type='Multipole', density=densityHalo)],
+        ['BH',    pot_bh],
+        ['total', pot_total] ]:
+        vcirc = (-gridrmajor * pot.force(numpy.column_stack((gridrmajor, gridrmajor*0, gridrmajor*0)))[:,0] * Upsilon)**0.5
+        ax[3].plot(gridrmajor, vcirc, label=name)
+    ax[3].legend(loc='upper left', scatterpoints=1, ncol=(2 if 'HIST' in variant else 3), frameon=False)
+    ax[3].set_xscale('log')
+    ax[3].set_xlim(min(gridrmajor), max(gridrmajor))
+    ax[3].set_ylim(0, max(vcirc)*1.25)
+    ax[3].set_xlabel('radius')
+    ax[3].set_ylabel('circular velocity')
+
+    plt.tight_layout()
+    plt.show()
+
+elif command == 'PLOT':
+
+    try:
+        tab = numpy.loadtxt(fileResult, dtype=str)
+        # keep only the models with the same parameters as given in the command-line arguments (or their default values),
+        # except the two parameters (Mbh and M/L) that are shown on the chi2 plane 
+        # [OPT]: may choose different fixed/free params, but make sure the order of columns corresponds to that provided to runModel
+        filt = (
+            (tab[:,1].astype(float) == Omega) *
+            (tab[:,2].astype(float) == rhalo) *
+            (tab[:,3].astype(float) == vhalo) *
+            (tab[:,4].astype(float) == incl) *
+            (tab[:,5].astype(float) == alpha_deg) *
+            (tab[:,6].astype(int  ) == numOrbits) *
+            (tab[:,7].astype(float) == regul)
+        )
+        tab = tab[filt]
+        if len(tab) == 0:
+            print('No models satisfying all criteria are found in %s' % fileResult)
+    except:
+        print('File not found: %s' % fileResult)
+        tab = numpy.zeros((0,12))
+    filenames = tab[:,-1]                 # last column is the filename of LOSVD file for each model
+    tab = tab[:,:-1].astype(float)        # remaining columns are numbers
+    Mbh = tab[:,0] * tab[:,8]             # the order of parameters is the same as in linePrefix provided to runModel
+    ML  = tab[:,8]                        # Upsilon is appended as the first column after those provided in linePrefix
+    chi2= numpy.sum(tab[:,10:-1], axis=1) # chi2 values are stored separately for each dataset, but here we combine all of them except regularization penalty
+    # launch interactive plot with [OPT] Mbh vs M/L as the two coordinate axes displayed in chi2 plane (may choose a different pair of parameters)
+    agama.schwarzlib.runPlot(datasets=datasets, aval=Mbh, bval=ML, chi2=chi2, filenames=filenames,
+        # [OPT] various adjustable parameters for the plots (ranges, names, etc.) - most have reasonable default values
+        alabel='Mbh', blabel='M/L', alim=(0, 4e8), blim=(0.9, 1.2), vlim=(-500,500),
+        v0lim=(-150,150), sigmalim=(40,160), v0err=15.0, sigmaerr=15.0, potential=pot_total)
+
+else:
+    exit('Nothing to do!')
+</file>
+    <file path="py/example_gala.py">
+import numpy, agama, gala.potential, time; from timeit import timeit
+numpy.set_printoptions(linewidth=100, precision=8)
+numpy.random.seed(42)
+
+gpot1=gala.potential.PlummerPotential(1,1) # native Gala potential
+Gpot1=agama.GalaPotential(gpot1)           # chimera object providing both Gala and Agama interfaces
+apot1=agama.Potential(type='plummer')      # native Agama potential
+Apot1=agama.GalaPotential(type='plummer')  # exactly the same functionality for Agama, but adds a Gala interface
+
+gpot2=gala.potential.MiyamotoNagaiPotential(m=1, a=1, b=0.1)
+Gpot2=agama.GalaPotential(gpot2)
+Apot2=agama.GalaPotential(type='miyamotonagai', scaleradius=1, scaleheight=0.1)
+
+gpot3=gala.potential.HernquistPotential(m=2.3, c=4.5)
+Gpot3=agama.GalaPotential(gpot3)
+Apot3=agama.GalaPotential(type='dehnen', gamma=1, mass=2.3, scaleradius=4.5)
+
+gpot4=gala.potential.NFWPotential(m=1.2, r_s=3.4)
+Gpot4=agama.GalaPotential(gpot4)
+Apot4=agama.GalaPotential(type='nfw', mass=1.2, scaleradius=3.4)
+
+### this one fails probably because of some bug in handling vectorized inputs in gala.KuzminPotential
+#gpot5=gala.potential.KuzminPotential(m=1, a=1, units=None)   # pure-python potential
+gpot5=gala.potential.HarmonicOscillatorPotential(omega=1.0)  # another pure-python potential
+Gpot5=agama.GalaPotential(gpot5)
+Apot5=agama.GalaPotential(type='harmonic', omega=1.0)
+
+# some random test points
+points=numpy.random.normal(size=(5,3))  # positions
+pointv=numpy.random.normal(size=(20,6))  # positions and velocities
+
+def test(gpot, Gpot, Apot, test_hessian=False):
+    '''
+    gpot is the native gala potential;
+    Gpot is the same one accessed through wrapper;
+    Apot is the equivalent native agama potential
+    '''
+    print(&quot;\nTesting G=%s and A=%s&quot; % (Gpot, Apot))
+    #0. retrieve dimensional factors for converting the output of agama-related methods
+    # to the potential's unit system (assuming it is identical for both potentials)
+    lu = Gpot.units['length']
+    pu = Gpot.units['energy'] / Gpot.units['mass']
+    vu = Gpot.units['length'] / Gpot.units['time']
+    fu = Gpot.units['length'] / Gpot.units['time']**2
+    du = Gpot.units['mass'] / Gpot.units['length']**3
+    #1. test that the values of potential coincide, using both interfaces
+    print(&quot;G energy vs potential: %.3g&quot; % numpy.max(abs(Gpot.energy(points.T) / Gpot.potential(points)/pu - 1)))
+    print(&quot;A energy vs potential: %.3g&quot; % numpy.max(abs(Apot.energy(points.T) / Apot.potential(points)/pu - 1)))
+    print(&quot;G energy vs A energy:  %.3g&quot; % numpy.max(abs(Gpot.energy(points.T) / Apot.energy(points.T) - 1)))
+    #2. test the accelerations - these don't exactly match,
+    # because agama evaluates them by finite-differencing if initialized from a &quot;foreign&quot; gala potential
+    print(&quot;G acceleration vs force:  %.3g&quot; % numpy.max(abs(Gpot.acceleration(points.T).T / Gpot.force(points)/fu - 1)))
+    print(&quot;A acceleration vs force:  %.3g&quot; % numpy.max(abs(Apot.acceleration(points.T).T / Apot.force(points)/fu - 1)))
+    print(&quot;G gradient vs A gradient: %.3g&quot; % numpy.max(abs(Gpot.gradient(points.T) / Apot.gradient(points.T) - 1)))
+    #3. test the hessian
+    print(&quot;G acc.deriv vs A acc.deriv:  %.3g&quot; % numpy.max(abs(Gpot.eval(points,der=1) / Apot.eval(points,der=1) - 1)))
+    print(&quot;G hessian vs A hessian:      %.3g&quot; % numpy.max(abs(Gpot.hessian(points.T) / Apot.hessian(points.T) - 1)))
+    #4. test density - again no exact match since it is computed by finite differences in Gpot
+    print(&quot;G density [gala] vs [agama]: %.3g&quot; % numpy.max(abs(Gpot.density(points.T) / Gpot.agamadensity(points)/du - 1)))
+    print(&quot;A density [gala] vs [agama]: %.3g&quot; % numpy.max(abs(Apot.density(points.T) / Apot.agamadensity(points)/du - 1)))
+    print(&quot;G density vs A density:      %.3g&quot; % numpy.max(abs(Gpot.density(points.T) / Apot.density(points.T) - 1)))
+    #5. test orbit integration using both gala and agama routines with either potential
+    # create some initial conditions for orbits:
+    # take the positions and assign velocity to be comparable to circular velocity at each point
+    ic = numpy.hstack((points, numpy.random.normal(size=points.shape) * Apot.circular_velocity(points.T)[:,None] / vu))
+    t0 = time.time()
+    g_orb_g = gpot.integrate_orbit(ic.T, dt=10, n_steps=100, Integrator=gala.integrate.DOPRI853Integrator, Integrator_kwargs=dict(rtol=1e-8,atol=0))
+    t1 = time.time()
+    g_orb_G = Gpot.integrate_orbit(ic.T, dt=10, n_steps=100, Integrator=gala.integrate.DOPRI853Integrator, Integrator_kwargs=dict(rtol=1e-8,atol=0))
+    t2 = time.time()
+    g_orb_A = Apot.integrate_orbit(ic.T, dt=10, n_steps=100, Integrator=gala.integrate.DOPRI853Integrator, Integrator_kwargs=dict(rtol=1e-8,atol=0))
+    t3 = time.time()
+    a_orb_G = numpy.dstack(agama.orbit(potential=Gpot, ic=ic, time=1000, trajsize=101, dtype=float)[:,1])
+    t4 = time.time()
+    a_orb_A = numpy.dstack(agama.orbit(potential=Apot, ic=ic, time=1000, trajsize=101, dtype=float)[:,1])
+    t5 = time.time()
+    print(&quot;gala  orbit integration for g (native): %.4g s&quot; % (t1-t0) +
+         &quot;, G (wrapper): %.4g s&quot; % (t2-t1) + &quot;, A: %.4g s&quot; % (t3-t2))
+    print(&quot;agama orbit integration for G: %.4g s&quot; % (t4-t3) + &quot;, A: %.4g s&quot; % (t5-t4))
+    deltaEg = numpy.max(abs(g_orb_G.energy()[-1] / g_orb_G.energy()[0] - 1))
+    Eainit  = Apot.potential(a_orb_A[0, 0:3].T) + 0.5*numpy.sum(a_orb_A[0, 3:6]**2, axis=0)
+    Eafinal = Apot.potential(a_orb_A[-1,0:3].T) + 0.5*numpy.sum(a_orb_A[-1,3:6]**2, axis=0)
+    deltaEa = numpy.max(abs(Eafinal / Eainit - 1))
+    # shape of the output is different: for gala, it is 3 x nsteps x norbits; for agama (dstack'ed) - nsteps x 6 x norbits
+    g_orb_G = g_orb_G.xyz.reshape(3, len(g_orb_G.t), len(ic))
+    g_orb_A = g_orb_A.xyz.reshape(3, len(g_orb_A.t), len(ic))
+    a_orb_G = numpy.swapaxes(a_orb_G*lu, 0, 1)[0:3]  # now the shape is 3 x nsteps x norbits
+    a_orb_A = numpy.swapaxes(a_orb_A*lu, 0, 1)[0:3]
+    maxrad  = numpy.max(numpy.sum(a_orb_A**2, axis=0)**0.5, axis=0)  # normalization factor for relative deviations in position
+    print(&quot;gala  orbits G vs A: %.3g&quot; % numpy.max(numpy.sum(abs(g_orb_G - g_orb_A), axis=0) / maxrad))
+    print(&quot;agama orbits G vs A: %.3g&quot; % numpy.max(numpy.sum(abs(a_orb_G - a_orb_A), axis=0) / maxrad))
+    print(&quot;gala vs agama: %.3g&quot;       % numpy.max(numpy.sum(abs(g_orb_G - a_orb_G), axis=0) / maxrad))
+    print(&quot;energy error in gala: %.3g, agama: %.3g&quot; % (deltaEg, deltaEa))
+    # illustrate that the hessian is broken (?) - compute it once for all points, then for each point in a loop
+    if test_hessian:
+        print(&quot;Checking vectorization of hessian for G: the two arrays should be equivalent, but they are not&quot;)
+        print(&quot;Vectorized:\n&quot;, Gpot.hessian(points.T))
+        print(&quot;Pointwise:\n&quot;, numpy.dstack([Gpot.hessian(point) for point in points]))
+        print(&quot;Checking vectorization of hessian for A: the two arrays should be equivalent&quot;)
+        print(&quot;Vectorized:\n&quot;, Apot.hessian(points.T))
+        print(&quot;Pointwise:\n&quot;, numpy.dstack([Apot.hessian(point) for point in points]))
+
+
+test(gpot1, Gpot1, Apot1)
+test(gpot2, Gpot2, Apot2)
+test(gpot3, Gpot3, Apot3)
+test(gpot4, Gpot4, Apot4)
+#test(gpot5, Gpot5, Apot5)  #### this one also fails because of hessian (and the absense of density method in gala)
+
+# now test potentials defined with units
+agama.setUnits(length=1, mass=1, velocity=977.792594852689)  # velocity unit = 1 kpc / 1 Myr
+gpot6=gala.potential.MilkyWayPotential()
+Gpot6=agama.GalaPotential(gpot6)
+Apot6=agama.GalaPotential(
+    dict(type='miyamotonagai', mass=6.8e10, scaleradius=3.0, scaleheight=0.28),  # disk
+    dict(type='dehnen', mass=5.00e9, scaleradius=1.0),   # bulge
+    dict(type='dehnen', mass=1.71e9, scaleradius=0.07),  # nucleus
+    dict(type='nfw',    mass=5.4e11, scaleradius=15.62), # halo
+    units=Gpot6.units)
+
+test(gpot6, Gpot6, Apot6, test_hessian=False)
+</file>
+    <file path="py/example_galpy.py">
+#!/usr/bin/python
+&quot;&quot;&quot;
+This script illustrates the use of the class agama.GalpyPotential, which is a subclass of
+both galpy.potential.Potential and agama.Potential, and provides both interfaces
+suitable for orbit integration and action finder routines.
+Internally, this potential can represent either a native galpy potential or a native agama potential,
+depending on how it is constructed, but the public API is the same in both cases.
+Of course, routines from agama will be much more efficient when this object represents an agama-native
+potential internally; the reverse is not necessarily true, since galpy does not know whether this
+object internally represents a galpy-native or agama-native potential, and hence C acceleration
+will not be used even if the galpy-native potential supports it.
+&quot;&quot;&quot;
+
+import agama
+import galpy.potential, galpy.actionAngle, galpy.orbit
+import numpy, time, matplotlib.pyplot as plt
+
+### galpy uses these units, so instruct agama to do the same
+agama.setUnits( mass=1., length=8., velocity=220.)  # Msun, kpc, km/s
+
+### set up galpy potential
+g_pot_native = galpy.potential.MWPotential2014
+
+### set up a chimera potential that is initialized from the existing galpy potential,
+### and provides both galpy and agama interfaces - when used with galpy routines,
+### its behaviour (but not performance!) should be identical to g_pot_native
+g_pot_hybrid = agama.GalpyPotential(g_pot_native)
+
+### set up equivalent potential from the agama library (up to a constant offset)
+a_pot_native = agama.Potential(&quot;../data/MWPotential2014galpy.ini&quot;)
+
+### set up another chimera that is now initialized from the existing agama potential,
+### and again provides both interfaces -- when used with agama classes and routines,
+### its behaviour and performance are identical to a_pot_native
+a_pot_hybrid = agama.GalpyPotential(a_pot_native)
+
+### note: the same effect is achieved by initializing the hybrid potential directly from the file
+a_pot_hybrid = agama.GalpyPotential(&quot;../data/MWPotential2014galpy.ini&quot;)
+
+### since a galpy-native potential has poor performance in computationally heavy tasks within agama,
+### we construct an approximation for it represented by a native CylSpline potential expansion
+dt = time.time()
+### note: the CylSpline expansion would be better suited for the disky potential, but unfortunately,
+### it cannot be used because some of galpy potentials do not return a valid value at r=0;
+### instead we use a Multipole expansion (which never needs the value of the original potential at 0);
+### it is less accurate in this case, but still acceptable
+#g_pot_approx = agama.Potential(type='CylSpline', potential=g_pot_hybrid, symmetry='axi', rmin=0.01, rmax=10, zmin=0.01, zmax=10)
+g_pot_approx = agama.Potential(type='Multipole', potential=g_pot_hybrid, symmetry='axi', rmin=0.01, rmax=10, lmax=20)
+#g_pot_approx.export('example_galpy.ini')  # may save the potential coefs for later use
+print('Time to set up a CylSpline approximation to galpy potential: %.4g s' % (time.time()-dt))
+
+### initialization of the action finder needs to be done once for the given potential
+dt = time.time()
+a_actfinder = agama.ActionFinder(a_pot_hybrid, interp=False)
+print('Time to set up agama action finder: %.4g s' % (time.time()-dt))
+### we have a faster but less accurate &quot;interpolated action finder&quot;, which takes a bit longer to initialize
+dt = time.time()
+i_actfinder = agama.ActionFinder(a_pot_hybrid, interp=True)
+print('Time to set up agama interpolated action finder: %.4g s' % (time.time()-dt))
+
+### conversion from prolate spheroidal to cylindrical coords
+def ProlSphToCyl(la, nu, fd):
+    return ( ((la - fd*fd) * (1 - abs(nu)/fd**2))**0.5, (la*abs(nu))**0.5 / fd * numpy.sign(nu) )
+
+### show coordinate grid in prolate spheroidal coords
+def plotCoords(fd, maxR):
+    la = numpy.linspace(0, maxR, 32)**2 + fd**2
+    ls = numpy.linspace(0, 1, 21)
+    nu = ls*ls*(3-2*ls)*fd**2
+    for i in range(len(la)):
+        lineR, linez = ProlSphToCyl(la[i], nu, fd)
+        plt.plot(lineR, linez, 'grey', lw=0.5)
+        plt.plot(lineR,-linez, 'grey', lw=0.5)
+    for i in range(len(nu)):
+        lineR, linez = ProlSphToCyl(la, nu[i], fd)
+        plt.plot(lineR, linez, 'grey', lw=0.5)
+        plt.plot(lineR,-linez, 'grey', lw=0.5)
+
+### convert position/velocity from cylindrical coordinates (in the galpy convention) to cartesian
+def toCyl(car):
+    x, y, z, vx, vy, vz = numpy.array(car).T
+    R = (x**2 + y**2)**0.5
+    phi = numpy.arctan2(y, x)
+    cosphi, sinphi = numpy.cos(phi), numpy.sin(phi)
+    vR   = vx*cosphi + vy*sinphi
+    vphi = vy*cosphi - vx*sinphi
+    return numpy.array([R, vR, vphi, z, vz, phi]).T
+
+### convert position/velocity from cartesian to cylindrical system in the galpy convention
+def toCar(cyl):
+    R, vR, vphi, z, vz, phi = numpy.array(cyl).T
+    cosphi, sinphi = numpy.cos(phi), numpy.sin(phi)
+    return numpy.array([R*cosphi, R*sinphi, z, vR*cosphi-vphi*sinphi, vR*sinphi+vphi*cosphi, vz]).T
+
+### run tests for the given input point and orbit size;
+### ic is the array of initial conditions in the galpy convention: R, vR, vphi, z, vz, phi
+def compare(ic, inttime, numsteps):
+    times = numpy.linspace(0, inttime, numsteps)
+    times1 = times[:numsteps//10]   # compute only 1/10th of the orbit to save time in galpy
+
+    ### integrate the orbit in galpy using the native MWPotential2014 from galpy
+    g_orb_obj = galpy.orbit.Orbit(ic)
+    dt = time.time()
+    g_orb_obj.integrate(times, g_pot_native)
+    g_orb_g_native = g_orb_obj.getOrbit()
+    print('Time to integrate the orbit in galpy, using galpy-native potential [1]: %.4g s' % (time.time()-dt))
+
+    ### integrate the orbit again with the galpy routine, but now using the chimera potential
+    ### representing a galpy-native underlying potential.
+    ### since galpy has no idea that this potential has a C implementation, it switches to a slower
+    ### pure-Python integration algorithm, so to save time, we compute only 1/10th of the orbit
+    dt = time.time()
+    g_orb_obj.integrate(times1, g_pot_hybrid)
+    g_orb_g_hybrid = g_orb_obj.getOrbit()
+    print('Time to integrate 1/10th of the orbit in galpy, using galpy-hybrid potential [2]: %.4g s' %
+        (time.time()-dt))
+
+    ### integrate the orbit with the galpy routine, but using the chimera potential
+    ### representing an agama-native underlying potential instead
+    ### (also much slower because of repeated transfer of control between C++ and Python)
+    dt = time.time()
+    g_orb_obj.integrate(times1, a_pot_hybrid)
+    g_orb_a_hybrid = g_orb_obj.getOrbit()
+    print('Time to integrate 1/10th of the orbit in galpy, using agama-hybrid potential [3]: %.4g s' %
+        (time.time()-dt))
+
+    ### integrate the orbit with the agama routine, using the galpy-native potential through the chimera
+    ### (note different calling conventions and the use of cartesian coordinates)
+    dt = time.time()
+    a_orb_g_hybrid = agama.orbit(potential=g_pot_hybrid, time=inttime, trajsize=numsteps, ic=toCar(ic))[1]
+    print('Time to integrate the orbit in agama, using galpy-hybrid potential [4]: %.4g s' % (time.time()-dt))
+
+    ### integrate the orbit in a native agama potential approximation constructed from the galpy potential
+    dt = time.time()
+    a_orb_g_approx = agama.orbit(potential=g_pot_approx, time=inttime, trajsize=numsteps, ic=toCar(ic))[1]
+    print('Time to integrate the orbit in agama, using galpy-approx potential [5]: %.4g s' % (time.time()-dt))
+
+    ### using both the orbit integration routine and the native potential from agama - much faster
+    dt = time.time()
+    a_orb_a_native = agama.orbit(potential=a_pot_native, time=inttime, trajsize=numsteps, ic=toCar(ic))[1]
+    print('Time to integrate the orbit in agama, using agama-native potential [6]: %.4g s' % (time.time()-dt))
+
+    ### the same but with the chimera potential representing an agama-native potential
+    ### (should be identical to the above, since in both cases the same underlying C++ object is used)
+    dt = time.time()
+    a_orb_a_hybrid = agama.orbit(potential=a_pot_hybrid, time=inttime, trajsize=numsteps, ic=toCar(ic))[1]
+    print('Time to integrate the orbit in agama, using agama-hybrid potential [7]: %.4g s' % (time.time()-dt))
+
+    ### compare the differences between the orbits computed in different ways
+    ### (both the potentials and integration routines are not exactly equivalent);
+    ### use only common initial segment (1/10th of the orbit) for comparison
+    print('Differences between orbits: ' +
+        '[1]-[2]=%g, ' % numpy.max(numpy.abs(toCar(g_orb_g_native[:len(times1)])-toCar(g_orb_g_hybrid))) +
+        '[1]-[3]=%g, ' % numpy.max(numpy.abs(toCar(g_orb_g_native[:len(times1)])-toCar(g_orb_a_hybrid))) +
+        '[1]-[4]=%g, ' % numpy.max(numpy.abs(toCar(g_orb_g_native)-a_orb_g_hybrid)[:len(times1)]) +
+        '[1]-[5]=%g, ' % numpy.max(numpy.abs(toCar(g_orb_g_native)-a_orb_g_approx)[:len(times1)]) +
+        '[1]-[6]=%g, ' % numpy.max(numpy.abs(toCar(g_orb_g_native)-a_orb_a_native)[:len(times1)]) +
+        '[6]-[4]=%g, ' % numpy.max(numpy.abs(a_orb_a_native-a_orb_g_hybrid)[:len(times1)]) +
+        '[6]-[7]=%g'   % numpy.max(numpy.abs(a_orb_a_native-a_orb_a_hybrid)[:len(times1)]) )  # should be zero
+
+    ### convert the orbits to the same galpy coordinate convention
+    gg_orb = g_orb_g_native  # it's already in this convention
+    ga_orb = g_orb_a_hybrid
+    ag_orb = toCyl(a_orb_g_hybrid)
+    aa_orb = toCyl(a_orb_a_native)
+    ### in galpy, this is the only tool that can estimate focal distance,
+    ### but it requires the orbit to be computed first
+    delta = float(galpy.actionAngle.estimateDeltaStaeckel(g_pot_hybrid, gg_orb[:,0], gg_orb[:,3]))
+    print('Focal distance estimated from the entire trajectory: Delta=%.4g' % delta)
+
+    ### plot the orbit(s) in R,z plane, along with the prolate spheroidal coordinate grid
+    plt.figure(figsize=(12,8))
+    plt.axes([0.06, 0.56, 0.43, 0.43])
+    plotCoords(delta, 1.5)
+    plt.plot(gg_orb[:,0],gg_orb[:,3], 'b', label='galpy native')  # R,z
+    plt.plot(aa_orb[:,0],aa_orb[:,3], 'g', label='agama native', dashes=[4,2])
+    plt.plot(ag_orb[:,0],ag_orb[:,3], 'y', label='agama using galpy potential', dashes=[1,1])
+    plt.plot(ga_orb[:,0],ga_orb[:,3], 'r', label='galpy using agama potential')
+    plt.xlabel(&quot;R/8kpc&quot;)
+    plt.ylabel(&quot;z/8kpc&quot;)
+    plt.xlim(0, 1.2)
+    plt.ylim(-1,1)
+    plt.legend(loc='lower left', ncol=2)
+
+    ### create galpy action/angle finder for the given value of Delta
+    ### note: using c=False in the routine below is much slower but apparently more accurate,
+    ### comparable to the agama for the same value of delta
+    g_actfinder = galpy.actionAngle.actionAngleStaeckel(pot=g_pot_native, delta=delta, c=True)
+
+    ### find the actions for each point of the orbit using galpy action finder
+    dt = time.time()
+    g_act = g_actfinder(gg_orb[:,0],gg_orb[:,1],gg_orb[:,2],gg_orb[:,3],gg_orb[:,4],fixed_quad=True)
+    print('Time to compute actions in galpy: %.4g s' % (time.time()-dt))
+    print('Jr = %.6g +- %.4g, Jz = %.6g +- %.4g' %
+        (numpy.mean(g_act[0]), numpy.std(g_act[0]), numpy.mean(g_act[2]), numpy.std(g_act[2])))
+
+    ### use the agama action routine for the same value of Delta as in galpy (explicity specify focal distance):
+    ### the result is almost identical but computed much faster
+    dt = time.time()
+    c_act = agama.actions(point=a_orb_a_hybrid, potential=a_pot_hybrid, fd=delta)
+    print('Time to compute actions in agama using galpy-estimated focal distance: %.4g s' % (time.time()-dt))
+    print('Jr = %.6g +- %.4g, Jz = %.6g +- %.4g' %
+        (numpy.mean(c_act[:,0]), numpy.std(c_act[:,0]), numpy.mean(c_act[:,1]), numpy.std(c_act[:,1])))
+
+    ### use the agama action finder (initialized at the beginning) that automatically determines
+    ### the best value of Delta (same computational cost as the previous one)
+    dt = time.time()
+    a_act = a_actfinder(a_orb_a_hybrid)   # use the focal distance estimated by action finder
+    print('Time to compute actions in agama using pre-initialized focal distance: %.4g s' % (time.time()-dt))
+    print('Jr = %.6g +- %.4g, Jz = %.6g +- %.4g' %
+        (numpy.mean(a_act[:,0]), numpy.std(a_act[:,0]), numpy.mean(a_act[:,1]), numpy.std(a_act[:,1])))
+
+    ### use the interpolated agama action finder (initialized at the beginning) - less accurate but faster
+    dt = time.time()
+    i_act = i_actfinder(a_orb_a_hybrid)
+    print('Time to compute actions in agama with interpolated action finder: %.4g s' % (time.time()-dt))
+    print('Jr = %.6g +- %.4g, Jz = %.6g +- %.4g' %
+        (numpy.mean(i_act[:,0]), numpy.std(i_act[:,0]), numpy.mean(i_act[:,1]), numpy.std(i_act[:,1])))
+
+    ### plot Jr vs Jz
+    plt.axes([0.55, 0.56, 0.43, 0.43])
+    plt.plot(g_act[0],  g_act[2],   c='b', label='galpy')
+    plt.plot(c_act[:,0],c_act[:,1], c='g', label=r'agama, $\Delta=%.4f$'%delta, dashes=[4,2])
+    plt.plot(a_act[:,0],a_act[:,1], c='r', label=r'agama, $\Delta=$auto')
+    plt.plot(i_act[:,0],i_act[:,1], c='c', label=r'agama, interpolated')
+    plt.xlabel(&quot;$J_r$&quot;)
+    plt.ylabel(&quot;$J_z$&quot;)
+    plt.legend(loc='lower left', frameon=False)
+
+    ### plot Jr(t) and Jz(t)
+    plt.axes([0.06, 0.06, 0.92, 0.43])
+    plt.plot(times, g_act[0],   c='b', label='galpy')
+    plt.plot(times, g_act[2],   c='b')
+    plt.plot(times, c_act[:,0], c='g', label=r'agama, $\Delta=%.4f$'%delta, dashes=[4,2])
+    plt.plot(times, c_act[:,1], c='g', dashes=[4,2])
+    plt.plot(times, a_act[:,0], c='r', label=r'agama, $\Delta=$auto')
+    plt.plot(times, a_act[:,1], c='r')
+    plt.plot(times, i_act[:,0], c='c', label=r'agama, interpolated')
+    plt.plot(times, i_act[:,1], c='c')
+    plt.text(0, c_act[0,0], '$J_r$', fontsize=16)
+    plt.text(0, c_act[0,1], '$J_z$', fontsize=16)
+    plt.xlabel(&quot;t&quot;)
+    plt.ylabel(&quot;$J_r, J_z$&quot;)
+    plt.legend(loc='center right', ncol=2, frameon=False)
+    #plt.ylim(0.14,0.25)
+    plt.xlim(0,50)
+    plt.show()
+
+compare([0.5, 0.82, 0.28, 0, 1.0, 0], 100., 1000)
+</file>
+    <file path="py/example_gizmo_snapshot.py">
+#!/usr/bin/python
+'''
+This example illustrates the use of Agama to construct a smooth potential approximation
+for a snapshot from the FIRE simulation (stored in the GIZMO format, similar to GADGET).
+It relied on external python packages - gizmo_analysis and utilities (sic!), both hosted at
+https://bitbucket.org/awetzel/
+
+Author:  Robyn Sanderson, with contributions from Andrew Wetzel, Eugene Vasiliev
+'''
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
+
+import agama
+import numpy as np
+import gizmo_analysis as ga
+import utilities as ut
+import sys
+
+# base directory for all the simulations - change to the correct path, include trailing slash
+# note that these files, of course, are not provided in the Agama distribution.
+# the folder should contain a subfolder with the name of the simulation (e.g., 'm12i'),
+# and in that subfolder there should be a file 'snapshot_times.txt', and yet another subfolder
+# 'output', which contains files 'snapshot_***.*.hdf5'
+sims_dir = '../../FIRE/'
+
+# list of labels for symmetry spec
+symmlabel={'a':'axi','s':'sph','t':'triax','n':'none'}
+
+# define the physical units used in the code: the choice below corresponds to
+# length scale = 1 kpc, velocity = 1 km/s, mass = 1 Msun
+agama.setUnits(mass=1,length=1,velocity=1)
+
+# tunable parameters for the potentials are:
+# GridSizeR, rmin, rmax - specify the (logarithmic) grid in spherical radius
+# (for Multipole) or cylindrical radius (for CylSpline); for the latter, there is a second grid in z,
+# defined by GridSizeZ, zmin, zmax (by default the same as the radial grid).
+# The minimum radius should be comparable to the smallest resolvable feature in the snapshot
+# (e.g., the extent of the central cusp or core, or the disk scale height), but not smaller.
+# The maximum radius defines the region where the potential and density approximated in full detail;
+# note that for Multipole, the density is extrapolated as a power law outside this radius,
+# and the potential takes into account the contribution of input particles at all radii,
+# while for CylSpline the particles outside the grid are ignored, and the density is zero there.
+# lmax - the order of multipole expansion;
+# mmax - the order of azimuthal Fourier expansion for CylSpline (if it is axisymmetric, mmax is ignored)
+# Note that the default parameters are quite sensible, but not necessarily optimal for your case.
+
+def fitPotential(sim_name,
+                 nsnap=600,
+                 symmetry='a',
+                 subsample_factor=1,
+                 rmax_sel=600,
+                 rmax_ctr=10,
+                 rmax_exp=500,
+                 save_coords=True):
+
+        '''
+        constructs a hybrid two-component basis expansion model of the potential for one Gizmo snapshot.
+        dark matter and hot gas are represented by an expansion in spherical harmonics.
+        remaining baryons (stars and cold gas) are represented by an azimuthal harmonic expansion in phi and a quintic spline in (R,z).
+        (see Agama docs, sections 2.2.2 and 2.2.3 for more details).
+
+        Arguments:
+        sim_name [str]: name of simulation folder within main dir
+        nsnap [int]: snapshot number
+        symmetry [char]: 's' for spherical, 'a' for axisymmetric, 't' for triaxial, 'n' for none (see table 2 of Agama docs)
+        subsample_factor [int]: factor by which to subsample (for speedup/testing)
+        rmax_sel [float]: max radius in kpc to select particles for fitting the model
+        rmax_ctr [float]: radius (kpc) defining the subset of stars which are used to define the reference frame (centering and rotation)
+        rmax_exp [float]: max radial extent in kpc of the hybrid potential expansion (both components)
+        save_coords [bool]: save center position, velocity, mean acceleration, and rotation matrix for principal-axis frame, to a file
+        '''
+        print('reading snapshot')
+
+        #read in the snapshot
+        part = ga.io.Read.read_snapshots(species=['gas', 'star', 'dark'],
+                                         snapshot_values=nsnap,
+                                         simulation_directory=sims_dir+sim_name,
+                                         # snapshot_directory='output_accel',
+                                         particle_subsample_factor=subsample_factor,
+                                         assign_host_coordinates=True,
+                                         assign_host_principal_axes=True)
+
+        # start with default centering and rotation to define aperture
+
+        dist=ut.particle.get_distances_wrt_center(part, species=['gas','star','dark'],
+                rotation=part.host_rotation_tensors[0], total_distance = True)
+        dist_vectors = ut.particle.get_distances_wrt_center(part, species=['gas','star','dark'],
+                rotation=part.host_rotation_tensors[0])
+
+
+        # compute new centering and rotation using a fixed aperture in stars
+
+        sp = 'star'
+        ctr_indices = np.where(dist[sp]&lt;rmax_ctr)[0]
+
+        m = part[sp]['mass'][ctr_indices]
+        pos = part[sp]['position'][ctr_indices]
+        vel = part[sp]['velocity'][ctr_indices]
+        new_ctr = np.multiply(m,pos.T).sum(axis=1)/np.sum(m)
+        new_vctr = np.multiply(m,vel.T).sum(axis=1)/np.sum(m)
+        new_rot = ut.particle.get_principal_axes(part,'star',part_indices=ctr_indices,
+                                                 print_results=False)
+
+        #optionally compute acceleration of center of mass frame if it was recorded 
+
+        save_accel = ('acceleration' in part[sp].keys())
+        if save_accel:
+                print('saving acceleration of COM frame')
+                accel = part[sp]['acceleration'][ctr_indices]
+                new_actr = np.multiply(m,accel.T).sum(axis=1)/np.sum(m)
+
+        # recompute distances in the new frame
+
+        dist=ut.particle.get_distances_wrt_center(part,
+                                                  species=['star','gas','dark'],
+                                                  center_position=new_ctr,
+                                                  rotation=new_rot['rotation.tensor'],
+                                                  total_distance = True)
+        dist_vectors = ut.particle.get_distances_wrt_center(part,
+                                                            species=['star','gas','dark'],
+                                                            center_position=new_ctr,
+                                                            rotation=new_rot['rotation.tensor'])
+
+        #pick out gas and stars within the region that we want to supply to the model
+
+        m_gas_tot = part['gas']['mass'].sum()*subsample_factor
+
+        pos_pa_gas = dist_vectors['gas'][dist['gas']&lt;rmax_sel]
+        m_gas = part['gas']['mass'][dist['gas']&lt;rmax_sel]*subsample_factor
+        print('{0:.3g} of {1:.3g} solar masses in gas selected'.format(m_gas.sum(),m_gas_tot))
+
+
+        m_star_tot = part['star']['mass'].sum()*subsample_factor
+
+        pos_pa_star = dist_vectors['star'][dist['star']&lt;rmax_sel]
+        m_star = part['star']['mass'][dist['star']&lt;rmax_sel]*subsample_factor
+        print('{0:.3g} of {1:.3g} solar masses in stars selected'.format(m_star.sum(),m_star_tot))
+
+        #separate cold gas in disk (modeled with cylspline) from hot gas in halo (modeled with multipole)
+
+        tsel = (np.log10(part['gas']['temperature'])&lt;4.5)
+        rsel = (dist['gas']&lt;rmax_sel)
+
+        pos_pa_gas_cold = dist_vectors['gas'][tsel&amp;rsel]
+        m_gas_cold = part['gas']['mass'][tsel&amp;rsel]*subsample_factor
+        print('{0:.3g} of {1:.3g} solar masses are cold gas to be modeled with cylspline'.format(m_gas_cold.sum(),m_gas.sum()))
+
+        pos_pa_gas_hot = dist_vectors['gas'][(~tsel)&amp;rsel]
+        m_gas_hot = part['gas']['mass'][(~tsel)&amp;rsel]*subsample_factor
+        print('{0:.3g} of {1:.3g} solar masses are hot gas to be modeled with multipole'.format(m_gas_hot.sum(),m_gas.sum()))
+
+
+        #combine components that will be fed to the cylspline part
+        pos_pa_bar = np.vstack((pos_pa_star,pos_pa_gas_cold))
+        m_bar = np.hstack((m_star,m_gas_cold))
+
+
+        #pick out the dark matter
+        m_dark_tot = part['dark']['mass'].sum()*subsample_factor
+
+        rsel = dist['dark']&lt;rmax_sel
+        pos_pa_dark=dist_vectors['dark'][rsel]
+        m_dark = part['dark']['mass'][rsel]*subsample_factor
+        print('{0:.3g} of {1:.3g} solar masses in dark matter selected'.format(m_dark.sum(),m_dark_tot))
+
+        #stack with hot gas for multipole density
+        pos_pa_dark = np.vstack((pos_pa_dark,pos_pa_gas_hot))
+        m_dark = np.hstack((m_dark,m_gas_hot))
+
+        if save_coords:
+                #save the Hubble parameter to transform to comoving units
+                hubble = part.info['hubble']
+                scalefactor = part.info['scalefactor']
+
+        del(part)
+
+        #right now, configured to save to a new directory in the simulation directory.
+        #Recommended, since it's generally useful to have around
+
+        output_stem = sims_dir+sim_name+'/potential/{0:.0f}kpc/{1}_{2:d}'.format(rmax_ctr,sim_name,nsnap)
+        try:    # create the directory if it didn't exist
+                os.makedirs(os.path.dirname(output_stem))
+        except OSError as e:
+                if e.errno != errno.EEXIST:
+                        raise
+
+        if save_coords:
+                cname = '{0}_coords.txt'.format(output_stem)
+                print('Saving coordinate transformation to {0}'.format(cname))
+                with open(cname,'w') as f:
+                        f.write('# Hubble parameter and scale factor (to convert physical &lt;-&gt; comoving) \n')
+                        f.write('{0:.18g} {1:.18g}\n'.format(hubble, scalefactor))
+                        f.write('# center position (kpc comoving)\n')
+                        np.savetxt(f,new_ctr)
+                        f.write('# center velocity (km/s physical)\n')
+                        np.savetxt(f,new_vctr)
+                        if save_accel:
+                                f.write('# center acceleration (km/s^2 physical)\n')
+                                np.savetxt(f,new_actr)
+                        f.write('# rotation to principal-axis frame\n')
+                        np.savetxt(f,new_rot['rotation.tensor'])
+
+
+        print('Computing multipole expansion coefficients for dark matter/hot gas component')
+
+        p_dark=agama.Potential(type='multipole',
+                               particles=(pos_pa_dark, m_dark),
+                               lmax=4, symmetry=symmetry,
+                               rmin=0.1, rmax=rmax_exp)
+
+
+        p_dark.export('{0}.dark.{1}.coef_mul'.format(output_stem,symmlabel[symmetry]))
+        print('Computing cylindrical spline coefficients for stellar/cold gas component')
+
+        p_bar = agama.Potential(type='cylspline',
+                                particles=(pos_pa_bar, m_bar),
+                                mmax=4, symmetry=symmetry,
+                                #gridsizer=40, gridsizez=40,
+                                rmin=0.1, rmax=rmax_exp)
+
+        p_bar.export('{0}.bar.{1}.coef_cylsp'.format(output_stem,symmlabel[symmetry]))
+        print('done, enjoy your potentials!')
+
+
+if __name__ == &quot;__main__&quot;:
+        import os, errno
+        import argparse
+
+        parser = argparse.ArgumentParser(description=&quot;Constructs and saves a hybrid &quot;
+                                         &quot;two-component basis expansion model of the potential for one Gizmo snapshot. &quot;
+                                         &quot;The dark matter and hot gas are represented by an expansion in spherical harmonics. &quot;
+                                         &quot;The cold gas and stars are represented by an azimuthal harmonic &quot;
+                                         &quot;expansion in phi and a quintic spline in (R,z). See Agama docs, sections &quot;
+                                         &quot;2.2.2 and 2.2.3 for more details.&quot;)
+
+        parser.add_argument('--simname',help='name of simulation folder within main dir (required)', default=None)
+        parser.add_argument('--nsnap', type=int, help='snapshot number', default=600)
+        parser.add_argument('--symmetry', help=&quot;s' for spherical, 'a' for axisymmetric, 't' for triaxial, 'n' for none (see table 2 of Agama docs)&quot;, default='a')
+        parser.add_argument('--subfactor', type=int, help='factor by which to subsample snapshot particles (for speedup/testing)', default=1)
+        parser.add_argument('--rsel', type=float, help='max radius in kpc to select particles for the model (should be larger than rmaxc, rmaxm)', default=600)
+        parser.add_argument('--rmaxc', type=float, help='max radius in kpc to select particles for centering the model', default=10)
+        parser.add_argument('--rmaxe', type=float, help='max radial extent in kpc of the hybrid potential expansion', default=400)
+        parser.add_argument('--savec', type=bool, help='save coordinate transformation to a file', default=True)
+
+
+        args=parser.parse_args()
+
+        #check that at least simname is specified
+        if args.simname is None:
+                print('Error: no simulation specified')
+                parser.print_help()
+                parser.exit()
+
+        #check that symmetry is a valid letter
+        if args.symmetry not in 'satn':
+                print('Error: invalid symmetry specification')
+                parser.print_help()
+                parser.exit()
+
+        #otherwise start the program
+        fitPotential(args.simname,
+                     nsnap=args.nsnap,
+                     symmetry=args.symmetry,
+                     subsample_factor=args.subfactor,
+                     rmax_sel=args.rsel,
+                     rmax_ctr=args.rmaxc,
+                     rmax_exp=args.rmaxe,
+                     save_coords=args.savec)
+</file>
+    <file path="py/example_lmc_mw_interaction.py">
+#!/usr/bin/python
+&quot;&quot;&quot;
+Context: The Large Magellanic Cloud (LMC) is the most massive satellite of the Milky Way,
+and it perturbs the motion of stars in the outer regions of the Galaxy due to two effects:
+(1) stars that pass in its vicinity are deflected and form an overdensity behind the LMC
+on its trajectory, which in turn is responsible for dynamical friction (local pertubations);
+(2) the Milky Way itself is not fixed in space, but moves in response to the gravitational
+pull of the LMC. Moreover, stars at large distances from the MW center experience different
+amounts of perturbation from the LMC, and therefore are systematically shifted and
+accelerated w.r.t. the Galactic center (global perturbations).
+
+This script illustrates both effects in a simplified setup, where the relative motion
+of the Milky Way and the LMC is approximated as if both galaxies had rigid (moving but
+non-deforming) potentials, and then the orbits of test particles in the Milky Way halo
+are computed in the resulting time-dependent potential of the MW-LMC system.
+&quot;&quot;&quot;
+import sys, agama, numpy, scipy.integrate, scipy.ndimage, scipy.special, matplotlib, matplotlib.pyplot as plt
+
+agama.setUnits(length=1, velocity=1, mass=1)  # work in units of 1 kpc, 1 km/s, 1 Msun)
+
+Trewind = -4.0  # initial time [Gyr] - the LMC orbit is computed back to that time
+Tcurr   =  0.0  # current time
+# heliocentric ICRS celestial coordinates and velocity of the LMC
+# (PM from Luri+ 2021, distance from Pietrzynski+ 2019, center and velocity from van der Marel+ 2002)
+ra, dec, dist, pmra, pmdec, vlos = 81.28, -69.78, 49.6, 1.858, 0.385, 262.2
+# transform to Galactocentric cartesian position/velocity, using built-in routines from Agama
+# (hence the manual conversion factors from degrees to radians and from mas/yr to km/s/kpc)
+l, b, pml, pmb = agama.transformCelestialCoords(agama.fromICRStoGalactic,
+    ra * numpy.pi/180, dec * numpy.pi/180, pmra, pmdec)
+posvelLMC = agama.getGalactocentricFromGalactic(l, b, dist, pml*4.74, pmb*4.74, vlos)
+
+# Create a simple but realistic model of the Milky Way with a bulge, a single disk,
+# and a spherical dark halo
+paramBulge = dict(
+    type              = 'Spheroid',
+    mass              = 1.2e10,
+    scaleRadius       = 0.2,
+    outerCutoffRadius = 1.8,
+    gamma             = 0.0,
+    beta              = 1.8)
+paramDisk  = dict(
+    type='Disk',
+    mass              = 5.0e10,
+    scaleRadius       = 3.0,
+    scaleHeight       = -0.4)
+paramHalo  = dict(
+    type              = 'Spheroid',
+    densityNorm       = 1.35e7,
+    scaleRadius       = 14,
+    outerCutoffRadius = 300,
+    cutoffStrength    = 4,
+    gamma             = 1,
+    beta              = 3)
+densMWhalo = agama.Density(paramHalo)
+potMW      = agama.Potential(paramBulge, paramDisk, paramHalo)
+
+# create a sphericalized MW potential and a corresponding isotropic halo distribution function
+potMWsph   = agama.Potential(type='Multipole', potential=potMW, lmax=0, rmin=0.01, rmax=1000)
+gmHalo     = agama.GalaxyModel(potMWsph,
+    agama.DistributionFunction(type='quasispherical', density=densMWhalo, potential=potMWsph))
+
+# compute the velocity dispersion in the MW halo needed for the dynamical friction
+rgrid      = numpy.logspace(1, 3, 16)
+xyzgrid    = numpy.column_stack([rgrid, rgrid*0, rgrid*0])
+sigmafnc   = agama.Spline(rgrid, gmHalo.moments(xyzgrid, dens=False, vel=False, vel2=True)[:,0]**0.5)
+
+# Create the LMC potential - a spherical truncated NFW profile with mass and radius
+# related by the equation below, which produces approximately the same enclosed mass
+# profile in the inner region, satisfying the observational constraints, as shown
+# in Fig.3 of Vasiliev,Belokurov&amp;Erkal 2021.
+massLMC    = 1.5e11
+radiusLMC  = (massLMC/1e11)**0.6 * 8.5
+bminCouLog = radiusLMC * 2.0   # minimum impact parameter in the Coulomb logarithm
+potLMC     = agama.Potential(
+    type              = 'spheroid',
+    mass              = massLMC,
+    scaleradius       = radiusLMC,
+    outercutoffradius = radiusLMC*10,
+    gamma             = 1,
+    beta              = 3)
+
+######## PART ONE ########
+# Simulate (approximately!) the past trajectory of the MW+LMC system under mutual gravity.
+# Here, we integrate in time a 12-dimensional ODE system for positions &amp; velocities of
+# both galaxies in the external inertial reference frame. The acceleration of each galaxy
+# is computed by taking the gradient of the rigid (non-deforming) potential of the other
+# galaxy at the location of the first galaxy's center, and then assuming that the entire
+# first galaxy experiences the same acceleration and continues to move as a rigid body.
+# The same procedure then is applied in reverse. Moreover, we add a dynamical friction
+# acceleration to the LMC, but not to the Milky Way; it is computed using the standard
+# Chandrasekhar's formula, but with a spatially-varying value of Coulomb logarithm,
+# which has been calibrated against full N-body simulations.
+# This simplified model is certainly not physically correct, e.g. manifestly violates
+# Newton's third law, but still captures the main features of the actual interaction.
+print(&quot;Computing the past orbits of the Milky Way and the LMC&quot;)
+def difeq(vars, t):
+    x0    = vars[0:3]          # MW position
+    v0    = vars[3:6]          # MW velocity
+    x1    = vars[6:9]          # LMC position
+    v1    = vars[9:12]         # LMC velocity
+    dx    = x1-x0              # relative offset
+    dv    = v1-v0              # relative velocity
+    dist  = sum(dx**2)**0.5    # distance between the galaxies
+    vmag  = sum(dv**2)**0.5    # magnitude of relative velocity
+    f0    = potLMC.force(-dx)  # force from LMC acting on the MW center
+    f1    = potMW .force( dx)  # force from MW acting on the LMC
+    rho   = potMW.density(dx)  # actual MW density at this point
+    sigma = sigmafnc(dist)     # approximate MW velocity dispersion at this point
+    # distance-dependent Coulomb logarithm
+    # (an approximation that best matches the results of N-body simulations)
+    couLog= max(0, numpy.log(dist / bminCouLog)**0.5)
+    X     = vmag / (sigma * 2**.5)
+    drag  = -(4*numpy.pi * rho * dv / vmag *
+        (scipy.special.erf(X) - 2/numpy.pi**.5 * X * numpy.exp(-X*X)) *
+        massLMC * agama.G**2 / vmag**2 * couLog)   # dynamical friction force
+    return numpy.hstack((v0, f0, v1, f1 + drag))
+
+Tstep   = 1./64
+tgrid   = numpy.linspace(Trewind, Tcurr, round((Tcurr-Trewind)/Tstep)+1)
+ic      = numpy.hstack((numpy.zeros(6), posvelLMC))
+sol     = scipy.integrate.odeint(difeq, ic, tgrid[::-1])[::-1]
+
+# After obtaining the solution for trajectories of both galaxies,
+# we transform it into a more convenient form, namely, into the non-inertial
+# reference frame centered at the Milky Way center at all times.
+# In this frame, the total time-dependent gravitational potential consists of
+# three terms. First is the rigid potential of the Milky Way itself.
+# Because the latter moves on a curvilinear trajectory, we need to add
+# a corresponding spatially uniform acceleration field. Finally, the potential
+# of the LMC is also rigid but moves in space.
+
+# LMC trajectory in the MW-centric (non-inertial) reference frame
+# (7 columns: time, 3 position and 3 velocity components)
+trajLMC = numpy.column_stack([tgrid, sol[:,6:12] - sol[:,0:6]])
+# MW trajectory in the inertial frame
+trajMWx = agama.Spline(tgrid, sol[:,0], der=sol[:,3])
+trajMWy = agama.Spline(tgrid, sol[:,1], der=sol[:,4])
+trajMWz = agama.Spline(tgrid, sol[:,2], der=sol[:,5])
+# MW centre acceleration is minus the second derivative of its trajectory in the inertial frame
+accMW   = numpy.column_stack([tgrid, -trajMWx(tgrid, 2), -trajMWy(tgrid, 2), -trajMWz(tgrid, 2)])
+potacc  = agama.Potential(type='UniformAcceleration', file=accMW)
+potLMCm = agama.Potential(potential=potLMC, center=trajLMC)  # potential of the moving LMC
+
+# finally, the total time-dependent potential in the non-inertial MW-centric reference frame
+potTotal= agama.Potential(potMW, potLMCm, potacc)
+
+######## PART TWO ########
+# Compute the perturbations caused by the moving LMC and the accelerating
+# Milky Way on the orbits of test particles in the Milky Way halo.
+# We create a large sample of stars initially in equilibrium with
+# the isolated Milky Way potential, then integrate their orbits
+# in the time-dependent potential of two interacting galaxies,
+# and plot the changes in density and mean velocity in several radial bins.
+
+if len(sys.argv)&gt;1:
+    Nstars = int(float(sys.argv[1]))
+else:
+    Nstars = 100000
+
+# create the initial conditions for the halo objects (for simplicity,
+# using the density profile of the DM halo rather than a separate stellar halo)
+ic = gmHalo.sample(Nstars)[0]
+
+# integrate the orbits of these objects in the time-dependent total potential
+# and record the &quot;final conditions&quot; (present-day position&amp;velocity)
+print(&quot;Integrating the trajectories of %i stars in the Milky Way halo &quot;
+    &quot;in the time-dependent potential of the LMC + MW&quot; % len(ic))
+if Nstars &lt; 1e6:
+    print(&quot;To increase the resolution and reduce the Poisson noise in maps, run the script &quot;
+        &quot;with a larger number of orbits, e.g. 1e6 (provide the number in the command line)&quot;)
+
+fc = numpy.vstack(agama.orbit(potential=potTotal, ic=ic, time=Tcurr-Trewind,
+    timestart=Trewind, trajsize=1)[:,1])
+
+# present-day positions and Solar reflex-corrected velocities of these stars
+# in the heliocentric system (for an observer at rest w.r.t. the Galactic center)
+l,b,d,ml,mb,vl = agama.getGalacticFromGalactocentric(*fc.T, galcen_v_sun=[0,0,0])
+ml *= d; mb *= d
+
+# the background density of stars in the unperturbed halo could be taken from &quot;ic&quot;,
+# but to reduce the Poisson noise, we create a higher-resolution sample of stars
+oversampling_factor = 10
+ic_hr = densMWhalo.sample(Nstars * oversampling_factor)[0]
+# convert the positions to the heliocentric system
+l0,b0,d0 = agama.getGalacticFromGalactocentric(*ic_hr.T)
+
+# LMC trajectory in the heliocentric system
+lLMC, bLMC, dLMC = agama.getGalacticFromGalactocentric(*trajLMC[:,1:4].T)
+
+def projectMollweide(lon, lat):
+    &quot;&quot;&quot;
+    Convert the longitude/latitude expressed in radians into coordinates in the ellipse
+    with semimajor axes 2x1, typical for showing all-sky maps of some quantity
+    &quot;&quot;&quot;
+    ang = numpy.array(lat)
+    bla = numpy.pi/2 * numpy.sin(lat)
+    # solve a nonlinear equation for ang by Newton's method, carefully designing the first approximation
+    w = (1 - abs(ang) * 2/numpy.pi)**(2./3)
+    ang = (1 - w * (1 + (1-w) * (-0.09 - 0.086*w) )) * numpy.sign(ang) * numpy.pi/2
+    for it in range(3):
+        ang -= 0.5 * (ang + 0.5*numpy.sin(2*ang) - bla) / numpy.cos(ang)**2
+    X = lon * 2/numpy.pi * numpy.cos(ang)
+    Y = numpy.sin(ang)
+    return X, Y
+
+X,Y   = projectMollweide(l, b)
+X0,Y0 = projectMollweide(l0,b0)
+Xl,Yl = projectMollweide(lLMC,bLMC)
+# show perturbation maps as 2d histograms in X,Y
+gridX, gridY = numpy.linspace(-2,2,81), numpy.linspace(-1,1,41)
+centX, centY = (gridX[1:]+gridX[:-1])/2, (gridY[1:]+gridY[:-1])/2
+cntrX = numpy.repeat(centX, len(centY)).reshape(len(centX), len(centY))
+cntrY = numpy.tile  (centY, len(centX)).reshape(len(centX), len(centY))
+def smooth(hist):
+    # Gaussian smoothing of a region inside the ellipse
+    smoothing = (Nstars/1e7)**-0.25
+    hist[hist==0] = numpy.mean(hist)  # fill the outside region with the mean value
+    hist = scipy.ndimage.gaussian_filter(hist, smoothing)
+    hist[ (cntrX/2.0)**2 + cntrY**2 &gt; 1.0 ] = numpy.nan
+    return hist
+
+def showmap(ax, qty):
+    ax.set_axis_off()
+    ax.imshow(qty.T, extent=[-2,2,-1.01,0.99], aspect='auto', interpolation='nearest', origin='lower',
+        cmap='bluered', vmin=-1, vmax=1)
+    ax.add_artist(matplotlib.patches.Ellipse((0,0), 4, 2, fill=False, color='k', lw=0.5, clip_on=False))
+    ax.set_xlim(2, -2)
+    ax.set_ylim(-1, 1)
+    ax.plot(Xl, Yl, color='g', dashes=[2,1.5], lw=0.25)
+    ax.plot(Xl[dlf], Yl[dlf], color='g', lw=0.75)
+    ax.plot(Xl[-1 ], Yl[-1 ], 'o', mew=0, ms=1.5, color='g')
+
+plt.rc('axes', linewidth=0.5)
+plt.rc('font', size=6)
+plt.rc('ytick.major', size=1)
+plt.figure(figsize=(6.4,3.2), dpi=200)
+distbins = [0, 30, 60, 100, 150]
+for i in range(4):
+    dmin = distbins[i]
+    dmax = distbins[i+1]
+    filt0= (d0  &gt;=dmin) * (d0  &lt;=dmax)
+    filt = (d   &gt;=dmin) * (d   &lt;=dmax)
+    dlf  = (dLMC&gt;=dmin) * (dLMC&lt;=dmax)
+    print('%g &lt; D [kpc] &lt; %g: %i stars' % (dmin, dmax, numpy.sum(filt)))
+    his0 = smooth(numpy.histogram2d(X0[filt0], Y0[filt0], bins=(gridX,gridY))[0]) / oversampling_factor
+    his  = smooth(numpy.histogram2d(X[filt], Y[filt], bins=(gridX,gridY))[0])
+    hml  = smooth(numpy.histogram2d(X[filt], Y[filt], bins=(gridX,gridY), weights=ml[filt])[0]) / his
+    hmb  = smooth(numpy.histogram2d(X[filt], Y[filt], bins=(gridX,gridY), weights=mb[filt])[0]) / his
+    hvl  = smooth(numpy.histogram2d(X[filt], Y[filt], bins=(gridX,gridY), weights=vl[filt])[0]) / his
+    showmap(plt.axes([0.005 + i*0.22, 0.73, 0.20, 0.20]), his/his0-1)  # over/underdensity map
+    showmap(plt.axes([0.005 + i*0.22, 0.49, 0.20, 0.20]), hml/80.0)    # mean velocity in the &quot;l&quot; direction
+    showmap(plt.axes([0.005 + i*0.22, 0.25, 0.20, 0.20]), hmb/80.0)    # mean velocity in the &quot;b&quot; direction
+    showmap(plt.axes([0.005 + i*0.22, 0.01, 0.20, 0.20]), hvl/80.0)    # mean line-of-sight velocity
+    plt.text(0.115 + i*0.22, 0.99, '%g &lt; D [kpc] &lt; %g' % (dmin, dmax), ha='center', va='top',
+        transform=plt.gcf().transFigure, fontsize=7)
+
+def showcolorbar(ax, label, vmin, vmax):
+    ax.imshow(numpy.linspace(0,1,256).reshape(-1,1), extent=[0,1,vmin,vmax], aspect='auto', interpolation='nearest',
+        origin='lower', cmap='bluered', vmin=0, vmax=1)
+    ax.set_xticks([])
+    ax.yaxis.tick_right()
+    ax.set_ylabel(label, labelpad=-40, fontsize=8)
+
+showcolorbar(plt.axes([0.89, 0.73, 0.02, 0.20]), r'$\rho / \rho_0 - 1$', -1, 1)
+showcolorbar(plt.axes([0.89, 0.49, 0.02, 0.20]), r'$D\times \mu_l \;\sf[km/s]$', -80, 80)
+showcolorbar(plt.axes([0.89, 0.25, 0.02, 0.20]), r'$D\times \mu_b \;\sf[km/s]$', -80, 80)
+showcolorbar(plt.axes([0.89, 0.01, 0.02, 0.20]), r'$v_\mathsf{los} \;\sf[km/s]$', -80, 80)
+#plt.savefig('example_lmc_mw_interaction.pdf')
+plt.show()
+</file>
+    <file path="py/example_mw_bar_potential.py">
+#!/usr/bin/python
+'''
+This script defines an analytic approximation for the barred Milky Way model from Portail et al.(2017)
+and constructs a corresponding CylSpline potential, which can be used to integrate orbits, etc.
+The density is represented by four components: an X-shaped inner bar, two instances of long bars,
+and an axisymmetric disk. In addition, there is a 'central mass concentration' (a triaxial disk)
+and a flattened axisymmetric dark halo, which is represented by a separate Multipole potential.
+This potential model is a good fit for the central region of the Galaxy (within ~5kpc),
+but is not very realistic further out.
+A better variant of the entire Milky Way potential is provided by example_mw_potential_hunter24.py
+The left panel shows the circular-velocity curve (in the axisymmetrized potential),
+and the right panel shows examples of a few orbits in this potential.
+
+Reference: Sormani et al. 2022 (MNRAS Letters/514/L5).
+
+Authors: Mattia Sormani, Eugene Vasiliev
+'''
+import agama, numpy, matplotlib.pyplot as plt
+
+# Nearly identical to the built-in Disk density profile, but with a slightly different
+# vertical profile containing an additional parameter 'verticalSersicIndex'
+def makeDisk(**params):
+    surfaceDensity      = params['surfaceDensity']
+    scaleRadius         = params['scaleRadius']
+    scaleHeight         = params['scaleHeight']
+    innerCutoffRadius   = params['innerCutoffRadius']
+    sersicIndex         = params['sersicIndex']
+    verticalSersicIndex = params['verticalSersicIndex']
+    def density(xyz):
+        R = (xyz[:,0]**2 + xyz[:,1]**2)**0.5
+        return (surfaceDensity / (4*scaleHeight) *
+            numpy.exp( - (R/scaleRadius)**sersicIndex - innerCutoffRadius/(R+1e-100)) /
+            numpy.cosh( (abs(xyz[:,2]) / scaleHeight)**verticalSersicIndex ) )
+    return agama.Density(density, symmetry='a')
+
+# Modification of equation 9 of Coleman et al. 2020 (https://arxiv.org/abs/1911.04714)
+def makeXBar(**params):
+    densityNorm = params['densityNorm']
+    x0   = params['x0']
+    y0   = params['y0']
+    z0   = params['z0']
+    xc   = params['xc']
+    yc   = params['yc']
+    c    = params['c']
+    alpha= params['alpha']
+    cpar = params['cpar']
+    cperp= params['cperp']
+    m    = params['m']
+    n    = params['n']
+    outerCutoffRadius = params['outerCutoffRadius']
+    def density(xyz):
+        r  = numpy.sum(xyz**2, axis=1)**0.5
+        a  = ( ( (abs(xyz[:,0]) / x0)**cperp + (abs(xyz[:,1]) / y0)**cperp )**(cpar/cperp) +
+            (abs(xyz[:,2]) / z0)**cpar )**(1/cpar)
+        ap = ( ((xyz[:,0] + c * xyz[:,2]) / xc)**2 + (xyz[:,1] / yc)**2 )**(0.5)
+        am = ( ((xyz[:,0] - c * xyz[:,2]) / xc)**2 + (xyz[:,1] / yc)**2 )**(0.5)
+        return (densityNorm / numpy.cosh(a**m) * numpy.exp( -(r/outerCutoffRadius)**2) *
+            (1 + alpha * (numpy.exp(-ap**n) + numpy.exp(-am**n) ) ) )
+    return density
+
+# Modification of equation 9 of Wegg et al. 2015 (https://arxiv.org/pdf/1504.01401.pdf)
+def makeLongBar(**params):
+    densityNorm = params['densityNorm']
+    x0   = params['x0']
+    y0   = params['y0']
+    cpar = params['cpar']
+    cperp= params['cperp']
+    scaleHeight = params['scaleHeight']
+    innerCutoffRadius   = params['innerCutoffRadius']
+    outerCutoffRadius   = params['outerCutoffRadius']
+    innerCutoffStrength = params['innerCutoffStrength']
+    outerCutoffStrength = params['outerCutoffStrength']
+    def density(xyz):
+        R = (xyz[:,0]**2 + xyz[:,1]**2)**0.5
+        a = ( (abs(xyz[:,0]) / x0)**cperp + (abs(xyz[:,1]) / y0)**cperp )**(1/cperp)
+        return densityNorm / numpy.cosh(xyz[:,2] / scaleHeight)**2 * numpy.exp(-a**cpar
+            -(R/outerCutoffRadius)**outerCutoffStrength - (innerCutoffRadius/R)**innerCutoffStrength)
+    return density
+
+# additional central mass concentration as described in sec.7.3 of Portail et al.(2017)
+def makeCMC(mass, scaleRadius, scaleHeight, axisRatioY):
+    norm = mass / (4 * numpy.pi * scaleRadius**2 * scaleHeight * axisRatioY)
+    def density(xyz):
+        return norm * numpy.exp(-(xyz[:,0]**2 + (xyz[:,1]/axisRatioY)**2)**0.5 / scaleRadius
+            - abs(xyz[:,2]) / scaleHeight)
+    return agama.Density(density, symmetry='a')
+
+# create the bar density profile with 3 component
+def makeBarDensity():
+    params = numpy.array(
+      # short/thick bar
+      [ 3.16273226e+09, 4.90209137e-01, 3.92017253e-01, 2.29482096e-01,
+        1.99110223e+00, 2.23179266e+00, 8.73227940e-01, 4.36983774e+00,
+        6.25670015e-01, 1.34152138e+00, 1.94025114e+00, 7.50504078e-01,
+        4.68875471e-01] +
+      # long bar 1
+      [ 4.95381575e+08, 5.36363324e+00, 9.58522229e-01, 6.10542494e-01,
+        9.69645220e-01, 3.05125124e+00, 3.19043585e+00, 5.58255674e-01,
+        1.67310332e+01, 3.19575493e+00] +
+      # long bar 2
+      [ 1.74304936e+13, 4.77961423e-01, 2.66853061e-01, 2.51516920e-01,
+        1.87882599e+00, 9.80136710e-01, 2.20415408e+00, 7.60708626e+00,
+       -2.72907665e+01, 1.62966434e+00]
+    )
+    ind=0
+    densityXBar = makeXBar(
+         densityNorm=params[ind+0],
+         x0=params[ind+1],
+         y0=params[ind+2],
+         z0=params[ind+3],
+         cpar=params[ind+4],
+         cperp=params[ind+5],
+         m=params[ind+6],
+         outerCutoffRadius=params[ind+7],
+         alpha=params[ind+8],
+         c=params[ind+9],
+         n=params[ind+10],
+         xc=params[ind+11],
+         yc=params[ind+12])
+    ind+=13
+    densityLongBar1 = makeLongBar(
+        densityNorm=params[ind+0],
+        x0=params[ind+1],
+        y0=params[ind+2],
+        scaleHeight=params[ind+3],
+        cperp=params[ind+4],
+        cpar=params[ind+5],
+        outerCutoffRadius=params[ind+6],
+        innerCutoffRadius=params[ind+7],
+        outerCutoffStrength=params[ind+8],
+        innerCutoffStrength=params[ind+9] )
+    ind+=10
+    densityLongBar2 = makeLongBar(
+        densityNorm=params[ind+0],
+        x0=params[ind+1],
+        y0=params[ind+2],
+        scaleHeight=params[ind+3],
+        cperp=params[ind+4],
+        cpar=params[ind+5],
+        outerCutoffRadius=params[ind+6],
+        innerCutoffRadius=params[ind+7],
+        outerCutoffStrength=params[ind+8],
+        innerCutoffStrength=params[ind+9] )
+    ind+=10
+    assert len(params)==ind, 'invalid number of parameters'
+    return agama.Density(lambda x: densityXBar(x) + densityLongBar1(x) + densityLongBar2(x), symmetry='t')
+
+
+# create the potential of the entire model:
+# 3-component bar density as defined above, plus disk, central mass concentration, and dark halo
+def makePotentialModel():
+    # combined 4 components and the CMC represented by a single triaxial CylSpline potential
+    mmax = 12  # order of azimuthal Fourier expansion (higher order means better accuracy,
+    # but values greater than 12 *significantly* slow down the computation!)
+    params_disk = [ 1.03063359e+09, 4.75409497e+00, 4.68804907e+00, 1.51100601e-01,
+        1.53608780e+00, 7.15915848e-01 ]
+    densityDisk = makeDisk(
+        surfaceDensity=params_disk[0],
+        scaleRadius=params_disk[1],
+        innerCutoffRadius=params_disk[2],
+        scaleHeight=params_disk[3],
+        sersicIndex=params_disk[4],
+        verticalSersicIndex=params_disk[5])
+
+    pot_bary = agama.Potential(type='CylSpline',
+        density=agama.Density(makeBarDensity(), densityDisk, makeCMC(0.2e10, 0.25, 0.05, 0.5)),
+        mmax=mmax, gridsizeR=25, gridsizez=25, Rmin=0.1, Rmax=40, zmin=0.05, zmax=20)
+    # flattened axisymmetric dark halo with the Einasto profile
+    pot_dark = agama.Potential(type='Multipole',
+        density='Spheroid', axisratioz=0.8, gamma=0, beta=0,
+        outerCutoffRadius=1.84, cutoffStrength=0.74, densityNorm=0.0263e10,
+        gridsizer=26, rmin=0.01, rmax=1000, lmax=8)
+    return agama.Potential(pot_bary, pot_dark)
+
+
+if __name__ == '__main__':
+    agama.setUnits(length=1, mass=1, velocity=1)  # 1 kpc, 1 Msun, 1 km/s
+    pot = makePotentialModel()
+    pot.export('Portail17.ini')
+    print('Created MW potential: total mass in stars=%.3g Msun, halo=%.3g Msun' %
+        (pot[0].totalMass(), pot[1].totalMass()))
+    # create an axisymmetrized version of the potential for plotting the true circular-velocity curve
+    pot_axi = agama.Potential(
+        agama.Potential(type='CylSpline', potential=pot[0],
+            mmax=0, gridsizeR=25, gridsizez=25, Rmin=0.1, Rmax=40, zmin=0.05, zmax=20),
+        pot[1])
+
+    r=numpy.linspace(0,10,101)
+    xyz=numpy.column_stack((r,r*0,r*0))
+    ax=plt.subplots(1, 2, figsize=(12,6), dpi=100)[1]
+    ax[0].plot(r, (-r*pot_axi[0].force(xyz)[:,0])**0.5, 'c', label='stars')
+    ax[0].plot(r, (-r*pot_axi[1].force(xyz)[:,0])**0.5, 'y', label='halo')
+    ax[0].plot(r, (-r*pot_axi   .force(xyz)[:,0])**0.5, 'r', label='total')
+    ax[0].legend(loc='lower right', frameon=False)
+    ax[0].set_xlabel('radius [kpc]')
+    ax[0].set_ylabel('circular velocity [km/s]')
+
+    # integrate and show a few orbits
+    numorbits=10
+    numpy.random.seed(42)
+    ic=numpy.random.normal(size=(numorbits,6)) * numpy.array([2.0, 0.0, 0.4, 50., 40., 30.])
+    ic[:,0] += -6.
+    ic[:,4] += 220
+    bar_angle = -25.0 * numpy.pi/180  # orientation of the bar w.r.t. the Sun
+    Omega = -39.0  # km/s/kpc - the value is negative since the potential rotates clockwise
+    orbits = agama.orbit(potential=pot, ic=ic, time=10., trajsize=1000, Omega=Omega)[:,1]
+    sina, cosa = numpy.sin(bar_angle), numpy.cos(bar_angle)
+    rmax = 10.0   # plotting range
+    cmap = plt.get_cmap('mist')
+    for i,o in enumerate(orbits):
+        ax[1].plot(o[:,0]*cosa-o[:,1]*sina, o[:,0]*sina+o[:,1]*cosa, color=cmap(i*1.0/numorbits), lw=0.5)
+    ax[1].plot(-8.2,0.0, 'ko', ms=5)  # Solar position
+    ax[1].text(-8.0,0.0, 'Sun')
+    ax[1].set_xlabel('x [kpc]')
+    ax[1].set_ylabel('y [kpc]')
+    ax[1].set_xlim(-rmax, rmax)
+    ax[1].set_ylim(-rmax, rmax)
+
+    # overplot the surface density contours
+    print('Computing surface density')
+    gridr  = numpy.linspace(-rmax, rmax, 101)  # 1d grid
+    gridxy = numpy.column_stack((numpy.repeat(gridr, len(gridr)), numpy.tile(gridr, len(gridr))))  # 2d grid
+    Sigma  = pot[0].projectedDensity(gridxy, gamma=-bar_angle)  # surface density for a stellar component rotated by bar_angle
+    logSigma = 2.5 * numpy.log10(Sigma / numpy.max(Sigma))      # log-scaled to magnitudes per unit square
+    # thick lines spaced by one magnitude, thin lines lie halfway between thick ones
+    ax[1].contour(gridr, gridr, logSigma.reshape(len(gridr), len(gridr)).T,
+        levels=numpy.linspace(-8,0,17), colors='k', zorder=5, linewidths=[2,1], linestyles='solid')
+
+    plt.tight_layout()
+    plt.show()
+</file>
+    <file path="py/example_nbody_simulation_arepo.param">
+%----  Relevant files
+InitCondFile                            IC.snap
+OutputDir                               output
+SnapshotFileBase                        snapshot
+OutputListFilename                      none
+ResubmitOn                              0
+ResubmitCommand                         none
+
+%---- File formats
+ICFormat                                2
+SnapFormat                              2
+
+%---- CPU-time limits in seconds
+TimeLimitCPU                            1800
+CpuTimeBetRestartFile                   7200
+
+%----- Memory alloction
+MaxMemSize                              2000
+
+%---- Characteristics of run
+TimeBegin                               0.0    % Begin of the simulation
+TimeMax                                 0.25   % End of the simulation
+
+%---- Basic code options that set the type of simulation
+ComovingIntegrationOn                   0
+PeriodicBoundariesOn                    0
+CoolingOn                               0
+StarformationOn                         0
+
+%---- Cosmological parameters (unused)
+Omega0                                  0.0
+OmegaLambda                             0.0
+OmegaBaryon                             0.0
+HubbleParam                             1.0
+BoxSize                                 0
+
+%---- Output frequency and output parameters
+OutputListOn                            0
+TimeBetSnapshot                         0.001953125
+TimeOfFirstSnapshot                     0
+TimeBetStatistics                       0.03125
+NumFilesPerSnapshot                     1
+NumFilesWrittenInParallel               1
+
+%---- Accuracy of time integration
+TypeOfTimestepCriterion                 0
+ErrTolIntAccuracy                       0.1
+CourantFac                              0.15
+MaxSizeTimestep                         0.001953125
+MinSizeTimestep                         0
+
+%---- Tree algorithm, force accuracy, domain update frequency
+TypeOfOpeningCriterion                  1
+ErrTolTheta                             0.5
+ErrTolForceAcc                          0.005
+MultipleDomains                         8
+TopNodeFactor                           2.5
+ActivePartFracForNewDomainDecomp        0.01
+ 
+%---- Initial density estimate
+DesNumNgb                               64
+MaxNumNgbDeviation                      4
+
+%---- System of units
+UnitLength_in_cm                        3.085678e21   %  1.0 kpc/h
+UnitMass_in_g                           1.989e33      %  1 solar mass
+UnitVelocity_in_cm_per_s                1e5           %  1 km/sec
+GravityConstantInternal                 0             %  determine automatically from the above units
+
+%---- Gravitational softening lengths
+SofteningComovingType0                  0
+SofteningComovingType1                  0.001
+SofteningComovingType2                  0
+SofteningComovingType3                  0
+SofteningComovingType4                  0
+SofteningComovingType5                  0
+
+SofteningMaxPhysType0                   0
+SofteningMaxPhysType1                   0.001
+SofteningMaxPhysType2                   0
+SofteningMaxPhysType3                   0
+SofteningMaxPhysType4                   0
+SofteningMaxPhysType5                   0
+
+SofteningTypeOfPartType0                0
+SofteningTypeOfPartType1                1
+SofteningTypeOfPartType2                1
+SofteningTypeOfPartType3                1
+SofteningTypeOfPartType4                1
+SofteningTypeOfPartType5                1
+
+GasSoftFactor                           2.5
+
+%----- Mesh regularization options
+CellShapingSpeed                        0.5
+CellShapingFactor                       1.0
+
+%---- Treatment of empty space and temperature limits
+InitGasTemp                             0
+MinGasTemp                              0
+MinimumDensityOnStartUp                 0
+LimitUBelowThisDensity                  0
+LimitUBelowCertainDensityToThisValue    0
+MinEgySpec                              0
+</file>
+  </repository_files>
+</compressed_repository>
